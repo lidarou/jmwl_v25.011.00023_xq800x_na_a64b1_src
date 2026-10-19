@@ -1,0 +1,8 @@
+menu "Console Config"
+    config PLAT_CONSOLE
+        bool "Console Enable"
+        default y
+        help
+          Enable the console function.
+
+endmenu

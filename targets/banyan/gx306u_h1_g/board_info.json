@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx306u_h1_g",
+				"ap board name":        "gx306u_h1_g",
+				"md board name":        "gx306u_h1",
+				"cp board name":        "gx30xu_lite",
+				"nv board name":        "gx306u_h1_d",
+				"bootloader board name":"gx306u_h1_g",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+2 cm data transfer + gps board"
+			}
+        ]
+	}
+}

@@ -1,0 +1,40 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# pmic power supply battery configurations
+
+menuconfig BAT
+    bool "battery driver."
+    default n
+    help
+         battery capacity statistacil report.
+
+if BAT
+    # battery driver Selection configurations
+    choice
+        prompt "battery driver Selection"
+        default BAT_R1P0
+
+        config BAT_R1P0
+            bool "R1P0 battery ip"
+            help
+                select battery r1p0 for battery interface.
+
+        config BAT_R2P0
+            bool "R2P0 battery ip"
+            help
+                select battery r2p0 for battery interface.
+    endchoice
+
+    if BAT_R1P0
+        config BAT_IP
+            string
+            default "r1p0"
+    endif
+
+    if BAT_R2P0
+        config BAT_IP
+            string
+            default "r2p0"
+    endif
+endif

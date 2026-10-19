@@ -1,0 +1,173 @@
+{
+    "HEADER": {
+        "id": 18,
+        "category": 1
+    },
+    "EXT_MODEM_CFG": {
+        "uart_flowcontrol_en": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "0: disable hardware flow control;1: enable hardware flow control."
+        },
+        "wakeup_type": {
+            "value": 1,
+            "type": "unsigned int",
+            "description": "0: gpio mode;1: eipu mode."
+        },
+        "wakeup_mcu_n": {
+            "value": 5,
+            "type": "unsigned int",
+            "description": "gx wakeup mcu gpio number."
+        },
+        "wakeup_mcu_iomuxaddr": {
+            "value": 1074790468,
+            "type": "unsigned int",
+            "description": "gx wakeup mcu iomux address."
+        },
+        "wakeup_mcu_iomuxval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "gx wakeup mcu iomux value."
+        },
+        "wakeup_mcu_pinaddr": {
+            "value": 1074790436,
+            "type": "unsigned int",
+            "description": "gx wake up mcu pad control address."
+        },
+        "wakeup_mcu_pinval": {
+            "value": 1048833,
+            "type": "unsigned int",
+            "description": "gx wake up mcu pad control value."
+        },
+        "wakeup_gx_n": {
+            "value": 6,
+            "type": "unsigned int",
+            "description": "mcu wakeup gx gpio number or eipu number."
+        },
+        "wakeup_gx_iomuxaddr": {
+            "value": 1074790464,
+            "type": "unsigned int",
+            "description": "mcu wakeup gx iomux address."
+        },
+        "wakeup_gx_iomuxval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "mcu wakeup gx iomux value."
+        },
+        "wakeup_gx_pinaddr": {
+            "value": 1074790432,
+            "type": "unsigned int",
+            "description": "mcu wakeup gx pad control address."
+        },
+        "wakeup_gx_pinval": {
+            "value": 1055281,
+            "type": "unsigned int",
+            "description": "mcu wakeup gx pad control value."
+        },
+        "autodowload_n": {
+            "value": 4294967295,
+            "type": "unsigned int",
+            "description": "autodowload gpio number."
+        },
+        "autodowload_iomuxaddr": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "autodowload iomux address."
+        },
+        "autodowload_iomuxval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "autodowload iomux value."
+        },
+        "autodowload_pinaddr": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "autodowload pad control address."
+        },
+        "autodowload_pinval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "autodowload pad control value."
+        },
+        "audiopa_en_n": {
+            "value": 4294967295,
+            "type": "unsigned int",
+            "description": "audiopa enable gpio number."
+        },
+        "audiopa_en_iomuxaddr": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "audiopa enable iomux address."
+        },
+        "audiopa_en_iomuxval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "audiopa enable iomux value."
+        },
+        "audiopa_en_pinaddr": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "audiopa enable pad control address."
+        },
+        "audiopa_en_pinval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "audiopa enable pad control value."
+        },
+        "abnormal_status_n": {
+            "value": 9,
+            "type": "unsigned int",
+            "description": "abnormal status gpio number."
+        },
+        "abnormal_status_iomuxaddr": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "abnormal status iomux address."
+        },
+        "abnormal_status_iomuxval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "abnormal status iomux value."
+        },
+        "abnormal_status_pinaddr": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "abnormal status pad control address."
+        },
+        "abnormal_status_pinval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "abnormal status pad control value."
+        },
+        "sim_detect_pin_cfg": {
+            "value": 1,
+            "type": "unsigned int",
+            "description": "0: nothing 1: SIM detect pin reconfiguration"
+        },
+        "sim_detect_iomuxaddr": {
+            "value": 1074688124,
+            "type": "unsigned int",
+            "description": "sim detect iomux address."
+        },
+        "sim_detect_iomuxval": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "sim detect iomux value."
+        },
+        "sim_detect_pinaddr": {
+            "value": 1074688064,
+            "type": "unsigned int",
+            "description": "sim detect pad control address."
+        },
+        "sim_detect_pinval": {
+            "value": 137777,
+            "type": "unsigned int",
+            "description": "sim detect pad control value."
+        },
+        "uart_baudrate": {
+            "value": 4000000,
+            "type": "unsigned int",
+            "description": "uart baudrate value."
+        }
+    }
+}

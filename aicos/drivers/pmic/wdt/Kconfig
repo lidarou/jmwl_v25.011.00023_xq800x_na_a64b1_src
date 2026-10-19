@@ -1,0 +1,28 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+menu "pmic watchdog Configurations"
+
+config PMIC_WDT
+    bool "pmic watchdog timer driver"
+    select PMIC_IRQ
+    depends on SUBSYS_AP
+    default y
+    help
+      Monitor system scheduling exceptions via wdt.
+
+config PMIC_WDT_VER
+    string "pmic wdt driver version"
+    depends on PMIC_WDT
+    default "r2p0"
+    help
+      Select version that match witch pmic wdt IP.
+
+config PMIC_WATCHDOG_INDEPENDENT_THREAD
+    bool "pmic watchdog independent thread"
+    depends on PMIC_WDT
+    default n
+    help
+      Create pmic watchdog independent thread for system exception monitoring.
+
+endmenu # pmic watchdog Configurations

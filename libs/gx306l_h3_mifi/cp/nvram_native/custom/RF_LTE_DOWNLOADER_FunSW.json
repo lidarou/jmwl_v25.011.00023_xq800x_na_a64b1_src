@@ -1,0 +1,210 @@
+{
+    "HEADER": {
+        "id": 101,
+        "category": 1
+    },
+    "RF_LTE_DOWNLOADER_FunSW_T": {
+        "RF_LTE_DOWNLOADER_FunSW": [
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": ""
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "Pdet enable:1,Enable;0,Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "APT enable:1,Enable;0,Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "APC print enable:1,Enable;0,Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "Cali check enable:0,Enable;1,Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "0xFC Val NV Flag: 1,Enable; 0: Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "Temp comp under LPM"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "tdd bw rsrp thd enable:1,Enable;0,Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "0x198 Val NV Flag: 1,Enable; 0: Disable"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": "TX DC Cal bandwidth"
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned char",
+                "description": " "
+            }
+        ]
+    }
+}

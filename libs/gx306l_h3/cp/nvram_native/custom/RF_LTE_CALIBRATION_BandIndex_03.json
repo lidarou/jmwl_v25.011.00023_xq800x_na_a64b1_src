@@ -1,0 +1,4440 @@
+{
+    "HEADER": {
+        "id": 126,
+        "category": 2
+    },
+    "RF_LTE_CALIBRATION": {
+        "LteCal_Apc": {
+            "PowerLever": [
+                {
+                    "value": 64,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 71,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 79,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 86,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 94,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 100,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 108,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 115,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 122,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 16513,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 16520,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 16527,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 34938,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 34946,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 34953,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2192,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2199,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2206,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2211,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2219,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2225,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2232,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 2240,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 18632,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 18642,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 18648,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 37011,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 37017,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 37023,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4258,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4264,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4271,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4276,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4282,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4289,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4298,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4306,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4312,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4319,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4327,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4337,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4345,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4351,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4357,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4366,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4373,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4376,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4381,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4390,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4398,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4407,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4411,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4413,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4421,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4432,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4441,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4455,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4464,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4476,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4484,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4493,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4501,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4509,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4516,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4525,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4532,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4540,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4547,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4555,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4562,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4574,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4582,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4590,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4596,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 4603,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+                }
+            ]
+        },
+        "LteCal_ApcComp": {
+            "ChannelIndex": [
+                {
+                    "TPCPoint": [
+                        {
+                            "value": -2,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": -1,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": -1,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": -1,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 2,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 2,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": -1,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "TPCPoint": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                }
+            ]
+        },
+        "LteCal_Agc": {
+            "RxGainIndex": [
+                {
+                    "value": 67,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 87,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 106,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 124,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 144,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 165,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 184,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 204,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 224,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 244,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 264,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 284,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 299,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 319,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 339,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 359,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 379,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 401,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 412,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 432,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 451,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 472,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 492,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 512,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 532,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 537,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 556,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 577,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 597,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 619,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 638,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 658,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 679,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 699,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 732,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 759,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 776,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 795,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 810,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 845,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "dB Rx Gain*10"
+                }
+            ]
+        },
+        "LteCal_AgcComp": {
+            "LNAStage": [
+                {
+                    "AgcChannelIndex": [
+                        {
+                            "value": -4,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": -1,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "AgcChannelIndex": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "AgcChannelIndex": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                },
+                {
+                    "AgcChannelIndex": [
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        },
+                        {
+                            "value": 0,
+                            "type": "signed char",
+                            "description": "dB power*10"
+                        }
+                    ]
+                }
+            ]
+        },
+        "LteCal_Pdet": {
+            "PowerLever": [
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                },
+                {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "PdetCal"
+                }
+            ]
+        },
+        "LteCal_PdetComp": {
+            "ChannelIndex": [
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": "Pdet Channelcomp"
+                }
+            ]
+        },
+        "Tx_Anti_Droop": {
+            "ChannelIndex": [
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "Tx_IQ_Imbalance": {
+            "IQImb_Comp_Phs": [
+                {
+                    "value": 132,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                }
+            ],
+            "IQImb_Comp_Amp": [
+                {
+                    "value": -117,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                }
+            ]
+        },
+        "Tx_DCOC": {
+            "DC_Comp_I": [
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                }
+            ],
+            "DC_Comp_Q": [
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                }
+            ]
+        },
+        "Rx_IQ_Imbalance": {
+            "IQImb_Comp_Phs": [
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                }
+            ],
+            "IQImb_Comp_Amp": [
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                }
+            ]
+        },
+        "Rx_DCOC": {
+            "DC_Comp_I": [
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4095,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4094,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4095,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 3,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32504,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 9,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 10,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 10,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 9,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32507,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 5,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 5,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32506,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 6,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 5,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 5,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 6,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 6,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 7,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32251,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 261,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32250,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32504,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1029,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -31739,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1029,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1029,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 2054,
+                    "type": "short",
+                    "description": " "
+                }
+            ],
+            "DC_Comp_Q": [
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 2,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4095,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4094,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 4093,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 2,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 5,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 139,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 139,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 138,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 138,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 138,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32376,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 137,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 136,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 136,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 134,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 133,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 131,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 134,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 133,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 131,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 129,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 2,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 7,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 133,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 131,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32512,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 3,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 5,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 1,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 3,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 6,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 8,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 12,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 264,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 267,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32496,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 20,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 31,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -31466,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 17,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 533,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": -32234,
+                    "type": "short",
+                    "description": " "
+                },
+                {
+                    "value": 32,
+                    "type": "short",
+                    "description": " "
+                }
+            ]
+        },
+        "Reserved": [
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 176,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 48,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 48,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 80,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "short",
+                "description": " "
+            }
+        ],
+        "LteCal_Flag": [
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": "Bit0~3 for AGC,Bit 4~7 for APC"
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            }
+        ]
+    }
+}

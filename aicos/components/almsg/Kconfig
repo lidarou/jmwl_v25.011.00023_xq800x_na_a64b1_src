@@ -1,0 +1,9 @@
+menu "Almsg Config"
+    config ALOG_MSG_SUPPORT
+        bool "Enable alog message feature"
+        depends on ALOG_SUPPORT
+        default n
+        help
+          Enable alog message feature.
+
+endmenu

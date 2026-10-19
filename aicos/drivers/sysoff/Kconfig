@@ -1,0 +1,26 @@
+menu "SYSOFF Config"
+    config AIC_SYSOFF
+        bool "AIC SYSOFF Enable"
+        depends on SUBSYS_AP && PMIC_I2C
+	select DRIVER_WDT
+        default y
+        help
+          Enable SYSOFF process for ap
+          if enable it, will use sysoff
+
+    config AIC_SYSOFF_AT
+        bool "AIC SYSOFF for AT COMMAND"
+	depends on AIC_SYSOFF
+	default n
+	help
+	  Enable SYSOFF process for at command
+	  if enable it, will use sysoff
+
+    config AIC_SYSOFF_CHARGE
+        bool "AIC Charge process while system off"
+        depends on AIC_SYSOFF
+        default n
+        help
+          Enable charging while system off.
+          if enable it, will use sysoff
+endmenu

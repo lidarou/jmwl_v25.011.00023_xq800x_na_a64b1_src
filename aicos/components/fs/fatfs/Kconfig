@@ -1,0 +1,28 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig FS_FATFS
+    tristate "FAT File System support"
+    default y
+    help
+        This option will provide the ffs support for users to transparently access the
+        file system.
+
+if FS_FATFS
+    config FS_FATFS_IMAGE_GEN
+        bool "Generate FATFS image at build time"
+        default n
+        help
+            Generate FATFS image at build time.
+
+    config FS_FATFS_IMAGE_GEN_SIZE
+        string "Size of gernerated fatfs image"
+        default "1M"
+        depends on FS_FATFS_IMAGE_GEN
+        help
+            Size of the FATFS image, n[K/M/G].
+
+    source "components/fs/fatfs/fxffs/Kconfig"
+endif

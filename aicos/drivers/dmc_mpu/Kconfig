@@ -1,0 +1,21 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "DMC MPU SoC Drivers"
+
+config DRIVER_DMC_MPU
+    bool "DMC MPU module"
+    depends on SUBSYS_AP
+    help
+      DMC MPU module.
+
+config DRIVER_DMC_MPU_VER
+    string "DMC MPU driver IP version"
+    depends on DRIVER_DMC_MPU
+    default "r1p0"
+    help
+      DMC MPU IP version, different chip will use different version
+      of DMC MPU IP.
+
+endmenu # DMC MPU SoC Drivers

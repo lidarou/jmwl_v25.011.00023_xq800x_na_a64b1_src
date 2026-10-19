@@ -1,0 +1,18 @@
+{
+	"Board info": {
+		"genesis": [
+			{
+				"project board name":   "gx318h_h1",
+				"ap board name":        "gx318h_h1",
+				"md board name":        "gx318h_h1",
+				"cp board name":        "gx318_volte_2sim",
+				"nv board name":        "gx318h_h1",
+				"dsp board name":       "gx316h",
+				"bootloader board name":"gx318h_h1",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "8+8 board"
+			}
+		]
+	}
+}

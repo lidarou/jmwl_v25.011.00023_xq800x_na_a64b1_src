@@ -1,0 +1,4440 @@
+{
+	"HEADER": {
+		"id": 138,
+		"category": 2
+	},
+	"RF_LTE_CALIBRATION": {
+		"LteCal_Apc": {
+			"PowerLever": [
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "Bit[Bit[10:0] for Apc Index, Bit[13:11] for TPC Section, Bit[15:14] for Power Overlap Flag"
+				}
+			]
+		},
+		"LteCal_ApcComp": {
+			"ChannelIndex": [
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"TPCPoint": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				}
+			]
+		},
+		"LteCal_Agc": {
+			"RxGainIndex": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "dB Rx Gain*10"
+				}
+			]
+		},
+		"LteCal_AgcComp": {
+			"LNAStage": [
+				{
+					"AgcChannelIndex": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"AgcChannelIndex": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"AgcChannelIndex": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				},
+				{
+					"AgcChannelIndex": [
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						},
+						{
+							"value": 0,
+							"type": "signed char",
+							"description": "dB power*10"
+						}
+					]
+				}
+			]
+		},
+		"LteCal_Pdet": {
+			"PowerLever": [
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "PdetCal"
+				}
+			]
+		},
+		"LteCal_PdetComp": {
+			"ChannelIndex": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": "Pdet Channelcomp"
+				}
+			]
+		},
+		"Tx_Anti_Droop": {
+			"ChannelIndex": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				}
+			]
+		},
+		"Tx_IQ_Imbalance": {
+			"IQImb_Comp_Phs": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			],
+			"IQImb_Comp_Amp": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			]
+		},
+		"Tx_DCOC": {
+			"DC_Comp_I": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			],
+			"DC_Comp_Q": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			]
+		},
+		"Rx_IQ_Imbalance": {
+			"IQImb_Comp_Phs": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			],
+			"IQImb_Comp_Amp": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			]
+		},
+		"Rx_DCOC": {
+			"DC_Comp_I": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			],
+			"DC_Comp_Q": [
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "short",
+					"description": " "
+				}
+			]
+		},
+		"Reserved": [
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			}
+		],
+		"LteCal_Flag": [
+			{
+				"value": 0,
+				"type": "unsigned short",
+				"description": "Bit0~3 for AGC,Bit 4~7 for APC"
+			},
+			{
+				"value": 0,
+				"type": "unsigned short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "unsigned short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "unsigned short",
+				"description": " "
+			}
+		]
+	}
+}

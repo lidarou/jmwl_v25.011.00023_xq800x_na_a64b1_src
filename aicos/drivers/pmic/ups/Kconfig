@@ -1,0 +1,35 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PMIC_UPS
+    bool "UPS Drivers"
+    depends on PMIC_GP201 || PMIC_GP202 || PMIC_GP301
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config options for ups drivers.
+
+if PMIC_UPS
+config DRV_UPS
+    bool "PMIC UPS driver"
+    default n
+    help
+      PMIC UPS IP
+
+config DRV_UPS_VER
+    string "PMIC UPS driver IP version"
+    depends on DRV_UPS
+    default "gp201"
+    help
+      PMIC UPS IP version, different chip will use different version
+      of pmic ups IP.
+
+config DEF_UPS_MODE
+    bool "Enable UPS mode by default"
+    depends on DRV_UPS
+    default n
+    help
+      Enable UPS mode by default, it will be enabled when boot up.
+
+endif

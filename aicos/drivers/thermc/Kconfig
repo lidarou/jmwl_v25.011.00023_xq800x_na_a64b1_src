@@ -1,0 +1,48 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+menu "THERMC Configurations"
+
+config DRIVER_THERMC
+    bool "THERMC driver"
+    depends on SUBSYS_AP
+    default n
+    help
+      Monitor system temperature.
+
+if DRIVER_THERMC
+# AIC SoC therm controller Selection configurations
+choice
+    prompt "THERMC Selection"
+    default THERMC_GX316
+
+    config THERMC_GX316
+        bool "gx316 therm controller."
+        help
+            gx316 therm controller.
+endchoice
+
+if THERMC_GX316
+    config THERMC_VER
+        string
+        default "gx316"
+endif
+
+# AIC SoC therm Sensor Selection configurations
+choice
+    prompt "Therm Sensor Selection"
+    default THERM_SENSOR_GX316_RF
+
+    config THERM_SENSOR_GX316_RF
+        bool "gx316 rf therm sensor."
+        help
+            gx316 rf therm sensor.
+endchoice
+
+if THERM_SENSOR_GX316_RF
+    config THERM_SENSOR_VER
+        string
+        default "gx316_rf"
+endif
+endif
+endmenu # thermal Configurations

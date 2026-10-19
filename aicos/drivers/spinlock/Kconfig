@@ -1,0 +1,18 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig SPINLOCK
+    bool "SoC SPINLOCK Drivers"
+    help
+      Enable config options for spinlock drivers.
+
+if SPINLOCK
+
+config DRIVER_SPINLOCK
+    bool "Soc spinlock driver"
+    default y
+    help
+      Soc spinlock module driver.
+
+endif

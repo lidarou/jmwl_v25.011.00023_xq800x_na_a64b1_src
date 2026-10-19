@@ -1,0 +1,56 @@
+# General configuration options
+#
+# Copyright 2022 by AIC Micro Corporation. All rights reserved.
+
+config DRIVER_SDMMC
+    bool "sdmmc driver support"
+    depends on SUBSYS_AP
+    default n
+    help
+      sdmmc driver support
+
+choice
+	prompt "sdmmc driver selection"
+	default SDMMC_SDIO
+	help
+	  This menu uses to select sdmmc driver.
+	  It includes sd/sdio/emmc drivers.
+
+	config SDMMC_SD
+		bool "sd driver support"
+		depends on DRIVER_SDMMC
+		help
+		  sdmmc driver for sd support
+
+	config SDMMC_SDIO
+		bool "sdio driver support"
+		depends on DRIVER_SDMMC
+		help
+		  sdmmc driver for sdio support
+
+	config SDMMC_EMMC
+		bool "emmc driver support"
+		depends on DRIVER_SDMMC
+		help
+		  sdmmc driver for emmc support
+endchoice
+
+choice
+	prompt "sdmmc phy selection"
+	default SDMMC_ASICPHY
+	help
+	  This menu uses to select sdmmc phy.
+	  It includes asic phy / fpga phy.
+
+	config SDMMC_ASICPHY
+		bool "sdmmc asic combo phy driver"
+		depends on DRIVER_SDMMC
+		help
+		  sdmmc asic combo phy driver support
+
+	config SDMMC_FPGAPHY
+		bool "sdmmc fpga combo phy driver"
+		depends on DRIVER_SDMMC
+		help
+		  sdmmc fpga combo phy driver support
+endchoice

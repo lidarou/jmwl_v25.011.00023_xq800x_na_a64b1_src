@@ -1,0 +1,25 @@
+menu "D2D App Module"
+    config D2D_APP
+        bool "d2d app"
+        depends on D2D
+        default n
+        help
+          Enable d2d app module.
+    choice
+    prompt "codec select"
+    default D2D_CODEC_ISELP
+    depends on D2D_APP
+    help
+        select codec type
+
+    config D2D_CODEC_ISELP
+        bool "iselp codec"
+        help
+            iselp codec
+
+    config D2D_CODEC_PRIVOICE
+        bool "privoice codec"
+        help
+            privoice codec
+    endchoice
+endmenu

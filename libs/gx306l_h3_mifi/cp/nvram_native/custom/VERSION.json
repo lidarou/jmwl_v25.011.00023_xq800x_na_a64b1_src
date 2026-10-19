@@ -1,0 +1,35 @@
+{
+    "HEADER": {
+        "id": 1,
+        "category": 1
+    },
+    "VERSION": {
+        "sys": {
+            "value": "CP",
+            "type": "string",
+            "description": "sys"
+        },
+        "base": {
+            "value": "gx306l_h3_mifi-v25.011",
+            "len": 48,
+            "type": "string",
+            "description": "base version"
+        },
+        "time": {
+            "value": "",
+            "len": 32,
+            "type": "string",
+            "description": "compiler time"
+        },
+        "diff": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "diff flag"
+        },
+        "hwid": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "hw id"
+        }
+    }
+}

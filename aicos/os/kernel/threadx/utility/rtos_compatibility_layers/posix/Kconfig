@@ -1,0 +1,17 @@
+menu "POSIX Config"
+    config AIC_POSIX
+        bool "AIC Posix Enable"
+        default y
+        help
+          Enable use the posix.
+          if enable it， will use posix libc.
+
+
+    config AIC_POSIX_TEST
+        bool "AIC POSIX TEST Enable"
+        depends on AIC_POSIX
+        default n
+        help
+        Enable AIC POSIX test function.
+
+endmenu

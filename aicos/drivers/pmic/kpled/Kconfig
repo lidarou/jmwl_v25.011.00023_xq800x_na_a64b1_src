@@ -1,0 +1,55 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig KPLED
+    bool "kpled driver"
+    depends on SUBSYS_AP
+    select PMIC_PMU
+    default n
+    help
+      enalbe kpled driver.
+
+if KPLED
+
+config DRIVER_KPLED
+    bool "pmic kpled driver"
+    default y
+    help
+      pmic kpled driver operate.
+
+#PMIC pmu version Selection configurations
+choice
+    prompt "kpled version Selection"
+    default KPLED_R1P0
+
+    config KPLED_R1P0
+        bool "kpled driver r1p0"
+        help
+            select kpled driver r1p0.
+
+    config KPLED_R2P0
+        bool "kpled driver r2p0"
+        help
+            select kpled driver r2p0.
+endchoice
+
+if KPLED_R1P0
+    config DRIVER_KPLED_VER
+        string
+        default "r1p0"
+endif
+
+if KPLED_R2P0
+    config DRIVER_KPLED_VER
+        string
+        default "r2p0"
+endif
+
+config DRIVER_KPLED_DEMO
+    bool "kpled demo"
+    depends on DRIVER_KPLED
+    default n
+    help
+      kpled users demo.
+endif

@@ -1,0 +1,42 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menu "File System Device Select"
+    config FS_DEV_FLASH
+        tristate "flash device fs support"
+        default n
+        help
+            fs direct to storage in flash device.
+
+    config FS_DEV_FTL
+        tristate "ftl device fs support"
+        default y
+        help
+            fs use ftl api to storage in flash device.
+
+    config FS_DEV_FILE
+        tristate "file device fs support"
+        default n
+        help
+            fs storage in file.
+
+    config FS_DEV_BD
+        tristate "block device fs support"
+        default n
+        help
+            fs storage in block device.
+
+    config FS_DEV_RAM
+        tristate "ram device fs support"
+        default n
+        help
+            fs storage in ram device.
+
+    config FS_DEV_WIN32
+        tristate "win32 device fs support"
+        default n
+        help
+            fs storage in win32 device.
+endmenu

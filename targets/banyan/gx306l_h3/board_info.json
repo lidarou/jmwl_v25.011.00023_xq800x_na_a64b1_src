@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx306l_h3",
+				"ap board name":        "gx306l_h3",
+				"md board name":        "gx306l_h3",
+				"cp board name":        "gx30xl_ims",
+				"nv board name":        "gx306l_h3",
+				"bootloader board name":"gx306l_h3",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "4+4 board"
+			}
+        ]
+	}
+}

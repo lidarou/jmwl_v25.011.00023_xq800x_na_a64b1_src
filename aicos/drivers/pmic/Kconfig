@@ -1,0 +1,10 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+if PMIC
+    menu "PMIC Drivers Options"
+    #source other driver components Kconfig
+    source "drivers/pmic/*/Kconfig"
+    endmenu # PMIC Drivers
+endif

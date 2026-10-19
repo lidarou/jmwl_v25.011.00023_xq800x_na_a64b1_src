@@ -1,0 +1,45 @@
+menuconfig FS_LITTLEFS
+    tristate "LittleFS File System support"
+    default n
+    help
+        This option will provide the lfs support for users to transparently access the
+        file system.
+
+if FS_LITTLEFS
+    config FS_LITTLEFS_BLOCK_SIZE
+        int "Size of block in bytes"
+        default 4096
+        help
+            Size of block in bytes.
+
+    config FS_LITTLEFS_RW_SIZE
+        int "Size of read or prog in bytes"
+        default 256
+        help
+            Size of read or prog in bytes.
+
+    config FS_LITTLEFS_LOOKAHEAD_SIZE
+        int "Size of lookahead buffer in bytes"
+        default 32
+        help
+            Size of lookahead buffer in bytes, the size must be a multiple of 8.
+
+    config FS_LITTLEFS_BLOCK_CYCLES
+        int "Number of erase cycles before moving data to another block"
+        default 512
+        help
+            Number of erase cycles before moving data to another block
+
+    config FS_LFS_IMAGE_GEN
+        bool "Generate LFS image at build time"
+        default n
+        help
+            Generate LFS image at build time.
+
+    config FS_LFS_IMAGE_GEN_SIZE
+        int "Size of gernerated lfs image"
+        default 65536
+        depends on FS_LFS_IMAGE_GEN
+        help
+            Size of the LFS image in bytes.
+endif

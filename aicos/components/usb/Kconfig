@@ -1,0 +1,25 @@
+menu "USB Instance Config"
+    config CDC_ACM_INSTANCE
+        bool "CDC ACM instance enable"
+        select USB_SERVICE
+        depends on USBX_DEVICE_CLASS_CDC_ACM
+        default n
+    config RNDIS_INSTANCE
+        bool "RNDIS instance enable"
+        select USB_SERVICE
+        depends on USBX_DEVICE_CLASS_RNDIS
+        default n
+    config CDC_ECM_INSTANCE
+        bool "CDC ECM instance enable"
+        select USB_SERVICE
+        depends on USBX_DEVICE_CLASS_CDC_ECM
+        default n
+    config USB_STORAGE_INSTANCE
+        bool "USB storage instance enable"
+        select USB_SERVICE
+        depends on USBX_DEVICE_CLASS_STORAGE
+        default n
+    config USB_SERVICE
+        bool "USB service enable"
+        default n
+endmenu

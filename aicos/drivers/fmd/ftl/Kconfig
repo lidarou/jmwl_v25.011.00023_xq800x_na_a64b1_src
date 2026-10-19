@@ -1,0 +1,15 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig FTL
+    tristate "Flash translation layer (FTL) support"
+    help
+        FTL implements flash wear leveling and power loss protection.
+
+if FTL
+
+source "drivers/fmd/ftl/levelx/Kconfig"
+
+endif

@@ -1,0 +1,18 @@
+{
+	"Board info": {
+		"genesis": [
+			{
+				"project board name":   "gx316h_h2",
+				"ap board name":        "gx316h_h2",
+				"md board name":        "gx316h_h2",
+				"cp board name":        "gx31xl_volte",
+				"nv board name":        "gx316h_h2",
+				"dsp board name":       "gx316h",
+				"bootloader board name":"gx316h_h1",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "8+8 kids watch board"
+			}
+		]
+	}
+}

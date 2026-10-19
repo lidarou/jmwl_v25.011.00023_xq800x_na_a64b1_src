@@ -1,0 +1,38 @@
+{
+    "HEADER": {
+        "id": 40,
+        "category": 1
+    },
+    "D2D_T": {
+        "d2d_id": {
+            "value": 16909060,
+            "type": "unsigned int",
+            "description": "d2d id"
+        },
+        "pbch_freq_group": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "PBCH freq group, only for debug Use"
+        },
+        "bch_report_period": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "D2D broadcast report period, unit is second"
+        },
+        "Tout": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "L1 out of sync param, unit is second"
+        },
+        "tx_power": {
+            "value": 0,
+            "type": "unsigned short",
+            "description": "L1 tx power, unit is 1/10 dBm"
+        },
+        "max_tx_power": {
+            "value": 32767,
+            "type": "unsigned short",
+            "description": "L1 max tx power, unit is 1/10 dBm"
+        }
+    }
+}

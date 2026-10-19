@@ -1,0 +1,55 @@
+#/*****************************************************************************/
+#/*                                                                           */
+#/*  Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.     */
+#/*                                                                           */
+#/*****************************************************************************/
+
+target_sources(boot_driver
+    PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/bl_main.c
+)
+
+add_subdirectory(platform)
+add_subdirectory(timer)
+add_subdirectory(efuse)
+add_subdirectory(tzc)
+add_subdirectory(pin_ctrl)
+add_subdirectory(pmic_wdt)
+add_subdirectory(pmic_pmu)
+add_subdirectory(pmic_efuse)
+add_subdirectory(wdt)
+add_subdirectory(charger)
+add_subdirectory(adc)
+add_subdirectory(bspatch)
+add_subdirectory(lzma)
+add_subdirectory_ifdef(CONFIG_KPC kpc)
+add_subdirectory_ifdef(CONFIG_BL_AIC_UART serial)
+add_subdirectory_ifdef(CONFIG_GXEM gxem)
+add_subdirectory_ifdef(CONFIG_DOWNLOAD download)
+add_subdirectory_ifdef(CONFIG_I2C i2c)
+add_subdirectory_ifdef(CONFIG_PMIC_I2C pmic_i2c)
+add_subdirectory_ifdef(CONFIG_PMIC_MISC pmic_misc)
+add_subdirectory_ifdef(CONFIG_FMD fmd)
+add_subdirectory_ifdef(CONFIG_SECURE_BOOT secure)
+add_subdirectory_ifdef(CONFIG_USB usb)
+add_subdirectory_ifdef(CONFIG_BOOT_MODE boot_mode)
+add_subdirectory_ifdef(CONFIG_GPIO gpio)
+add_subdirectory_ifdef(CONFIG_AUTO_DL auto_dl)
+add_subdirectory_ifdef(CONFIG_SYS_DUMP sys_dump)
+add_subdirectory_ifdef(CONFIG_HLZMA_SUPPORT hlzma)
+add_subdirectory_ifdef(CONFIG_FOTA_SUPPORT fota)
+add_subdirectory_ifdef(CONFIG_BCD bcd)
+add_subdirectory_ifdef(CONFIG_ABUP_FOTA abup)
+add_subdirectory_ifdef(CONFIG_PMIC_SLP pmic_slp)
+add_subdirectory_ifdef(CONFIG_DMA dma)
+add_subdirectory_ifdef(CONFIG_SSP ssp)
+add_subdirectory_ifdef(CONFIG_MHA mha)
+add_subdirectory_ifdef(CONFIG_GRAPHICS graphics)
+add_subdirectory_ifdef(CONFIG_TRNG trng)
+if (NOT CONFIG_BL_SDK)
+    add_subdirectory_ifdef(CONFIG_CLK clk)
+    add_subdirectory_ifdef(CONFIG_PMIC_CLK pmic_clk)
+    add_subdirectory_ifdef(CONFIG_SNC_QSPI qspi)
+    add_subdirectory_ifdef(CONFIG_PSRAM psram)
+    add_subdirectory_ifdef(CONFIG_PMU_SLP pmu_slp)
+endif()

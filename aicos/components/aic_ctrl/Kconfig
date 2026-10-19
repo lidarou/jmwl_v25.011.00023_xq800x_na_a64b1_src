@@ -1,0 +1,22 @@
+menu "aic ctrl Config"
+    config AIC_CTRL_SUPPORT
+        bool "Enable aic control module"
+        depends on CMUX
+        default n
+        help
+          Enable aic control module.
+
+    config AIC_CTRL_D2D
+        bool "Enable aic control on d2d"
+        depends on AIC_CTRL_SUPPORT
+        default n
+        help
+          Enable aic control module.
+
+    config AIC_CTR_DBG_ON_CMUX
+        bool "Enable aic control dbg on cmux"
+        depends on AIC_CTRL_SUPPORT
+        default n
+        help
+          Enable it will pass the dbg data by cmux.
+endmenu

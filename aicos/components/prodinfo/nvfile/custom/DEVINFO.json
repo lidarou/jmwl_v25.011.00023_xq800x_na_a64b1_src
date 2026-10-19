@@ -1,0 +1,14 @@
+{
+	"HEADER": {
+		"id": 41,
+		"category": 2
+	},
+	"DEV_T": {
+		"DEV": {
+			"value": "NULL",
+			"len": 56,
+			"type": "string",
+			"description": "device info"
+		}
+	}
+}

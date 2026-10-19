@@ -1,0 +1,48 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+config MODEM_DRIVER
+    bool "Modem Driver Support" #    depends on SUPPORT_MD_IODEV
+    default n
+    help
+      Enable config for modem driver.
+choice
+    bool "Choice MD I/O Device Type"
+    depends on MODEM_DRIVER
+    default MD_IODEV_AIC_AT
+    help
+        select which type for ModemDriver I/O Device.
+
+    config MD_IODEV_AIC_AT
+        bool "Support MD I/O Device by AIC_AT"
+        help
+            Support ModemDriver I/O Device by AIC_AT
+
+    config MD_IODEV_AIC_CMUX
+        bool "Support MD I/O Device by AIC_CMUX"
+        help
+            Support ModemDriver I/O Device by AIC_CMUX
+
+endchoice
+
+
+choice
+    bool "Choice Modem Driver Adapter"
+    depends on MODEM_DRIVER
+    default ADAP_RTOS
+    help
+        select which modem driver adapter.
+
+    config ADAP_RTOS
+        bool "Run RTOS Adapter"
+        help
+            Modem driver rtos adapter
+
+    config ADAP_LINUX
+        bool "Run Linux adapter, NOT support yet"
+        help
+            Modem driver Linux adapter
+
+endchoice
+

@@ -1,0 +1,238 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "SOUND Configurations"
+
+config SOUND_SUPPORT
+    bool "Sound driver"
+    default n
+    select IIS
+    select DRIVER_IIS
+    help
+        Enable sound feature, contains sound driver framework,
+        stream driver and codec driver.
+
+config SOUND_AIC_CODEC
+    bool "AIC codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    help
+        Enable AIC codec driver.
+
+config SOUND_STREAM_IPC
+    bool "stream thr IPC"
+    default n
+    depends on SOUND_SUPPORT
+    select ADSP_MNG
+    select SND_IPC
+    help
+        Enable AIC stream driver which transfer data throught IPC.
+
+config SND_STREAM_CMUX
+    bool "CMUX stream"
+    default y
+    depends on SOUND_SUPPORT && CMUX
+    help
+        Enable CMUX stream.
+
+config SND_STREAM_VOICE_MIX
+    bool "voice mix stream"
+    default y
+    depends on SOUND_SUPPORT && MCU_AUDIO_VOICE_CLIENT
+    help
+        Enable voice mix stream.
+
+config SOUND_CODEC_ES8374
+    bool "ES8374 codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    select DRIVER_I2C
+    help
+        ES8374 codec driver through which can play sound.
+
+config SOUND_CODEC_ES8311
+    bool "ES8311 codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    select DRIVER_I2C
+    help
+        ES8311 codec driver through which can play sound.
+
+config SOUND_CODEC_ES8311_1V8
+    bool "ES8311 codec 1v8"
+    default n
+    depends on SOUND_CODEC_ES8311
+    help
+        ES8311 codec work voltage select 1.8V.
+
+config SOUND_CODEC_ES7243L
+    bool "ES7243L codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    select DRIVER_I2C
+    help
+        ES7243L codec driver through which can play sound.
+
+config SOUND_CODEC_CJC8910
+    bool "CJC8910 codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    select DRIVER_I2C
+    help
+        CJC8910 codec driver through which can play sound.
+
+config SOUND_CODEC_CJC8911
+    bool "CJC8911 codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    select DRIVER_I2C
+    help
+        CJC8911 codec driver through which can play sound.
+
+config SOUND_CODEC_NO_CTRL
+    bool "no ctrl codec driver"
+    default n
+    depends on SOUND_SUPPORT
+    help
+        No control codec driver through which can play sound.
+
+choice
+    prompt "Select sound PA model"
+    depends on SOUND_SUPPORT
+    default SOUND_PA_NONE
+    help
+        select which sound PA model should be used.
+
+    config SOUND_PA_NONE
+        bool "none"
+        help
+            no PA.
+
+    config SOUND_GPIO_CTRL_PA
+        bool "GPIO control type PA"
+        help
+            "GPIO control type general PA"
+
+    choice
+        prompt "Select PA codec"
+        depends on SOUND_GPIO_CTRL_PA
+        default SOUND_PA_CODEC_NONE
+        config SOUND_PA_CODEC_NONE
+            depends on SOUND_GPIO_CTRL_PA
+            bool "PA codec none"
+            help
+              123
+        config SOUND_PA_CODEC_AUX
+            depends on SOUND_GPIO_CTRL_PA
+            bool "PA codec aux"
+            help
+              234
+        config SOUND_PA_CODEC_MASTER
+            depends on SOUND_GPIO_CTRL_PA
+            bool "PA codec master"
+            help
+              345
+    endchoice
+
+    config SOUND_PA_AW87390
+        select DRIVER_I2C
+        bool "AW87390 PA"
+        help
+            AW87390 PA driver.
+
+    config AW87390_PRIMARY_CODEC
+        bool "AW87390 PA primary codec"
+        default n
+        depends on SOUND_PA_AW87390
+        help
+            AW87390 PA work as primary codec.
+
+    config SOUND_PA_AW88261
+        select DRIVER_I2C
+        bool "AW88261 PA"
+        help
+            AW88261 dig PA driver.
+
+    config SOUND_PA_HAA9210
+        bool "HAA9210 PA"
+        help
+            HAA9210 PA driver.
+endchoice
+
+config SOUND_BIAS_DVDD3V
+    bool "Micbias use DVDD3V"
+    default n
+    depends on SOUND_SUPPORT
+    help
+        Micbias use DVDD3V.
+
+config SND_IPC
+    bool "sound ipc"
+    default n
+    help
+        Enable sound ipc module
+
+config ADSP_MNG
+    bool "ADSP manager"
+    default n
+    select SND_IPC
+    help
+        Enable adsp manager module
+
+config ADSP_LOG
+    bool "ADSP log"
+    default n
+    depends on ADSP_MNG
+    help
+        Enable adsp log feature.
+
+config ADSP_DUMP
+    bool "ADSP dump"
+    default n
+    depends on ADSP_MNG
+    help
+        Enable adsp dump feature.
+
+config MUSIC_FIX_48K
+    bool "MUSIC FIX 48K"
+    default y
+    depends on SOUND_SUPPORT
+    help
+        Enable DSP music play fix to 48K sample rate.
+
+config RECORD_FIX_16K
+    bool "RECORD FIX 16K"
+    default y
+    depends on SOUND_SUPPORT
+    help
+        Enable DSP record fix to 16K sample rate.
+
+config SOUND_CONV
+    bool "data convert output"
+    default n
+    depends on SOUND_SUPPORT
+    help
+        Enable data convert output feature.
+
+config VOICE_TRANS
+    bool "Voice Trans"
+    default n
+    depends on SND_IPC
+    help
+        Voice data transfer API.
+
+config SND_SIMU
+    bool "Sound SIMU"
+    default n
+    help
+        Enable simu about sound module.
+
+config VOICE_SIMU
+    bool "Voice SIMU"
+    default n
+    depends on SND_SIMU
+    help
+        Enable voice data transfer simu.
+
+endmenu # CSP Configurations

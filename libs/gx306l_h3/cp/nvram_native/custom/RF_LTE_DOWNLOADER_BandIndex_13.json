@@ -1,0 +1,2690 @@
+{
+	"HEADER": {
+		"id": 115,
+		"category": 1
+	},
+	"RF_LTE_DOWNLOADER": {
+		"LteBandInfo": {
+			"Band": {
+				"BandNum": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved2": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"ULFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"ULFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				}
+			},
+			"Coband0": {
+				"BandNum": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved2": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"ULFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"ULFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				}
+			},
+			"Coband1": {
+				"BandNum": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved2": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"ULFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"ULFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				}
+			},
+			"Coband2": {
+				"BandNum": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved2": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"ULFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"ULFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				}
+			},
+			"Coband3": {
+				"BandNum": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved2": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"ULFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"ULFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqStart": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"DLFreqEnd": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				}
+			},
+			"Reserved0": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved1": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved2": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved3": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved4": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved5": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved6": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			},
+			"Reserved7": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": " "
+			}
+		},
+		"LteLogic": {
+			"LteRFCTRL_Config": {
+				"TxON": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"RxON": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"TRxON": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"TxOFF": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"RxOFF": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"TRxOFF": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"Reserved2": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				},
+				"Reserved3": {
+					"value": 0,
+					"type": "unsigned short",
+					"description": " "
+				}
+			},
+			"LteMipi_Config": {
+				"MipiON": [
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					}
+				],
+				"MipiOFF": [
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],TRx Mode;other,Reserved"
+					}
+				]
+			},
+			"LteRFICPort_Config": {
+				"TxPort": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"RxPort": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved0": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				},
+				"Reserved1": {
+					"value": 0,
+					"type": "unsigned char",
+					"description": " "
+				}
+			},
+			"LtePa_Config": {
+				"PaControlInfo": [
+					{
+						"value": 0,
+						"type": "unsigned char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "unsigned char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "unsigned char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "unsigned char",
+						"description": " "
+					}
+				],
+				"PaON": [
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+					}
+				],
+				"PaOFF": [
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],USID;other,Reserved"
+					},
+					{
+						"value": 4294967295,
+						"type": "unsigned int",
+						"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;Bit[23:20],USID;other,Reserved"
+					}
+				]
+			}
+		},
+		"LteTPC_Config": {
+			"PowerSec": [
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				},
+				{
+					"Start_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					},
+					"End_Power": {
+						"value": 0,
+						"type": "short",
+						"description": "dB power *10 "
+					}
+				}
+			],
+			"TPC_PA": [
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				},
+				{
+					"PA_Setting": [
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						},
+						{
+							"value": 4294967295,
+							"type": "unsigned int",
+							"description": "Bit[7:0],Data;Bit[15:8],ADDR;Bit[19:16],USID;other,Reserved"
+						}
+					]
+				}
+			],
+			"TPC_APT": [
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				},
+				{
+					"value": 0,
+					"type": "unsigned short",
+					"description": "voltage(v) *100 "
+				}
+			]
+		},
+		"LtePerfComp": {
+			"TempComp_Apc": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-40 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-30 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-20 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-10 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "0 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "10 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "20 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "30 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "40 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "50 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "60 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "70 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "80 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "90 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "100 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "110 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				}
+			],
+			"TempComp_Pdet": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-40 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-30 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-20 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "-10 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "0 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "10 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "20 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "30 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "40 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "50 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "60 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "70 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "80 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "90 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "100 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "110 degree"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": "Reserved"
+				}
+			],
+			"PdetComp": {
+				"BW1p4": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				],
+				"BW3": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				],
+				"BW5": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				],
+				"BW10": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				],
+				"BW15": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				],
+				"BW20": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				]
+			},
+			"RSSIComp": {
+				"BWComp": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": "dB Power*10"
+					}
+				],
+				"Reserved": [
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					},
+					{
+						"value": 0,
+						"type": "signed char",
+						"description": " "
+					}
+				]
+			},
+			"MPR": {
+                "BW1p4": [
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1RB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1<RB<=PRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "QPSK,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1RB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1<RB<=PRB"
+                    },
+                    {
+                        "value": 20,
+                        "type": "signed char",
+                        "description": "16QAM,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_L"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_H"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    }
+                ],
+                "BW3": [
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1RB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1<RB<=PRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "QPSK,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1RB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1<RB<=PRB"
+                    },
+                    {
+                        "value": 20,
+                        "type": "signed char",
+                        "description": "16QAM,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_L"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_H"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    }
+                ],
+                "BW5": [
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1RB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1<RB<=PRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "QPSK,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1RB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1<RB<=PRB"
+                    },
+                    {
+                        "value": 20,
+                        "type": "signed char",
+                        "description": "16QAM,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_L"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_H"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    }
+                ],
+                "BW10": [
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1RB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1<RB<=PRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "QPSK,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1RB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1<RB<=PRB"
+                    },
+                    {
+                        "value": 20,
+                        "type": "signed char",
+                        "description": "16QAM,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_L"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_H"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    }
+                ],
+                "BW15": [
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1RB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1<RB<=PRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "QPSK,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1RB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1<RB<=PRB"
+                    },
+                    {
+                        "value": 20,
+                        "type": "signed char",
+                        "description": "16QAM,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_L"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_H"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    }
+                ],
+                "BW20": [
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1RB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "QPSK,1<RB<=PRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "QPSK,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1RB"
+                    },
+                    {
+                        "value": 10,
+                        "type": "signed char",
+                        "description": "16QAM,1<RB<=PRB"
+                    },
+                    {
+                        "value": 20,
+                        "type": "signed char",
+                        "description": "16QAM,PRB<RB<=FullRB"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_L"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": "Bandedge_H"
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    },
+                    {
+                        "value": 0,
+                        "type": "signed char",
+                        "description": " "
+                    }
+                ]
+            },
+			"Reserved": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				}
+			]
+		},
+		"LteTiming": {
+			"TimingError": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				}
+			],
+			"PaTiming": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				}
+			],
+			"TimeMask": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				}
+			],
+			"Reserved": [
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				},
+				{
+					"value": 0,
+					"type": "signed char",
+					"description": " "
+				}
+			]
+		},
+		"Reserved": [
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			},
+			{
+				"value": 0,
+				"type": "short",
+				"description": " "
+			}
+		]
+	}
+}

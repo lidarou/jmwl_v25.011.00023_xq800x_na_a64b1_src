@@ -1,0 +1,26 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig SSP
+    bool "SSP Drivers"
+    help
+        This enables support for the SSP controller.
+
+if SSP
+
+config SSP_DRIVER
+    bool "Driver SSP module"
+    default n
+    help
+      Select SSP module.
+
+config SSP_DRIVER_VER
+    string "SSP IP version"
+    depends on SSP_DRIVER
+    default "r1p0"
+    help
+      SSP IP version, different chip will use different version SSP IP.
+
+endif

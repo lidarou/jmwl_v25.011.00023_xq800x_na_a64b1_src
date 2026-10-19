@@ -1,0 +1,385 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Netxduo Configurations"
+menu "Network Protocol"
+
+config NET_PROTOCOL
+    bool "Network application protocol"
+    depends on AZURE_NETXDUO
+    depends on NET_COMMON
+    default y
+
+config NET_SNTP
+    bool "Supports SNTP"
+    depends on NET_ADDONS && NET_PROTOCOL
+    default n
+
+config NET_HTTP
+    bool "Supports HTTP"
+    depends on NET_ADDONS && NET_PROTOCOL && NX_BSD
+    default n
+
+config NET_HTTPS
+    bool "Supports HTTPS"
+    select NET_HTTP
+    depends on NET_TLS_API || CRYPTO_MBEDTLS
+    depends on NET_ADDONS && NET_PROTOCOL
+    default n
+
+config NET_FTP
+    bool "Supports FTP"
+    depends on NET_ADDONS && NET_PROTOCOL
+    depends on FS
+    default n
+
+config NET_FTPS
+    bool "Supports FTPS"
+    depends on NET_ADDONS && NET_PROTOCOL
+    depends on NET_TLS_API || CRYPTO_MBEDTLS
+    depends on FS
+    select NET_FTP
+    default n
+
+config NET_MQTT
+    bool "Supports MQTT"
+    depends on NET_ADDONS && NET_PROTOCOL
+    default n
+
+config NET_MQTTS
+    bool "Supports MQTTS"
+    depends on NET_ADDONS && NET_PROTOCOL
+    depends on NET_TLS_API || CRYPTO_MBEDTLS
+    select NET_MQTT
+    default n
+
+config NET_LIBCOAP
+    bool "Supports COAP"
+    depends on NET_ADDONS && NET_PROTOCOL && NX_BSD
+    default n
+
+config NET_LWM2M
+    bool "Supports LWM2M"
+    depends on NET_ADDONS && NET_PROTOCOL
+    default n
+endmenu # Network Protocol
+
+menu "Network Tethering"
+
+config NET_SHARE_COMMON
+    bool "Network Share"
+    depends on AZURE_NETXDUO
+    default n
+
+menu "PPP Network module"
+config PPP
+    bool "PPP Network module"
+    depends on NET_SHARE_COMMON && NET_COMMON
+    select NET_ADDONS
+    select PDP_MGR
+    select NX_NAT
+    select NET_IPV6_PACKET_ROUTER
+    select NX_DHCP
+    select NET_DRIVER
+    default n
+
+config PPP_DIAL
+    bool "PPP Dial"
+    depends on PPP
+    default n
+
+config NX_PPP
+    bool "Point-to-Point Protocol(PPP)"
+    depends on PPP
+    default n
+
+endmenu # PPP Network module
+
+menu "Softap"
+
+config SOFTAP_SHARE
+    bool "SOFTAP Network Share"
+    depends on NET_SHARE_COMMON && NET_COMMON
+    select NX_NAT
+    select NX_DHCP
+    select NET_ADDONS
+    select PDP_MGR
+    select NET_IPV6_PACKET_ROUTER
+    default n
+
+endmenu # USB Tethering
+
+menu "USB Tethering"
+
+config USB_NET_SHARE
+    bool "USB Network Share"
+    depends on NET_SHARE_COMMON && NET_COMMON && NET_ADDONS
+    select NX_NAT
+    select NX_DHCP
+    select PDP_MGR
+    select NET_IPV6_PACKET_ROUTER
+    default n
+
+endmenu # USB Tethering
+
+menu "USB SEMI Tethering"
+
+config NET_SEMI_TETHER
+    bool "USB Semi Tether"
+    depends on NET_SHARE_COMMON && USB && NET_ADDONS
+    depends on USBX_DEVICE
+    select USBX_DEVICE_CLASS_CDC_ECM
+    select CDC_ECM_INSTANCE
+    select USBX_DEVICE_CLASS_RNDIS
+    select RNDIS_INSTANCE
+    select CDC_ECM_INSTANCE
+    select NX_NAT
+    select NX_DHCP
+    select USBX_NETWORK
+    default n
+    help
+        Say Y if you want to test usb share with LAN.
+
+endmenu # USB SEMI Tethering
+
+endmenu # Network Tethering
+
+menu "Network Basic Configurations"
+
+config AZURE_NETXDUO
+    bool "NetWork Configurations"
+    depends on USE_NETXDUO
+    default y
+
+menu "Network Kernel Configurations"
+
+config NET_COMMON
+    bool "net common component"
+    depends on AZURE_NETXDUO
+    select NET_NEW_PACKET_MANAGE
+    select NET_EXTERNEL_API
+    default n
+
+config DISABLE_IPV4_ARP
+    bool "disable ipv4 arp"
+    depends on NET_COMMON
+    default n
+
+config DISABLE_IPV4_RARP
+    bool "disable ipv4 rarp"
+    depends on NET_COMMON
+    default n
+
+config NET_IPSEC
+    bool "net ipsec component"
+    depends on NET_COMMON
+    select NET_CRYPTO_LITE_LIBRARIES
+    default n
+
+config NX_RAM_DRIVER
+    bool "example ram ethernet driver"
+    depends on NET_COMMON
+    default n
+
+config NET_EXTERNEL_API
+    bool "net externel api component"
+    depends on NET_COMMON
+    default n
+
+config NET_NEW_PACKET_MANAGE
+    bool "aic new network packet management"
+    depends on NET_COMMON
+    default n
+
+config NET_LOW_POWER
+    bool "aic net_low power"
+    depends on NET_COMMON
+    default n
+
+config NET_DRIVER_DIRECT_FORWARD
+    bool "aic network driver direct forward"
+    depends on NET_COMMON
+    default n
+
+config NET_IPV6_PACKET_ROUTER
+    bool "aic network ipv6 packet router"
+    depends on NET_COMMON
+    default n
+
+config NET_TRAFFIC_CONTROL
+    bool "aic network traffic control"
+    depends on NET_COMMON
+    default n
+
+config NET_NAT64
+    bool "aic network NAT64"
+    depends on NET_COMMON
+    default n
+
+config NET_IPSEC_TEST
+    bool "net ipsec test component"
+    depends on NET_IPSEC
+    select NX_RAM_DRIVER
+    default n
+
+config NET_IPSEC_IPV4_UDP_TEST
+    bool "net ipsec ipv4 udp test component"
+    depends on NET_IPSEC_TEST
+    default n
+
+config NET_IPSEC_IPV4_TCP_TEST
+    bool "net ipsec ipv4 tcp test component"
+    depends on NET_IPSEC_TEST
+    default n
+
+config NET_IPSEC_IPV6_UDP_TEST
+    bool "net ipsec ipv6 udp test component"
+    depends on NET_IPSEC_TEST
+    default n
+
+config NET_IPSEC_IPV6_TCP_TEST
+    bool "net ipsec ipv6 tcp test component"
+    depends on NET_IPSEC_TEST
+    default n
+
+endmenu # Network Kernel Configurations
+
+menu "Network Addons Configurations"
+
+config NET_ADDONS
+    bool "net addons component"
+    depends on NET_COMMON
+    default n
+
+config NX_DNS
+    bool "The DNS Client protocol(DNS)"
+    depends on NET_ADDONS
+    default n
+
+config NX_BSD
+    bool "Supports some of the basic BSD Socket API calls(BSD)"
+    depends on NET_ADDONS
+    default n
+
+config PDP_MGR
+    bool "PDP Manager"
+    depends on NET_ADDONS && AT_PROC
+    select NET_DRIVER
+    select NET_ALTE_DRIVER
+    default n
+
+config NX_DHCP
+    bool "Dynamic Host Configuration Protocol(DHCP and DHCPv6)"
+    depends on NET_ADDONS
+    default n
+
+config NX_NAT
+    bool "Network Address Translation(NAT)"
+    depends on NET_ADDONS
+    default n
+
+config NET_PING
+    bool "Supports aic network ping"
+    depends on PLAT_CONSOLE && NET_ADDONS
+    select NX_BSD
+    default n
+
+config NET_IFCONFIG
+    bool "Supports aic network ifconfig"
+    depends on PLAT_CONSOLE && NET_ADDONS
+    default n
+
+config IMS_NET_MGR
+    bool "IMS Network Manager"
+    depends on NET_ADDONS && NX_BSD
+    select NET_CRYPTO_LITE_LIBRARIES
+    select NET_IPSEC
+    select NET_DRIVER
+    select NET_IMS_NIC
+    default n
+
+endmenu # Network Addons Configurations
+
+menu "Network Crypto And Secure Configurations"
+
+config NET_CRYPTO_LIBRARIES
+    bool "net crypto libraries component"
+    depends on AZURE_NETXDUO
+    default n
+
+config NET_CRYPTO_LITE_LIBRARIES
+    bool "net crypto lite libraries component, include md5/sha1/aes/3des"
+    depends on AZURE_NETXDUO
+    default n
+
+config NET_SECURE
+    bool "net secure component"
+    depends on AZURE_NETXDUO
+    default n
+
+endmenu # Network Crypto And Secure Configurations
+
+menu "Network Unility Configurations"
+
+config NET_UTILITY
+    bool "net utility(iperf...)"
+    depends on AZURE_NETXDUO
+    default n
+
+config NET_IPERF
+    bool "net iperf utility"
+    depends on NET_UTILITY
+    default n
+
+endmenu # Network Unility Configurations
+
+menu "Network Test Configurations"
+
+config NET_TEST
+    bool "net test component"
+    depends on AZURE_NETXDUO
+    default n
+
+config NET_EXTERNEL_API_TEST
+    bool "net externel api component test"
+    depends on NET_TEST && NET_EXTERNEL_API
+    default n
+
+config NET_AIC_PACKET_TEST
+    bool "aic packet management test"
+    depends on NET_TEST && NET_NEW_PACKET_MANAGE
+    default n
+
+config NETXDUO_NAT_TEST
+    bool "netxduo nat test"
+    depends on NX_NAT && NET_TEST
+    default n
+
+config NET_HTTP_DEMO
+    bool "http demo"
+    depends on NET_HTTP && NET_TEST
+    default n
+
+endmenu # Network Test Configurations
+
+endmenu # Network Basic Configurations
+
+menu "CTCPIP extended configuration"
+config CTCPIP_CLOSE_SOCKET_MANUALLY
+    bool "Close socket manually"
+    depends on CUSTOMER_AT
+    default n
+    help
+        Enable it in order to keep socket open until right +CIPCLOSE AT cmd is set, otherwise the socket will be closed once it was dropped passively.
+
+config CTCPIP_LOCAL_TEST_SERVER
+    bool "Enable local test for UDP Server"
+    depends on CUSTOMER_AT
+    default n
+    help
+        Test purpose only. Enable it in order to test UDP server within local network.
+endmenu # CTCPIP extended configuration
+
+endmenu # Network Configurations
+

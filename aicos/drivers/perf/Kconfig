@@ -1,0 +1,20 @@
+# General configuration options
+#
+# Copyright 2023 by AIC Micro Corporation. All rights reserved.
+
+menu "Performance Monitor Options"
+
+    config DRIVER_PERFORMANCE
+        bool "Performance Monitor module"
+        depends on SUBSYS_AP
+        default n
+        help
+          Performance Monitor module.
+
+    config PERFORMACNE_VER
+        string "PERF MONITOR IP version"
+        depends on DRIVER_PERFORMANCE
+        default "r2p0"
+        help
+          PERF MONITOR IP version, different chip will use different version PERF MONITOR IP.
+endmenu

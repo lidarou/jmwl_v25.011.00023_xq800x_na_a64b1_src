@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_buffer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_cfg.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_data.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_data_format.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_formater.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_inner.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_msg_filter.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_outputer.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_pftrace_format.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_trace.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_trace_filter.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_trace_format.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\include\alog_api.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\include\alog_init.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_store_mgr.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\components\alog\src\alog_buffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_cmd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_data_format.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_formater.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_outputer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_trace.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_trace_filter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_trace_format.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_store_mgr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\alog\src\alog_cfg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

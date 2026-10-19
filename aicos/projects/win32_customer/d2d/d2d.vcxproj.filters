@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\components\d2d_l3_dummy\inc\aic_d2d_l3_func.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\d2d_l3_dummy\inc\aic_d2d_l3_mac.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\d2d_l3_dummy\inc\aic_d2d_l3_type.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\components\d2d_l3_dummy\src\aic_d2d_ccap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\d2d_l3_dummy\src\aic_d2d_ccl1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\d2d_l3_dummy\src\aic_d2d_ccl2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\d2d_l3_dummy\src\aic_d2d_l3_main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\components\d2d_l3_dummy\src\aic_d2d_test.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

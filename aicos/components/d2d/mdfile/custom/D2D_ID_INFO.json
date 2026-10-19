@@ -1,0 +1,13 @@
+ {
+    "HEADER": {
+        "id": 30,
+        "category": 1
+    },
+    "D2D_ID_INFO": {	
+	    "d2d_id": {
+	       "value": 1,
+	       "type": "unsigned int",
+		   "description": "D2D ID"
+		}
+    }
+}

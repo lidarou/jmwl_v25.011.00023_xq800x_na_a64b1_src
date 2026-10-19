@@ -1,0 +1,21 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+config ALV_APP_MGR
+    bool "Application Manager Support"
+    depends on LV_CONF_MINIMAL
+    default y
+    help
+      Whether support Application Manager
+      Depends on LV_CONF_MINIMAL at "Components Options → Graphics Options → LVGL configuration"
+
+
+config ALV_SKETCHPAD
+    bool "Sketchpad Class Support"
+    depends on LV_CONF_MINIMAL
+    default y
+    help
+      Whether support Sketchpad Class
+      Depends on LV_CONF_MINIMAL at "Components Options → Graphics Options → LVGL configuration"
+

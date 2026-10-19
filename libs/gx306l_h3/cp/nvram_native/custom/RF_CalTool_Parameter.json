@@ -1,0 +1,2088 @@
+{
+    "HEADER": {
+        "id": 143,
+        "category": 1
+    },
+    "RF_CalTool_Parameter": {
+        "BandIndex_00": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_01": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_02": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_03": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_04": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_05": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_06": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_07": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_08": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_09": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_10": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_11": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_12": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_13": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_14": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_15": {
+            "Reserved": [
+                {
+                    "value": 7,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 85,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_16": {
+            "Reserved": [
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_17": {
+            "Reserved": [
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_18": {
+            "Reserved": [
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        },
+        "BandIndex_19": {
+            "Reserved": [
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "min agc gain"
+                },
+                {
+                    "value": 80,
+                    "type": "signed char",
+                    "description": "max agc gain"
+                },
+                {
+                    "value": 2,
+                    "type": "signed char",
+                    "description": "agc gain step"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "agc channel comp target db value"
+                },
+                {
+                    "value": 8,
+                    "type": "signed char",
+                    "description": "apc cal step"
+                },
+                {
+                    "value": 1,
+                    "type": "signed char",
+                    "description": "apc reserved[4] step value db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": "apc channel comp target db value"
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                },
+                {
+                    "value": 0,
+                    "type": "signed char",
+                    "description": " "
+                }
+            ]
+        }
+    }
+}

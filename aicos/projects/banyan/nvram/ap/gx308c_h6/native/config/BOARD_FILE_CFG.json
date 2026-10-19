@@ -1,0 +1,7 @@
+{
+  "file_path": "aicos/projects/banyan/nvram/ap/gx308c_h6/native/file",
+  "header_path": "aicos/projects/banyan/nvram/ap/common",
+  "custom": [
+      "EXT_MODEM_CFG"
+  ]
+}

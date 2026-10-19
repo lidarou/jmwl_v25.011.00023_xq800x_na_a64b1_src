@@ -1,0 +1,278 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Audio Configurations"
+
+config AUDIO_SUPPORT
+    bool "MM Audio support"
+    default n
+    help
+        Enable audio feature, mainly contains audio framework,
+        include play, record, nv, eng moduel, etc.
+
+config MCU_AUDIO
+    bool "MCU AUDIO"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable audio get voice data directly.
+
+config VOICE_EFFECT
+    bool
+    default n
+    depends on MCU_AUDIO
+    help
+        Enable voice effect.
+
+config MCU_AUDIO_VOICE_CLIENT
+    bool "MCU audio voice client"
+    default n
+    depends on MCU_AUDIO
+    select VOICE_EFFECT
+    select SND_STREAM_VOICE_MIX
+    help
+        Enable ap voice client.
+
+config MCU_AUDIO_VOIP_CLIENT
+    bool "MCU audio voip client"
+    default n
+    depends on MCU_AUDIO
+    select VOICE_EFFECT
+    help
+        Enable ap voip client.
+
+config PLAYBACK_EFFECT
+    bool "playback effect"
+    default y
+    depends on MCU_AUDIO
+    help
+        Enable audio playback effect.
+
+config REC_EFFECT
+    bool "record effect"
+    default y
+    depends on MCU_AUDIO
+    help
+        Enable audio record effect.
+
+choice
+    prompt "lib type selection"
+    default AUDIO_LIB_NORMAL
+    depends on AUDIO_SUPPORT
+    config AUDIO_LIB_EXT
+        bool "lib ext"
+        help
+            audio lib extend instrument.
+
+    config AUDIO_LIB_NORMAL
+        bool "lib normal"
+        help
+            audio lib normal.
+endchoice
+
+config TONE_SUPPORT
+    bool "MM Tone support"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable tone generator.
+
+config VOICE_STREAM
+    bool "voice stream"
+    default n
+    depends on AUDIO_SUPPORT && CMUX
+    help
+        Enable AP get snd send voice stream.
+
+config FS_AUDIO_SUPPORT
+    bool "play and record by file system"
+    default y
+    depends on AUDIO_SUPPORT && FS
+    help
+        Enable play thr and record to file.
+
+config SAVE_REC_FILE_ASYNC
+    bool "Save record file async"
+    default n
+    depends on AUDIO_SUPPORT && FS_AUDIO_SUPPORT
+    help
+        Save record file async.
+
+config VOICE_ACC
+    bool "voice accelarator"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable voice accelarator.
+
+config VOLUME_NO_CODEC
+    bool "volume no codec"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Volume no codec.
+
+config AUDIO_AT_COMM
+    bool "common audio AT command"
+    default n
+        depends on AUDIO_SUPPORT
+    help
+        common audio AT command.
+config AUDIO_AT_DTMF
+    bool "Audio DTMF"
+    default n
+        depends on AUDIO_AT_COMM
+    help
+        Audio DTMF AT command.
+config AUDIO_AT_D2D
+    bool "D2D"
+    default n
+        depends on AUDIO_AT_COMM
+        select VOICE_SRATE_DYNAMIC
+    help
+        D2D audio AT command.
+
+config AUDIO_AT_CMIOT
+    bool "CMOIT audio AT command"
+    default n
+        depends on AUDIO_SUPPORT
+    help
+        audio CMIOT AT command.
+
+config AUDIO_STREAM_TEST
+    bool "audio stream test"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable audio stream play and record test.
+
+config NV_SUPPORT
+    bool "audio nv support"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Audio NV.
+
+config AUDIO_NV_TEST
+    bool "audio nv test"
+    default n
+    depends on NV_SUPPORT
+    help
+        Enable audio nv read and write.
+
+config VOLTE_SIMU_TEST
+    bool "volte simu test"
+    default n
+    depends on AUDIO_SUPPORT && AUDIO_SUPPORT
+    help
+        Enable volte simulator.
+
+config ADSP_EDA_MP3
+    bool "ADSP EDA mp3 test"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable ADSP EDA MP3.
+
+config AUDIO_TTS
+    bool "AUDIO TTS"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        ENABLE AUDIO TTS.
+
+choice
+    prompt "seletct music resource"
+    default FILE_NONE
+        depends on AUDIO_SUPPORT
+    help
+      Select music resoruce.
+
+    config FILE_NONE
+        bool "NONE"
+        help
+          No resource.
+
+    config PCM_48K_MONO
+        bool "PCM 48K MONO"
+        help
+          PCM 48k mono resource.
+
+    config PCM_16K_MONO
+        bool "PCM 16K MONO"
+        help
+          PCM 16k mono resource.
+
+    config PCM_8K_MONO
+        bool "PCM 8K MONO"
+        help
+          PCM 16k mono resource
+
+    config PCM_48K_DUAL
+        bool "PCM 48K MONO"
+        help
+          PCM 48k dual resource.
+
+    config PCM_16K_DUAL
+        bool "PCM 16K DUAL"
+        help
+          PCM 16k dual resource.
+
+    config PCM_8K_DUAL
+        bool "PCM 8K DUAL"
+        help
+          PCM 8K DUAL resource.
+
+    config MP3_NORMAL
+        bool "MP3 normal"
+        help
+          MP3 normal resource.
+
+    config MP3_8K_MONO
+        bool "MP3 8K MONO"
+        help
+          MP3 8k mono resource.
+
+    config CHIRP_48K_MP3
+        bool "CHIRP 48K MP3"
+        help
+          CHIRT 48K MP3.
+
+    config CHIRP_48K_WAV
+        bool "CHIRP 48K WAV"
+        help
+          CHIRP 48K WAV.
+
+    config MIDI_FILE
+        bool "MIDI"
+        help
+          MIDI resource.
+endchoice
+
+config VOLTE_SIMU
+    bool "volte simu"
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable volte simulator.
+
+if AUDIO_LIB_EXT
+    config AUDIO_LIB_TYPE
+        string
+        default "lib_ext"
+endif
+
+if AUDIO_LIB_NORMAL
+    config AUDIO_LIB_TYPE
+        string
+        default "lib"
+endif
+
+config VOICE_SRATE_DYNAMIC
+    bool
+    default n
+    depends on AUDIO_SUPPORT
+    help
+        Enable voice rate set dynamic
+endmenu

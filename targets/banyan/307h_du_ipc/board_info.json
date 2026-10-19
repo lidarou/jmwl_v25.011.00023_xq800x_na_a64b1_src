@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "307h_du_ipc",
+				"ap board name":        "307h_du_ipc",
+				"md board name":        "307h_du_ipc",
+				"cp board name":        "gx30xu_lite_dg",
+				"nv board name":        "gx306u_h1_d",
+				"bootloader board name":"gx306u_h1_d",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+2 307H-DU ipc board"
+			}
+        ]
+	}
+}

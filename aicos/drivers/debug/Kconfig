@@ -1,0 +1,10 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig CHIP_DEBUG
+    bool "Chip debug modules"
+    help
+      Enable config options for chip debug modules.
+
+source "drivers/debug/*/Kconfig"

@@ -1,0 +1,10 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+# fmd test configurations
+config FMD_UT
+    bool "Unit test of FMD"
+    depends on DRIVER_TEST && FMD
+    help
+      Select FMD unit test function.

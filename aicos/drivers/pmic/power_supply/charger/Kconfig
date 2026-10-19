@@ -1,0 +1,64 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# pmic power supply configurations
+
+menuconfig CHGR
+    bool "charger driver."
+    select BAT
+    select BCD
+    default n
+    help
+      provide AC&USB charging operate api.
+
+if CHGR
+    # AIC SoC PMIC charging Selection configurations
+    choice
+        prompt "PMIC CHARGER Selection"
+        default CHGR_GP201
+
+        config CHGR_GP201
+            bool "gp201 charging ip"
+            help
+                select gp201 for charging interface.
+
+        config CHGR_AUTO_IC
+            bool "external auto charger ic"
+            help
+                select external auto charger ic for charging interface.
+
+        config CHGR_EXT_CTRL_IC
+            bool "external ctrl charger ic"
+            help
+                select external ctrl charger ic for charging interface.
+
+        config FAST_CHARGER_IC
+            bool "external fast charge"
+            help
+                select external fast charge for charging interface.
+    endchoice
+
+    if CHGR_GP201
+        config CHGR_IP
+            string
+            default "gp201"
+    endif
+
+    if CHGR_AUTO_IC
+        config CHGR_IP
+            string
+            default "dummy"
+    endif
+
+    if CHGR_EXT_CTRL_IC
+        config CHGR_IP
+            string
+            default "ext_ctrl_chg"
+    endif
+
+    if FAST_CHARGER_IC
+        config CHGR_IP
+            string
+            default "fast_charger_ic"
+    endif
+endif

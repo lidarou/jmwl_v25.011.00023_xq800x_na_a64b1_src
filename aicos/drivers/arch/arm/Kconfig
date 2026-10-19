@@ -1,0 +1,168 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+config CPU_ARCH_ARM
+    bool "Select ARM architecture"
+    help
+      Select ARM cpu arch.
+
+config CPU_ARCH_ARM64
+    bool
+    help
+      Select ARM64 cpu arch.
+
+config CPU_ARCH_RISCV
+    bool
+    help
+      Select RISCV cpu arch.
+
+# arm components configurations
+config CPU_CORTEX_M33
+    bool
+    select ISA_THUMB2
+    help
+      This option signifies the use of a Cortex-M33 CPU
+
+config CPU_CORTEX_M55
+    bool
+    help
+      This option signifies the use of a Cortex-M55 CPU
+
+config CPU_CORTEX_M7
+    bool
+    select ISA_THUMB2
+    help
+      Select the cpu core as Cortex M7
+
+config CPU_CORTEX_MSTAR
+    bool "Select CPU Cortex MStar"
+    select ISA_THUMB2
+    help
+      Select the cpu core as Cortex MSTAR
+
+config CPU_CORTEX_R4
+    bool
+    help
+      This option signifies the use of a Cortex-R4 CPU
+
+config CPU_CORTEX_R5
+    bool "Select CPU Cortex Cortex R5"
+    select ISA_THUMB2
+    help
+      This option signifies the use of a Cortex-R5 CPU
+
+config CPU_CORTEX_R7
+    bool
+    help
+      This option signifies the use of a Cortex-R7 CPU
+
+config TCM_ENABLE
+    bool "Enable cp tcm"
+    depends on SUBSYS_CP
+    default y
+    help
+      Enable the tcm function.
+
+config GEN_TCM_BIN
+    bool "Generate tcm bin"
+    depends on TCM_ENABLE
+    default n
+    help
+      Generate tcm bins.
+
+config TCM_ROM_DEBUG_AS_RAM
+    bool "TCM rom debug as ram"
+    depends on TCM_ENABLE
+    default n
+    help
+      Only can open on fpga for atcm rom and btcm rom debug.
+      if open it, will complie the atcm rom and btcm rom as ram
+      and increase the atcm/btcm ram size.
+
+config TCM_MAP_NEQ_LOAD
+    bool "Map region not equal load region"
+    depends on TCM_ENABLE
+    default n
+    help
+      The map region and the load region are not equal.
+
+config ARMV8_M_DSP
+    bool "ARMv8m DSP"
+    depends on SUBSYS_AP
+    default n
+    help
+      ARMv8 arch contrexM DSP.
+
+config ISA_THUMB2
+    bool
+    help
+      From: http://www.arm.com/products/processors/technologies/instruction-set-architectures.php
+
+      Thumb-2 technology is the instruction set underlying the ARM Cortex
+      architecture which provides enhanced levels of performance, energy
+      efficiency, and code density for a wide range of embedded
+      applications.
+
+      Thumb-2 technology builds on the success of Thumb, the innovative
+      high code density instruction set for ARM microprocessor cores, to
+      increase the power of the ARM microprocessor core available to
+      developers of low cost, high performance systems.
+
+      The technology is backwards compatible with existing ARM and Thumb
+      solutions, while significantly extending the features available to
+      the Thumb instructions set. This allows more of the application to
+      benefit from the best in class code density of Thumb.
+
+      For performance optimized code Thumb-2 technology uses 31 percent
+      less memory to reduce system cost, while providing up to 38 percent
+      higher performance than existing high density code, which can be used
+      to prolong battery-life or to enrich the product feature set. Thumb-2
+      technology is featured in the  processor, and in all ARMv7
+      architecture-based processors.
+
+config ISA_ARM
+    bool
+    help
+      From: https://developer.arm.com/products/architecture/instruction-sets/a32-and-t32-instruction-sets
+
+      A32 instructions, known as Arm instructions in pre-Armv8 architectures,
+      are 32 bits wide, and are aligned on 4-byte boundaries. A32 instructions
+      are supported by both A-profile and R-profile architectures.
+
+      A32 was traditionally used in applications requiring the highest
+      performance, or for handling hardware exceptions such as interrupts and
+      processor start-up. Much of its functionality was subsumed into T32 with
+      the introduction of Thumb-2 technology.
+
+config ASSEMBLER_ISA_THUMB2
+    bool
+    default y if ISA_THUMB2 && !ISA_ARM
+    depends on !ISA_ARM
+    help
+      This helper symbol specifies the default target instruction set for
+      the assembler.
+
+      When only the Thumb-2 ISA is supported (i.e. on Cortex-M cores), the
+      assembler must use the Thumb-2 instruction set.
+
+      When both the Thumb-2 and ARM ISAs are supported (i.e. on Cortex-A
+      and Cortex-R cores), the assembler must use the ARM instruction set
+      because the architecture assembly code makes use of the ARM
+      instructions.
+
+config COMPILER_ISA_THUMB2
+    bool "Select compiler isa thumb2 support"
+    depends on ISA_THUMB2
+    default y
+    help
+      This option configures the compiler to compile all C/C++ functions
+      using the Thumb-2 instruction set.
+
+      N.B. The scope of this symbol is not necessarily limited to the C and
+           C++ languages; in fact, this symbol refers to all forms of
+           "compiled" code.
+
+           When an additional natively-compiled language support is added
+           in the future, this symbol shall also specify the Thumb-2
+           instruction set for that language.

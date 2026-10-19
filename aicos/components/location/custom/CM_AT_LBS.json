@@ -1,0 +1,35 @@
+{
+    "HEADER": {
+        "id": 17,
+        "category": 1
+    },
+    "LBS_T": {
+        "METHOD": {
+            "value": 40,
+            "type": "unsigned char",
+            "description": "METHOD"
+        },
+        "PRECISION": {
+            "value": 8,
+            "type": "unsigned char",
+            "description": "PRECISION"
+        },
+        "NEARBTSEN": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "NEARBTSEN"
+        },
+        "COORDINATE": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "COORDINATE"
+        },
+        "PID": {
+            "value": "ofvbkP3AU9",
+            "len": 20,
+            "type": "string",
+            "description": "PID"
+        }
+    }
+}
+

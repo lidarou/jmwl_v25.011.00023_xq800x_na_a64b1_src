@@ -1,0 +1,36 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "AMBOX Drivers"
+
+config DRIVER_AMBOX
+    bool "aic mailbox driver"
+    default y
+
+config ENABLE_AMBOX_SW_FIFO
+    bool "enable ambox sw fifo"
+    default n
+    depends on DRIVER_AMBOX
+    help
+      Enable ambox software mail fifo.
+
+choice
+    prompt "Select mailbox driver"
+    default DRIVER_AMBOX_R1PX
+config DRIVER_AMBOX_R1PX
+    bool "aic mailbox ip version r1px"
+    depends on DRIVER_AMBOX
+    help
+      Select aic mailbox ip version r1px
+endchoice
+
+config DRIVER_AMBOX_PHY
+    bool "enable ambox phy"
+    default n
+    depends on DRIVER_AMBOX
+    help
+      Enable ambox phy.
+      if disable it, will simulator ambox phy by software.
+
+endmenu # AMBOX Driver

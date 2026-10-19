@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+    <ProjectGuid>{FB24A783-BA63-401F-9ED1-A5BD8E99D4BE}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>aicos_app</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\out\win32\aicos_app\Debug\</OutDir>
+    <IntDir>..\..\..\..\out\win32\aicos_app\Debug\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;CONFIG_AIC_OSA;CONFIG_MISC_SUPPORT;_CRT_SECURE_NO_WARNINGS;CONFIG_D2D_L3_DUMMY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>..\..\..\..\out\win32\aicos_app\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>..\..\..\..\out\win32\aicos_app\Debug\sample_threadx.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>..\..\..\..\out\win32\aicos_app\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\..\..\out\win32\aicos_app\Debug\</ProgramDataBaseFileName>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <AdditionalIncludeDirectories>..\..\..\drivers\include;..\..\..\drivers\network\alte_network\inc;..\..\..\os\kernel\threadx\ports\win32\vs_2019\inc;..\..\..\os\kernel\threadx\common\inc;..\..\..\os\osa\include;..\config;..\..\..\components\include\module;..\..\..\components\aipc\inc;..\..\..\components\include;..\..\..\components\nvram\ap\inc;..\..\..\components\nvram\cp\inc;..\..\..\components\misc\inc;..\..\..\components\fs\inc;..\..\..\components\prodinfo\gxem\inc</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\sample_threadx.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>..\..\..\..\out\win32\aicos_app\Debug\sample_threadx.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>..\..\..\..\out\win32\aicos_app\Debug\aicos_app.exe</OutputFile>
+      <AdditionalDependencies>tx.lib;odbc32.lib;odbccp32.lib;osa.lib;alog.lib;almsg.lib;aipc.lib;driver.lib;misc.lib;connmgr.lib;sys.lib;diag.lib;at.lib;d2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\out\win32\at\Debug;..\..\..\..\out\win32\d2d\Debug;..\..\..\..\out\win32\alog\Debug;..\..\..\..\out\win32\driver\Debug;..\..\..\..\out\win32\almsg\Debug;..\..\..\..\out\win32\aipc\Debug\;..\..\..\..\out\win32\misc\Debug\;..\..\..\..\out\win32\osa\Debug;..\..\..\..\out\win32\connmgr\Debug;..\..\..\..\out\win32\diag\Debug;..\..\..\..\out\win32\sys\Debug;..\tx</AdditionalLibraryDirectories>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <MapFileName>..\..\..\..\out\win32\aicos_app\Debug\aicos_app.map</MapFileName>
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\sample_threadx.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>..\..\inc;..\..\..\..\..\common\inc</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\sample_threadx.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\sample_threadx.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>.\Release\sample_threadx.exe</OutputFile>
+      <AdditionalDependencies>tx.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\tx\Release</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\components\nvram\ap\inc\aic_nvram_ap.h" />
+    <ClInclude Include="..\..\..\components\nvram\cp\inc\aic_nvram_api.h" />
+    <ClInclude Include="..\..\..\components\nvram\cp\inc\aic_nvram_id.h" />
+    <ClInclude Include="..\..\..\os\azure-rtos\threadx\common\inc\tx_api.h" />
+    <ClInclude Include="..\..\..\os\azure-rtos\threadx\ports\win32\vs_2019\inc\tx_port.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_osa.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\config\aos_win32_dummy.c" />
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

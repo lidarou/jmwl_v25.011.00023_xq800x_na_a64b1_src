@@ -1,0 +1,14 @@
+menu "MISC Config"
+    config MISC_SUPPORT
+        bool "Enable misc"
+        default n
+        help
+          Enable misc feature.
+
+    config MISC_TEST_SUPPORT
+        bool "Enable misc test feature"
+        depends on MISC_SUPPORT
+        default n
+        help
+          Enable misc test feature.
+endmenu

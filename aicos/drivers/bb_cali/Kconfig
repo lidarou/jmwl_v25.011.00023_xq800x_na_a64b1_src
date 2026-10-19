@@ -1,0 +1,6 @@
+config AIC_BB_CALI
+    bool "aic bb cali module"
+    default n
+    help
+      "enable aic bb cali module"
+

@@ -1,0 +1,53 @@
+{
+    "HEADER": {
+        "id": 10,
+        "category": 1
+    },
+
+"APN_INFO_ADDITIONAL": {
+    "CARRIER_APN": [
+            {
+                "imsi": {
+                    "value": "46038",
+                    "len":16,
+                    "type": "string",
+                    "description": "imsi"
+                },
+                "apn": {
+                    "value": "internet",
+                    "len":40,
+                    "type": "string",
+                    "description": "apn"
+                },
+                "iccid_cmp_len": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "iccid cmp len"
+                },
+                "iccid": {
+                    "value": "",
+                    "len":24,
+                    "type": "string",
+                    "description": "iccid"
+                },
+                "auth_prot": {
+                    "value": 0,
+                    "type": "unsigned char",
+                    "description": "auth protocol"
+                },
+                "userid": {
+                    "value": "",
+                    "len":20,
+                    "type": "string",
+                    "description": "userid"
+                },
+                "password": {
+                    "value": "",
+                    "len":20,
+                    "type": "string",
+                    "description": "password"
+                }                
+            }
+        ]
+    }
+}

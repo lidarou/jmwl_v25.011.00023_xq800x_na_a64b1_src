@@ -1,0 +1,17 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Benchmark Configurations"
+
+config BENCHMARK
+    bool "Run benchmark"
+    default y
+
+config BCMARK_DHRYSTONE 
+    bool "Run dhrystone v2.1"
+    depends on BENCHMARK
+    help
+      Run dhrystone for evaluation
+
+endmenu # Benchmark Configurations

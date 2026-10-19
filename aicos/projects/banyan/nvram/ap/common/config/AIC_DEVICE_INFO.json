@@ -1,0 +1,9 @@
+{
+  "file_path": "aicos/components/at/res",
+  "header_path": "aicos/components/include/at",
+  "aic": [
+      "aic_manufacturer_info",
+      "aic_model_info",
+      "aic_net_cfg"
+  ]
+}

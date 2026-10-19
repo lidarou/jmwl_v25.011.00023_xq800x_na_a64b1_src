@@ -1,0 +1,28 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig GPD
+    bool "GPD Drivers"
+    depends on SUBSYS_AP
+    default y
+    help
+      Enable config options for gpd drivers.
+
+if GPD
+
+config DRIVER_GPD
+    bool "GPD driver"
+    default n
+    help
+      Define General Pulse Detecter driver IP
+
+config DRIVER_GPD_VER
+    string "GPD driver IP version"
+    depends on DRIVER_GPD
+    default "r1p0"
+    help
+      GPD IP version, different chip will use different version
+      of gpd IP.
+
+endif # GPD

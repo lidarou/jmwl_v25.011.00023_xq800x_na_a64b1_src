@@ -1,0 +1,76 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+menu "watchdog Configurations"
+
+config DRIVER_WDT
+    bool "watchdog timer driver"
+    default n
+    help
+      Monitor system scheduling exceptions via wdt.
+
+config DRIVER_WDT_VER
+    string "wdt driver version"
+    depends on DRIVER_WDT
+    default "r1p0"
+    help
+      Select version that match witch SoC wdt IP.
+
+config DRIVER_WDT_PMIC
+    bool "PMIC watchdog driver"
+    depends on DRIVER_WDT
+    default n
+    help
+      Use PMIC wdt monitor SoC completely hungup.
+
+config WATCHDOG_INDEPENDENT_THREAD
+    bool "watchdog independent thread"
+    depends on DRIVER_WDT
+    default y
+    help
+      Create watchdog independent thread for system exception monitoring.
+
+config WDT_RETENTION
+    bool "watchdog config suspend/resume retention"
+    depends on DRIVER_WDT
+    default n
+    help
+      watchdog config suspend/resume retention.
+
+if WATCHDOG_INDEPENDENT_THREAD
+    # AIC SoC wdt work mode Selection configurations
+    choice
+        prompt "wdt work mode Selection"
+        default WDT_MODE_HYBRID
+
+        config WDT_MODE_IRQ
+            bool "wdt work mode irq only"
+            help
+                select wdt work mode irq only.
+
+        config WDT_MODE_HYBRID
+            bool "wdt work mode irq & reset"
+            help
+                select wdt work mode irq & reset.
+    endchoice
+
+    if WDT_MODE_IRQ
+        config WDT_WORK_MODE
+            int
+            default 0
+    endif
+
+    if WDT_MODE_HYBRID
+        config WDT_WORK_MODE
+            int
+            default 2
+    endif
+endif
+
+config SW_WATCHDOG_MONITOR
+    bool "Low Priority Task scheduling exception monitor"
+    depends on SUBSYS_AP
+    default n
+    help
+      Create Software Watchdog for Low priority task scheduling exception monitor.
+endmenu # watchdog Configurations

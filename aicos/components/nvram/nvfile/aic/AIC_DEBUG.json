@@ -1,0 +1,298 @@
+{
+    "HEADER": {
+        "id": 14,
+        "category": 1
+    },
+    "AIC_DEBUG": {
+		"magic": {
+			"value": 0,
+			"type": "unsigned short",
+			"description": "magic, 0x5a5a means has been inited."
+		},
+		"sysdump": {
+			"value": 0,
+			"type": "unsigned char",
+			"description": "bit0: ap, bit1: cp, bit2: adsp."
+		},
+		"autoreset": {
+			"value": 0,
+			"type": "unsigned char",
+			"description": "bit0: ap, bit1: cp, bit2: adsp."
+		},
+		"debug_gate": {
+			"value": 0,
+			"type": "unsigned int",
+			"description": "bit0~bit32, can used as 32 debug function switch."
+		},
+		"sleep_mode": {
+			"value": 0,
+			"type": "unsigned char",
+			"description": "bit1: sleep_mode off/sleep_mode on; bit2: buck0 deepsleep off/on; bit3: buck1 deepsleep off/on"
+		},
+		"status_light": {
+			"value": 0,
+			"type": "unsigned char",
+			"description": "bit0: net status light, bit1:devcie status light, bit2:module work status"
+		},
+		"AIC_AT": {
+			"baudrate": {
+				"value": 0,
+				"type": "unsigned int",
+				"description": "The baudrate of the at uart com."
+			}
+		},
+		"AIC_DIAG": {
+			"device": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": "bit4~bit7: device, bit0~bit3: com."
+			},
+			"pad1": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": "pad1."
+			},
+			"pad2": {
+				"value": 0,
+				"type": "unsigned short",
+				"description": "pad2."
+			},
+			"baudrate": {
+				"value": 0,
+				"type": "unsigned int",
+				"description": "The baudrate of the com."
+			}
+		},
+		"AIC_LOG": {
+			"device": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": "bit4~bit7: device, bit0~bit3: com."
+			},
+			"gate": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": "bit0: trace, bit1: msg parm, bit2: msg peer, bit2: data."
+			},
+			"bak_dev": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": "bak dev."
+			},
+			"pad": {
+				"value": 0,
+				"type": "unsigned char",
+				"description": "pad."
+			},
+			"baudrate": {
+				"value": 0,
+				"type": "unsigned int",
+				"description": "The baudrate of the com."
+			},
+			"level_bitmap": [
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bit0~bit3: the level of the module 1."
+				}
+			],
+			"task_bitmap": [
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				},
+				{
+					"value": 0,
+					"type": "unsigned long",
+					"description": "bitmap:bitn: module n."
+				}
+			]
+		}
+    }
+}

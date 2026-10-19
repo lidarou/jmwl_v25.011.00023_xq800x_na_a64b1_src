@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "307h_du_tracker",
+				"ap board name":        "307h_du_tracker",
+				"md board name":        "307h_du_tracker",
+				"cp board name":        "gx30xu_lite_u_sms",
+				"nv board name":        "gx306u_h1_d",
+				"bootloader board name":"gx306u_h1_d",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+2 307H-DU tracker board"
+			}
+        ]
+	}
+}

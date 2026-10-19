@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx306u_h3",
+				"ap board name":        "gx306u_h3",
+				"md board name":        "gx306u_h3",
+				"cp board name":        "gx30xu_lite_u_sms",
+				"nv board name":        "gx306u_h3",
+				"bootloader board name":"gx306u_h1",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+2 tracker board"
+			}
+        ]
+	}
+}

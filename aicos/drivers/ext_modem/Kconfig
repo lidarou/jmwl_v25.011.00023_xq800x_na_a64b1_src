@@ -1,0 +1,24 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig EXT_MODEM
+    bool "EXT_MODEM support"
+    default n
+    help
+      Enable config options for EXT_MODEM drivers.
+
+if EXT_MODEM
+
+config DRIVER_EXT_MODEM
+    bool "EXT_MODEM driver"
+    default n
+    help
+       use for get external modem configuration.
+
+config DRIVER_EXT_MODEM_SPI_DEV
+    bool "EXT_MODEM spi device driver"
+    default n
+    help
+       use for enable EXT_MODEM spi device driver.
+endif # GPIO

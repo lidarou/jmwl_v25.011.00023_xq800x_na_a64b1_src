@@ -1,0 +1,17 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig GRAPHICS
+    bool "Graphics Options"
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config options for graphics Configurations.
+
+if GRAPHICS
+
+source "components/graphics/lvgl/Kconfig"
+source "components/graphics/alv/Kconfig"
+
+endif #graphics Configurations

@@ -1,0 +1,35 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig AZURE_LEVELX
+    tristate "Azure levelX support"
+    help
+      LevelX provides wearing level and power loss resilience for flash. 
+
+if AZURE_LEVELX
+
+config LX_USE_NAND_FLASH
+    tristate "Use Nand Flash"
+    depends on AZURE_LEVELX
+    help
+        Enable Use Nand Flash
+
+config LX_USE_NOR_FLASH
+    tristate "Use Nor Flash"
+    depends on AZURE_LEVELX
+    help
+        Enable Use Nor Flash
+
+if LX_USE_NOR_FLASH
+
+config LX_NOR_EXTENDED_CACHE
+    tristate "Use Extended cache"
+    depends on LX_USE_NOR_FLASH
+    help
+        Enable Use Extended cache
+
+endif
+
+endif

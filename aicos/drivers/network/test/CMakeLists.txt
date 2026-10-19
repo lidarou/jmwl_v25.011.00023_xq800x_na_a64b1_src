@@ -1,0 +1,9 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+aic_library_sources_ifdef(CONFIG_NET_DRIVER_IPV4_RAW_TEST aic_bsd_raw.c)
+aic_library_sources_ifdef(CONFIG_NET_DRIVER_IPV4_UDP_TEST aic_nic_ipv4_udp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_DRIVER_IPV4_TCP_TEST aic_nic_ipv4_tcp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_DRIVER_IPV6_UDP_TEST aic_nic_ipv6_udp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_DRIVER_IPV6_TCP_TEST aic_nic_ipv6_tcp_test.c)

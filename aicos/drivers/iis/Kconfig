@@ -1,0 +1,48 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig IIS
+    bool "IIS Drivers"
+    depends on SOUND_SUPPORT
+    default n
+    help
+      Enable config options for iis drivers.
+
+if IIS
+
+choice
+    prompt "IIS version selection"
+    default IIS_R1P0
+
+    config IIS_R1P0
+        bool "r1p0"
+        help
+            gx31x iis
+
+    config IIS_R2P0
+        bool "r2p0"
+        help
+            gx30x iis
+endchoice
+
+if IIS_R1P0
+    config IIS_VERSION
+        string
+        default "r1p0"
+endif
+
+if IIS_R2P0
+    config IIS_VERSION
+        string
+        default "r2p0"
+endif
+
+config DRIVER_IIS
+    bool "Driver IIS module"
+    default n
+    depends on SOUND_SUPPORT
+    help
+      Select IIS module.
+
+endif # IIS

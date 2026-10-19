@@ -1,0 +1,146 @@
+{
+    "description": {
+        "flag": "0(default): no need input file; 1: need input a file; 2: must be selected.",
+        "select": "0(default): DT not selected; 1: DT selected.",
+        "backup": "0(default): DT do nothing; 1: DT backup partition; 2.DT erase partition",
+        "type": "aic used, not changed, default is CODE.",
+        "address": "partition run address.",
+        "size": "partition size. if set, download size must be not more than config size.",
+        "auth": "0(default): no authentication; 1: MD5: 2: crc16.",
+        "bin_path": "binary path"
+    },
+    "init": {
+        "flag": 2,
+        "select": 1,
+        "type": "INIT",
+        "description": "Handshake with romcode"
+    },
+    "mdl": {
+        "flag": 3,
+        "select": 1,
+        "type": "MDL",
+        "address": 536883200,
+        "bin_path": "bootloader/bin/mdl_signed.bin",
+        "description": "MDL image file, run address at 0x20003000(536883200)"
+    },
+    "dl": {
+        "flag": 3,
+        "select": 1,
+        "type": "DL",
+        "address": 536915968,
+        "bin_path": "bootloader/bin/dl_signed.bin",
+        "description": "DL image file, run address at 0x2000b000(536915968)"
+    },
+    "mbl": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "bootloader/bin/mbl_signed.bin",
+        "flash_type": "qspi_nor",
+        "description": "mbl image file"
+    },
+    "cp": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "cp/bin/aicos_cp_flash.bin",
+        "flash_type": "qspi_nor",
+        "description": "cp image file"
+    },
+    "cpram1": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "cp/bin/aicos_cp_ram1_compressed.bin",
+        "flash_type": "qspi_nor",
+        "description": "cp ram1 image file"
+    },
+    "cpram2": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "cp/bin/aicos_cp_ram2_compressed.bin",
+        "flash_type": "qspi_nor",
+        "description": "cp ram2 image file"
+    },
+    "bl": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "bootloader/bin/bl_signed_compressed.bin",
+        "flash_type": "qspi_nor",
+        "description": "bl image file"
+    },
+    "nv": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "cp/bin/nvram_aic_native.bin",
+        "flash_type": "qspi_nor",
+        "description": "nvram aic image file"
+    },
+    "nvcust": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "cp/bin/nvram_custom_native.bin",
+        "flash_type": "qspi_nor",
+        "description": "nvram custom image file"
+    },
+    "nvdiff": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "cp/bin/nvram_hwdiff_native.bin",
+        "flash_type": "qspi_nor",
+        "description": "nvram hardware diff image file"
+    },
+    "md": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "ap/bin/md_native.bin",
+        "flash_type": "qspi_nor",
+        "description": "misc data image file"
+    },
+    "ap": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "ap/bin/aicos_ap.bin",
+        "flash_type": "qspi_nor",
+        "description": "ap basic image file"
+    },
+    "ap_extend": {
+        "flag": 1,
+        "select": 1,
+        "bin_path": "ap/bin/aicos_ap_extend.bin",
+        "flash_type": "qspi_nor",
+        "description": "ap extend image file"
+    },
+    "calibration": {
+        "backup": 1,
+        "flash_type": "qspi_nor",
+        "description": "calibration data partition"
+    },
+    "C": {
+        "flash_type": "qspi_nor",
+        "description": "fs C disk data partition"
+    },
+    "userdata": {
+        "flash_type": "qspi_nor",
+        "description": "user data partition"
+    },
+    "normdata": {
+        "backup": 2,
+        "flash_type": "qspi_nor",
+        "description": "running data partition, download must be erase."
+    },
+    "fota": {
+        "backup": 2,
+        "flash_type": "qspi_nor",
+        "description": "fota partition"
+    },
+    "factory": {
+        "flash_type": "qspi_nor",
+        "description": "factory station partition"
+    },
+    "factory_bak": {
+        "flash_type": "qspi_nor",
+        "description": "factory backup station partition"
+    },
+    "ptable": {
+        "flash_type": "qspi_nor",
+        "description": "partition table"
+    }
+}

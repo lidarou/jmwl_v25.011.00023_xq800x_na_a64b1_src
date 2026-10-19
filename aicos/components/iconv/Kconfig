@@ -1,0 +1,31 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "ICONV Config"
+    config USE_ICONV
+        bool "Use iconv"
+        default y
+        help
+        Enable to use code page converters, e.g. GBK to Unicode
+
+    if USE_ICONV
+        config ICONV_UTF8
+            bool "converter between UTF8 and Unicode"
+            default y
+            help
+                enable to use converter between UTF8 and Unicode
+
+        config ICONV_GB2312
+            bool "converter between GB2312 and Unicode"
+            default n
+            help
+                enable to use converter between GB2312 and Unicode
+
+        config ICONV_GBK
+            bool "converter between GBK and Unicode"
+            default n
+            help
+            enable to use converter between GBK and Unicode
+  endif
+endmenu

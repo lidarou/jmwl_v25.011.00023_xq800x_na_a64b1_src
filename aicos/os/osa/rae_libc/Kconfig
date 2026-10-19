@@ -1,0 +1,22 @@
+menu "Reent and ext libc Config"
+    config PLAT_RAC_LIBC
+        bool "Reent and ext LIBC Enable"
+        depends on COMPILER_GCC
+        default y
+        help
+          Enable reent and ext LIBC. 
+
+    config PLAT_RAC_LIBC_MEM
+        bool "Reent and ext mem api"
+        depends on PLAT_RAC_LIBC
+        default n
+        help
+          Enable use the Reent and ext mem api.
+
+    config PLAT_RAC_LIBC_TIME
+        bool "Reent and ext LIBC time api"
+        depends on PLAT_RAC_LIBC
+        default y
+        help
+          Enable use the Reent and ext libc time api.
+endmenu

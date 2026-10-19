@@ -1,0 +1,18 @@
+{
+	"Board info": {
+		"genesis": [
+			{
+				"project board name":   "gx316l_h3",
+				"ap board name":        "gx316l_h3",
+				"md board name":        "gx316l_h3",
+				"cp board name":        "gx31xc_sms",
+				"nv board name":        "gx316c_h3",
+				"dsp board name":       "gx316l",
+				"bootloader board name":"gx316c_h3",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+4 tracker board"
+			}
+		]
+	}
+}

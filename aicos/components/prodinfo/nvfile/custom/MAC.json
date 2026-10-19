@@ -1,0 +1,40 @@
+{
+	"HEADER": {
+		"id": 6,
+		"category": 2
+	},
+	"MAC_T": {
+		"MAC": [
+			{
+				"value": 18,
+				"type": "unsigned char",
+				"description": "mac address"
+			},
+			{
+				"value": 52,
+				"type": "unsigned char",
+				"description": "mac address"
+			},
+			{
+				"value": 86,
+				"type": "unsigned char",
+				"description": "mac address"
+			},
+			{
+				"value": 120,
+				"type": "unsigned char",
+				"description": "mac address"
+			},
+			{
+				"value": 144,
+				"type": "unsigned char",
+				"description": "mac address"
+			},
+			{
+				"value": 16,
+				"type": "unsigned char",
+				"description": "mac address"
+			}
+		]
+	}
+}

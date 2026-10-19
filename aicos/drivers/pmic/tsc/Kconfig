@@ -1,0 +1,15 @@
+# General configuration options
+#
+# Copyright 2022 by AIC Micro Corporation. All rights reserved.
+
+menuconfig TSC
+    bool "TSC Module"
+    depends on SUBSYS_AP
+    depends on GRAPHICS
+    select PMIC_GPIO
+    select DRV_GPIO_PMIC
+    select PIN_CTRL
+    select DRIVER_PIN_CTRL
+    default n
+    help
+      Enable config options for TSC drivers.

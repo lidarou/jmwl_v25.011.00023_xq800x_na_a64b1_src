@@ -1,0 +1,16 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+#
+#Assert function displays the assert reason, CPU register value,
+#task information, dump memory, handle assert command and so on.
+#
+menu "Assert Configure"
+    config ASSERT_TEST
+        bool "Assert test"
+        default n
+        help
+          Enable assert test case.
+endmenu

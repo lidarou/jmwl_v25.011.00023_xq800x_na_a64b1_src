@@ -1,0 +1,20 @@
+
+解决方案路径：
+\aicos\projects\win32_customer\aicos_win32.sln
+
+D2D L3 demo代码：
+\aicos\components\d2d, 已添加相关.h\.c文件，可按需调整；
+
+测试主流程：
+fd2d_test_main()
+
+相关task：
+D2D_L3_THREAD //D2D L3 task
+D2D_DUMMY_L1_THREAD //DUMMY L1 task, 仅用于调试
+D2D_DUMMY_L2_THREAD //DUMMY L2 task, 仅用于调试
+D2D_TEST //D2D Test task, 仅用于调试
+
+测试代码使用：
+1. 发送/接收AT的接口是AIC_SEND_AT/AIC_RECV_AT,仅用于WIN32调试；
+2. 新增AT命令添加到全局变量general_at_handlers[]中，可参考demo中的AT+DSTART；
+3. L1/L2相关stub处理，需在DUMMY L1/L2 task中按需手动添加；

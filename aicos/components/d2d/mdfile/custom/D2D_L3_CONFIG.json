@@ -1,0 +1,395 @@
+ {
+    "HEADER": {
+        "id": 29,
+        "category": 1
+    },
+    "D2D_L3_CONFIG": {
+        "PBCH_CONFIG": {
+           "PBCH_DTX_CONFIG": {
+		      "usr_num_threshold_1": {
+			      "value": 8,
+			      "type": "unsigned char",
+			      "description": "PBCH DTX user number threshold 1"
+		      },
+		      "usr_num_threshold_2": {
+			      "value": 12,
+			      "type": "unsigned char",
+			      "description": "PBCH DTX user number threshold 2"
+		      },
+		      "usr_num_threshold_3": {
+			      "value": 14,
+			      "type": "unsigned char",
+			      "description": "PBCH DTX user number threshold 3"
+		      },
+              "dtx_level_1": {
+			      "value": 1,
+			      "type": "unsigned char",
+			      "description": "PBCH DTX level 1"
+		      },
+              "dtx_level_2": {
+			      "value": 2,
+			      "type": "unsigned char",
+			      "description": "PBCH DTX level 2"
+		      },
+              "dtx_level_3": {
+			      "value": 3,
+			      "type": "unsigned char",
+			      "description": "PBCH DTX level 3"
+		      }
+		   },
+          "pbch_tx_power": {
+			  "value": 0,
+			  "type": "short",
+			  "description": "PBCH initial TX power"
+		  },
+		  "max_tx_power": {
+			  "value": 32767,
+			  "type": "short",
+			  "description": "Maximum TX power"
+		  }
+        },
+
+       "LCID_CONFIG": {
+          "lcid_num": {
+			  "value": 5,
+			  "type": "unsigned short",
+			  "description": "number of valid lcid"
+		  },
+		  "LCID_PARAM": [
+              {
+                 "lcid": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 5,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 1,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 100,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 100,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 2,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 40,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 1,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 20,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 2,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 10,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 1,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 100,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 100,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 2,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 40,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 3,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 30,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 1,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 300,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 300,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 7,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 90,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 4,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 40,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 5,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 6,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 7,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              },
+              {
+                 "lcid": {
+			        "value": 8,
+			        "type": "short",
+			        "description": "lcid"
+		          },
+                 "priority": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "priority of lcid 0"
+		          },
+                 "l2_mode": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "l2 mode: 0:UM, 1:AM"
+		          },
+		         "t_reordering": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-reordering time"
+		          },
+		         "t_discard": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "t-discard time"
+		          },
+		         "pollingNum": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          },
+		         "status_prohibit_time": {
+			        "value": 0,
+			        "type": "short",
+			        "description": "polling number of PDU"
+		          }
+              }
+		  ]
+       }
+    }
+}

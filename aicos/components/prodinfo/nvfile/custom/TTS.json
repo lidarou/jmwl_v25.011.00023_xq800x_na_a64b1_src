@@ -1,0 +1,14 @@
+{
+	"HEADER": {
+		"id": 47,
+		"category": 2
+	},
+	"TTS_T": {
+		"TTS": {
+			"value": "TTS_DEVER_INFO123456",
+			"len": 256,
+			"type": "string",
+			"description": "TTS"
+		}
+	}
+}

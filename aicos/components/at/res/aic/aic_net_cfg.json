@@ -1,0 +1,158 @@
+{
+    "HEADER": {
+        "id": 15,
+        "category": 1
+    },
+    "NET_CFG": {
+        "auto_start_ps": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "auto start ps"
+        },
+        "cfun_pre_rst": {
+            "value": 255,
+            "type": "unsigned char",
+            "description": "cfun value before reset"
+        },
+        "auto_cfg_pdp_intf": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "auto config pdp intf"
+        },
+        "auto_start_usb_net": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "auto start usb net"
+        },
+        "reg_mode": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "register mode"
+        },
+        "urc_port_name": {
+            "value": "",
+            "len":12,
+            "type": "string",
+            "description": "urc port name"
+        },
+        "ri_signal_type": {
+            "value": "respective",
+            "len":12,
+            "type": "string",
+            "description": "ri signal type"
+        },
+        "m_intf_mode": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer usb intf mode"
+        },
+        "m_work_mode": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer usb share mode"
+        },
+        "m_auto_flag": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer auto connect to wan"
+        },
+        "pdp_type": {
+            "value": "",
+            "len":8,
+            "type": "string",
+            "description": "pdp type"
+        },
+        "default_apn": {
+            "value": "",
+            "len":40,
+            "type": "string",
+            "description": "default apn name"
+        },
+        "cus_dial_mode": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "customer dial mode"
+        },
+        "cus_intf_mode": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer intf mode"
+        },
+        "cus_ip_mode": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "customer ip mode"
+        },
+        "cus_third_byte_set": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer if set third byte"
+        },
+        "cus_dhcp_start_set": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer if set dhcp start ip"
+        },
+        "cus_dhcp_third_byte": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "customer dhcp third byte"
+        },
+        "cus_dhcp_ip_start": {
+            "value": 17,
+            "type": "unsigned char",
+            "description": "customer dhcp start ip"
+        },
+        "cus_dhcp_ip_end": {
+            "value": 26,
+            "type": "unsigned char",
+            "description": "customer dhcp end ip"
+        },
+        "cereg_mode": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "cereg mode"
+        },
+        "ctzu_mode": {
+            "value": 255,
+            "type": "unsigned char",
+            "description": "ctzu mode"
+        },
+        "d2d_lte_mode": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "d2d or lte mode"
+        },
+        "d2d_pkt_dump": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "enable d2d pkt dump"
+        },
+        "d2d_pkt_size": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "d2d raw pkt size"
+        },
+        "d2d_at_com_id": {
+            "value": 65535,
+            "type": "unsigned int",
+            "description": "d2d at com id"
+        },
+        "d2d_role": {
+            "value": 3,
+            "type": "unsigned char",
+            "description": "d2d role"
+        },
+        "d2d_msg_head_enabled": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "d2d msg head enabled"
+        },
+        "d2d_com_type": {
+            "value": "cmux",
+            "len":8,
+            "type": "string",
+            "description": "d2d com type"
+        }
+    }
+}

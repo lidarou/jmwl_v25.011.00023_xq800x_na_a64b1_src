@@ -1,0 +1,22 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig KPC
+    bool "KPC Drivers"
+    depends on SUBSYS_AP
+    help
+      Enable config options for keypad controller drivers.
+
+if KPC
+
+comment "Driver Keypad Controller has been enabled."
+
+config KPC_DEMO_FUNC
+    bool "KPC support Demo Function [Camera Pre & Show LOGO]"
+    depends on KPC
+    default n
+    help
+      Whether KPC support Demo Function. Camer Preview depends on CAMERA_SUPPORT.
+
+endif # KPC

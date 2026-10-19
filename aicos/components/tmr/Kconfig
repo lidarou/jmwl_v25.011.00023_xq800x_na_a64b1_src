@@ -1,0 +1,8 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+config SRV_TIMER
+    bool "Enable Service Timer"
+    default n
+

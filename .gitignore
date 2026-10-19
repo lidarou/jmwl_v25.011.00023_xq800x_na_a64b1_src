@@ -1,0 +1,7 @@
+out
+mk_me.cmd
+个人记录
+
+# Bundled toolchain archive and Git installer
+/tools/toolchain/gcc-arm-none-eabi-10-2020-q4-major.rar
+/tools/git/Git-2.40.0-64-bit.exe

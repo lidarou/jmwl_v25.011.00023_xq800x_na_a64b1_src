@@ -1,0 +1,328 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig APP
+    bool "Application Options"
+    default n
+
+if APP
+
+choice
+    bool "Choice First entry APP"
+    depends on APP
+    default APP_ENTRY_EM
+    help
+        select which APP should be run.
+
+    config APP_ENTRY_NOGUI
+        bool "Application entry point without GUI"
+        help
+            Application entry point without GUI
+
+    config APP_ENTRY_IDLE
+        bool "Idle"
+        select APP_IDLE
+        select USE_SQUARELINE_COMMON_CODE
+        depends on LV_CONF_MINIMAL
+        depends on ALV_APP_MGR
+        help
+          Depends on LV_CONF_MINIMAL at "(Top) → Components Options → Graphics Options → LVGL configuration"
+          Depends on ALV_APP_MGR at "(Top) → Components Options → Graphics Options"
+
+    config APP_ENTRY_IDLE_FP
+        bool "Idle for FP"
+        select APP_IDLE_FP
+        select USE_SQUARELINE_COMMON_CODE
+        depends on LV_CONF_MINIMAL
+        depends on ALV_APP_MGR
+        help
+          Depends on LV_CONF_MINIMAL at "(Top) → Components Options → Graphics Options → LVGL configuration"
+          Depends on ALV_APP_MGR at "(Top) → Components Options → Graphics Options"
+
+    config APP_ENTRY_EM
+        bool "Engineering Mode"
+        select APP_EM
+        depends on LV_CONF_MINIMAL
+        depends on ALV_APP_MGR
+        help
+          Depends on LV_CONF_MINIMAL at "(Top) → Components Options → Graphics Options → LVGL configuration"
+          Depends on ALV_APP_MGR at "(Top) → Components Options → Graphics Options"
+
+    config APP_ENTRY_LVGL_DEMO
+        bool "LGVL Demo"
+        depends on LV_CONF_MINIMAL
+        help
+          Depends on LV_CONF_MINIMAL at "(Top) → Components Options → Graphics Options → LVGL configuration"
+
+        if APP_ENTRY_LVGL_DEMO
+        source "app/lvgl_demo_apps/Kconfig"
+        endif # APP_ENTRY_LVGL_DEMO
+endchoice
+
+config FP
+    bool "Feature Phone"
+    default n
+    help
+        Feature Phone
+
+config SUPPORT_PHYSICAL_KEY
+    bool "Support Physical key"
+    default n
+    help
+        Support Physical key
+
+
+choice
+    bool "Choice Resolution Ratio"
+    depends on LV_CONF_MINIMAL
+    default RESOLUTION_240x320
+    help
+      select resolution which graphics should be select.
+
+    config RESOLUTION_240x320
+        bool "240x320"
+        help
+          select resolution ratio 240x320
+
+    config RESOLUTION_128x128
+        bool "128x128"
+        help
+          select resolution ratio 128x128
+endchoice #choice "Resolution Ratio"
+
+
+menu "Config boot & charge animation"
+
+    config BOOT_ANIMATION
+        bool "Enable boot animation"
+        default n
+        help
+            Enable Boot animaiton
+
+    config CHARGE_ANIMATION
+        bool "Enable charge animation when system shutdown(If disable Show picture only)"
+        default n
+        help
+            Enable Charge animaiton
+
+endmenu # menu "Config boot & charge animation"
+
+
+menu "Enable APPs "
+
+config APP_IDLE
+    bool "Enable Idle APP"
+    default n
+    help
+        Enable Idle APP
+
+config APP_IDLE_FP
+    bool "Enable Idle APP for FP"
+    default n
+    help
+        Enable Idle APP for feature phone
+
+config APP_HOME_FP
+    bool "Enable Main Menu APP for FP"
+    default n
+    help
+        Enable Main Menu APP for feature phone
+
+config APP_CALL
+    bool "Enable Call APP"
+    depends on TELE_SERVICE
+    default n
+    help
+        Enable Call APP
+
+config APP_CALL_FP
+    bool "Enable Call APP for FP"
+    default n
+    help
+        Enable CALL APP for feature phone
+
+config APP_CALLLOG_FP
+    bool "Enable Call Log APP for FP"
+    default n
+    help
+        Enable Call Log APP for feature phone
+
+config APP_PHONEBOOK_FP
+    bool "Enable Phonebook APP for FP"
+    default n
+    help
+        Enable Phonebook APP for feature phone
+
+config APP_SMS_FP
+    bool "Enable SMS APP for FP"
+    default n
+    help
+        Enable SMS APP for feature phone
+
+config APP_TOOLS_FP
+    bool "Enable Tools APP for FP"
+    default n
+    help
+        Enable Tools APP for feature phone
+
+config APP_MULTIMEDIA_FP
+    bool "Enable Multi-Meida APP for FP"
+    default n
+    help
+        Enable Multi-Meida APP for feature phone
+
+config APP_REMIND_FP
+    bool "Enable Remind APP for FP"
+    default n
+    help
+        Enable Remind APP for feature phone
+
+config APP_SETTINGS
+    bool "Enable Settings APP"
+    default n
+    help
+        Enable Settings APP
+
+config APP_SETTINGS_FP
+    bool "Enable Settings APP for FP"
+    default n
+    help
+        Enable Settings APP for feature phone
+
+config APP_EM
+    bool "Enable EM APP (Engineering Mode)"
+    default n
+    help
+        Enable Engineering Mode
+
+config APP_CAMERA
+    bool "Enable Camera APP"
+    default n
+    help
+        Enable Camera APP
+
+config APP_PHOTO
+    bool "Enable Photo APP"
+    select USE_SQUARELINE_COMMON_CODE
+    default n
+    help
+        Enable Photo APP
+
+config APP_RECORDER
+    bool "Enable Recorder APP"
+    select LV_FONT_MONTSERRAT_10
+    default n
+    help
+        Enable Recorder APP
+
+config APP_SMS_TEST
+    bool "Enable SMS Test APP"
+    default n
+    help
+        Enable SMS Test APP
+
+config APP_FILEBROWSER
+    bool "Enable File Browser APP"
+    select USE_SQUARELINE_COMMON_CODE
+    select USE_APP_FS
+    select USE_ALV_BTNMATRIX
+    select USE_ALV_MENU
+    select LV_FONT_MONTSERRAT_10
+    default n
+    help
+        Enable File Browser APP
+
+config APP_FOTA
+    bool "Enable FOTA APP"
+    select USE_SQUARELINE_COMMON_CODE
+    default n
+    help
+        Enable FOTA APP
+
+config APP_ALARM
+    bool "Enable ALARM APP"
+    default n
+    help
+        Enable ALARM APP
+
+config APP_NOTIFY_CENTER
+    bool "Enable Notify Center APP"
+    default n
+    help
+        Enable Notify Center APP
+
+config APP_USB
+    bool "Enable USB APP"
+    select USB_SERVICE
+    default n
+    help
+        Enable USB APP
+
+endmenu #menu "Enable APPs "
+
+
+menu "APP Component & Utility"
+
+config COMP_STATUSBAR
+    bool "Enable Component Statusbar"
+    depends on APP_ENTRY_IDLE
+    default n
+    help
+        Enable Component of Statusbar
+
+config COMP_SOFTKEY
+    bool "Enable Component SoftKey"
+    depends on APP_ENTRY_IDLE
+    default n
+    help
+        Enable Component of SoftKey
+
+config COMP_CAMERA_PREVIEW
+    bool "Enable Component Camera Preview"
+    depends on APP_ENTRY_IDLE
+    default n
+    help
+        Enable Component of Camera Preview
+
+config COMP_MSGBOX
+    bool "Enable Component Msgbox"
+    #depends on APP_ENTRY_IDLE
+    default n
+    help
+        Enable Component Msgbox
+
+config USE_ALV_BTNMATRIX
+    bool "Use alv_btnmatrix widget"
+    depends on LV_USE_BTNMATRIX
+    default n
+    help
+      A customized widget which inherits from lv_btnmatrix.
+
+config USE_ALV_MENU
+    bool "Use alv menu widget"
+    depends on LV_USE_LIST
+    default n
+    help
+      A customized menu widget which is based on lv_list.
+
+config USE_APP_FS
+    bool "Use APP FS"
+    depends on FS && LV_CONF_MINIMAL
+    default n
+    help
+      Enable common APIs to operate on FS and monitoring device mount
+
+config USE_SQUARELINE_COMMON_CODE
+    bool "Use Squareline Studio auto-generated code"
+    depends on LV_CONF_MINIMAL
+    default n
+    help
+      Enable to use common ui helper&component auto-generated by squareline.
+
+endmenu #menu "APP Component & Utility"
+
+endif #if APP
+
+# include sample code kconfig
+source "app/samples/Kconfig"

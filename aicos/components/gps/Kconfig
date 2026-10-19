@@ -1,0 +1,25 @@
+menu "GPS"
+    config GPS
+        bool "Support GPS"
+        default n
+        help
+          Support GPS.
+    config ICOE_GPS
+        bool "Support ICOE GPS"
+        depends on GPS
+        default n
+        help
+          Support ICOE GPS.
+    config ICOE_GPS_FW
+        bool "Produce ICOE GPS FW binary"
+        depends on ICOE_GPS
+        default n
+        help
+          Produce ICOE GPS FW binary.
+    config ICOE_GPS_SRC
+        bool "Add ICOE GPS driver"
+        depends on ICOE_GPS
+        default n
+        help
+          Add ICOE GPS driver.
+endmenu

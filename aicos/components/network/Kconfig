@@ -1,0 +1,28 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Network Configurations"
+
+choice
+prompt "Select tcpip stack"
+default USE_NETXDUO
+
+config USE_NETXDUO
+    bool "use netxduo 6.1.9"
+
+config USE_LWIP
+    bool "use lwip 2.1.3"
+    depends on SUBSYS_CP
+
+endchoice
+
+if SUBSYS_CP
+source "components/network/lwip/Kconfig"
+endif
+
+source "components/network/netxduo/Kconfig"
+source "components/network/net_extension/Kconfig"
+
+endmenu # Network Configurations
+

@@ -1,0 +1,72 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig UART
+    bool "UART Drivers"
+    help
+      Enable config options for UART drivers.
+
+if UART
+
+config DRIVER_UART
+    bool "Uart driver"
+    default n
+
+choice
+    prompt "Select uart driver"
+    default DRIVER_UART_AIC
+config DRIVER_UART_XIL
+    bool "xil uart for cr5 dev board"
+    depends on DRIVER_UART
+    help
+      Select xil uart driver for cr5 dev board
+
+config DRIVER_UART_AIC
+    bool "enable AIC uart"
+    depends on DRIVER_UART
+    help
+      Select AIC uart driver for aic dev board
+
+if DRIVER_UART_AIC
+    config DRIVER_UART_AIC_VERSION
+    string "AIC SERIAL IP version"
+    default "r1p0"
+    help
+        AIC SERIAL IP version, different chip will use different version SERIAL IP.
+endif
+endchoice
+
+if SUBSYS_AP
+config PIN_WAKEUP
+    bool "wakeup by pin function"
+    default n
+
+choice
+    prompt "Select wakeup function"
+    depends on PIN_WAKEUP
+    default PIN_WAKEUP_EIPU
+config PIN_WAKEUP_GPIO
+    bool "enable wakeup by gpio"
+    help
+      Select gpio function for wakeup.
+
+config PIN_WAKEUP_EIPU
+    bool "enable wakeup by eipu"
+    help
+      Select gpio function for wakeup.
+endchoice
+endif
+
+config DRIVER_GPIO_WAKEUP
+    bool "enable GPIO wakeup"
+    depends on DRIVER_UART
+    default n
+    help
+      Add GPIO wakeup MCU for serial transfer.
+config DRIVER_QUAD_PIN_WAKEUP
+    bool "QUAD pin wakeup enable"
+    default n
+    help
+      Enable quad pin wakeup.
+endif

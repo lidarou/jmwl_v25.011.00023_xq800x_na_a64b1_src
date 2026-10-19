@@ -1,0 +1,47 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "CMUX Drivers"
+
+config CMUX
+    bool "CMUX Drivers"
+    depends on SUBSYS_AP
+    help
+      Enable config options for CMUX drivers.
+
+config CMUX_PRIORITY
+    bool "CMUX priority"
+    depends on CMUX
+    help
+      Cmux config for priority.
+
+choice
+    prompt "cmux version selection"
+    default CMUX_R1P0
+
+    config CMUX_R1P0
+        bool "r1p0"
+    depends on CMUX
+        help
+            gx31x cmux
+
+    config CMUX_R2P0
+        bool "r2p0"
+    depends on CMUX
+        help
+            gx30x cmux
+endchoice
+
+if CMUX_R1P0
+    config CMUX_VERSION
+        string
+        default "r1p0"
+endif
+
+if CMUX_R2P0
+    config CMUX_VERSION
+        string
+        default "r2p0"
+endif
+endmenu # CMUX Driver

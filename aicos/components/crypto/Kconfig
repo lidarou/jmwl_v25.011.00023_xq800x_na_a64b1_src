@@ -1,0 +1,25 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Crypto Component Configurations"
+
+config CRYPTO_MBEDTLS
+    bool "support mbedtls crypto library"
+    default n
+
+choice
+    prompt "mbedtls version selection"
+    depends on CRYPTO_MBEDTLS
+    default CRYPTO_MBEDTLS_3
+
+config CRYPTO_MBEDTLS_3
+    bool "support mbedtls-3.3.0 crypto library"
+
+config CRYPTO_MBEDTLS_2
+    bool "support mbedtls-2.1.8 crypto library"
+
+endchoice
+
+endmenu # Crypto Configurations
+

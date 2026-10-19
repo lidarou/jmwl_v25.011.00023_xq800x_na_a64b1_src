@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx306l_h3_mifi",
+				"ap board name":        "gx306l_h3_mifi",
+				"md board name":        "gx306l_h3_mifi",
+				"cp board name":        "gx30xl_sms",
+				"nv board name":        "gx306l_h3_mifi",
+				"bootloader board name":"gx306l_h3",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "4+4 mifi board"
+			}
+        ]
+	}
+}

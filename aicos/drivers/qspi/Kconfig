@@ -1,0 +1,26 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig SNC_QSPI
+    tristate "QSPI controller"
+    help
+        This enables support for the QSPI controller.
+
+if SNC_QSPI
+
+config QSPI_DRIVER
+    bool "Driver QSPI module"
+    default n
+    help
+      Select QSPI module.
+
+config QSPI_DRIVER_VER
+    string "QSPI IP version"
+    depends on QSPI_DRIVER
+    default "r1p0"
+    help
+      QSPI IP version, different chip will use different version QSPI IP.
+
+endif

@@ -1,0 +1,8 @@
+menu "BLT Config"
+    config BLT_SUPPORT
+        bool "Enable Board-Level Test"
+        default n
+        help
+          Enable the Board-Level Test
+
+endmenu

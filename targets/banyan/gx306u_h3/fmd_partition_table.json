@@ -1,0 +1,118 @@
+{
+    "fmd_head": {
+        "block_size": 4096,
+        "ftl_sector_size": 512,
+        "lx_sector_size": 256,
+        "device_num": 1
+    },
+    "qspi_nor": {
+        "device_info" : {
+            "dev0_base": "0x11000000",
+            "dev0_size": "0x200000"
+        },
+        "partition_table": [
+            {
+                "mbl": {
+                    "block_num": 6,
+                    "attribute": "RO"
+                },
+                "cp": {
+                    "block_num": 190,
+                    "attribute": "RO"
+                },
+                "cpram1": {
+                    "block_num": 28,
+                    "attribute": "RO"
+                },
+                "cpram2": {
+                    "block_num": 28,
+                    "attribute": "RO"
+                },
+                "cpram3": {
+                    "block_num": 27,
+                    "attribute": "RO"
+                },
+                "cpram4": {
+                    "block_num": 28,
+                    "attribute": "RO"
+                },
+                "bl": {
+                    "block_num": 11,
+                    "attribute": "RO"
+                },
+                "nv": {
+                    "block_num": 2,
+                    "attribute": "RO"
+                },
+                "nvcust": {
+                    "block_num": 6,
+                    "attribute": "RO"
+                },
+                "nvdiff": {
+                    "block_num": 2,
+                    "attribute": "RO"
+                },
+                "md": {
+                    "block_num": 2,
+                    "attribute": "RO"
+                },
+                "ap": {
+                    "block_num": 80,
+                    "attribute": "RO"
+                },
+                "fota_bak": {
+                    "ap_extend": {
+                        "block_num": 49,
+                        "attribute": "RW"
+                    }
+                },
+                "calibration": {
+                    "block_num": 8,
+                    "attribute": "RW",
+                    "discription": "lx_sector_size = 512: total sector_num <= (7 * (block_num - 2)); lx_sector_size = 256, total sector_num <= (((15 * (block_num - 2)) & ~0x1) / 2)",
+                    "ftl_table": {
+                        "nvcali": {
+                            "sector_num": 32
+                        },
+                        "mdcali": {
+                            "sector_num": 16
+                        }
+                    }
+                },
+                "C": {
+                    "block_num": 25,
+                    "attribute": "RW"
+                },
+                "normdata": {
+                    "block_num": 15,
+                    "attribute": "RW",
+                    "discription": "lx_sector_size = 512: total sector_num <= (7 * (block_num - 2)); lx_sector_size = 256, total sector_num <= (((15 * (block_num - 2)) & ~0x1) / 2)",
+                    "ftl_table": {
+                        "nvnorm": {
+                            "sector_num": 64
+                        },
+                        "mdnorm": {
+                            "sector_num": 32
+                        }
+                    }
+                },
+                "fota": {
+                    "block_num": 2,
+                    "attribute": "RW"
+                },
+                "factory": {
+                    "block_num": 1,
+                    "attribute": "RW"
+                },
+                "factory_bak": {
+                    "block_num": 1,
+                    "attribute": "RW"
+                },
+                "ptable": {
+                    "block_num": 1,
+                    "attribute": "RW"
+                }
+            }
+        ]
+    }
+}

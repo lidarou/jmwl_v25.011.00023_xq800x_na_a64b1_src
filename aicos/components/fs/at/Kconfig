@@ -1,0 +1,19 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menu "File System AT Config"
+    config FS_AT
+        tristate "fs at"
+        default y
+        help
+            file system at command.
+
+    config FS_CUSTOM_AT
+        tristate "fs custom at"
+        help
+            file system custom at command.
+endmenu
+
+

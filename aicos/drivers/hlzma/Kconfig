@@ -1,0 +1,32 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# lzma software decoder configurations
+#
+
+menuconfig HLZMA
+    bool "HLZMA Drivers"
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config options for hlzma drivers.
+
+if HLZMA
+
+config DRIVER_HLZMA
+    bool "Hardware lzma driver"
+    default n
+
+config DRIVER_HLZMA_VER
+    string "Hardware lzma ip version selection"
+    depends on DRIVER_HLZMA
+    default "r1p0"
+    help
+      HLZMA ip version, select correct version for specified project.
+
+config BYPASS_HLZMA_EB
+    bool "Not disable eb after work done"
+    depends on DRIVER_HLZMA
+    default n
+
+endif # HLZMA

@@ -1,0 +1,25 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig TELE_SERVICE
+
+    bool "Tele Service (Based on Modem Driver Support)"
+    depends on SUBSYS_AP
+    depends on MODEM_DRIVER
+    default n
+    help
+      Enable config for tele service which based on modem driver
+
+
+if TELE_SERVICE
+
+    config TELE_SERVICE_TRANSACTION
+        bool "Tele Service TRANSACTION"
+        depends on TELE_SERVICE
+        default n
+        help
+          Enable config for tele service transaction which based on tele service
+
+endif #if TELE_SERVICE
+

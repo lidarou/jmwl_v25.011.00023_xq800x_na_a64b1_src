@@ -1,0 +1,25 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig DMA
+    bool "DMA Drivers"
+    help
+      Enable config options for DMA drivers.
+
+if DMA
+
+config DRIVER_DMA
+    bool "Driver DMA"
+    default n
+    help
+      DMA IP, use for memory copy
+
+config DRIVER_DMA_VER
+    string "DMA IP version"
+    depends on DRIVER_DMA
+    default "r1p0"
+    help
+      DMA IP version, different chip will use different version DMA IP.
+
+endif # DMA

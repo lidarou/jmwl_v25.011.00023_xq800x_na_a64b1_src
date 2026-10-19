@@ -1,0 +1,110 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig USB
+    bool "USB Drivers"
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config options for USB drivers.
+
+if USB
+config AZURE_USBX
+    bool "USBX stack support"
+    default n
+
+# usb device configurations
+config USBX_DEVICE
+    bool "USBX device mode support"
+    depends on AZURE_USBX
+    default n
+
+config USBX_DEVICE_STACK
+    bool "USBX device stack support"
+    depends on USBX_DEVICE
+    default n
+
+config USBX_DEVICE_SIMLATOR
+    bool "USBX device stack simlator support"
+    depends on USBX_DEVICE
+    default n
+
+config USBX_DEVICE_CLASS_DPUMP
+    bool "USBX device class dpump support"
+    depends on USBX_DEVICE
+    default n
+
+config USBX_DEVICE_CLASS_CDC_ACM
+    bool "USBX device class cdc/acm support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_CDC_ECM
+    bool "USBX device class cdc/ecm support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_RNDIS
+    bool "USBX device class rndis support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_PIMA
+    bool "USBX device class pima support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_HID
+    bool "USBX device class hid support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_DFU
+    bool "USBX device class dfu support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_STORAGE
+    bool "USBX device class storage support"
+    depends on USBX_DEVICE
+
+config USBX_DEVICE_CLASS_AUDIO
+    bool "USBX device class audio support"
+    depends on USBX_DEVICE
+
+# usb host configurations
+config USBX_HOST
+    bool "USBX host mode support"
+    depends on AZURE_USBX
+    default n
+
+config USBX_HOST_STACK
+    bool "USBX host stack support"
+    depends on USBX_HOST
+    default n
+
+config USBX_HOST_SIMLATOR
+    bool "USBX host stack simlator support"
+    depends on USBX_HOST
+    default n
+
+config USBX_HOST_CLASS_DPUMP
+    bool "USBX host class dpump support"
+    depends on USBX_HOST
+    default n
+
+config USBX_NETWORK
+    bool "USBX network support"
+    depends on AZURE_USBX
+    default n
+
+config USB_AIC
+    bool "AIC USB support"
+    default n
+
+config USB_DETECT_BCD
+    bool "AIC USB BCD detect support"
+    depends on USB_AIC
+    default n
+
+config USB_DETECT_GPIO
+    bool "AIC USB GPIO detect support"
+    depends on USB_AIC
+    default n
+
+endif # USB Configurations

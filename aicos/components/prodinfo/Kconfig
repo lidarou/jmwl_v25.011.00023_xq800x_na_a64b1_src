@@ -1,0 +1,23 @@
+menu "PRODINFO Config"
+    config RESET_ENTER_GXEM_SUPPORT
+        bool "reset enter gxem"
+        default n
+        help
+          Enable reset enter gxem.
+
+    config UART_ENTER_GXEM
+        bool "support uart enter gxem"
+        default n
+        help
+          Enable support uart enter gxem.
+
+if  UART_ENTER_GXEM
+    config POWERON_DELAY_SLEEP_TIME
+        int "the num of delay time(s) enter to sleep when power on"
+        default 5
+        help
+            The num of delay time(s) enter to sleep when power on.
+
+endif
+
+endmenu

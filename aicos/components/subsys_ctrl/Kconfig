@@ -1,0 +1,27 @@
+menu "Subsys Config"
+    config SUBSYS_CTRL_SUPPORT
+        bool "Enable subsys control module"
+        depends on DRIVER_SUBSYS_CTRL
+        default y
+        help
+          Enable subsys control module to boot subsys.
+
+    config SUPPORT_ADSP
+        bool "Support adsp"
+        default n
+        select ADSP_AIPC
+        help
+          Support adsp in chip.
+
+    config COMPRESS_EXTEND_AP
+        bool "Enable compress extend ap image"
+        default n
+        help
+          Compress extend ap image.
+
+    config MEMMOVE_BASE_REGION_IMG
+        bool "Enable memmove the image on the base region."
+        default n
+        help
+          Memmove the image on the base region.
+endmenu

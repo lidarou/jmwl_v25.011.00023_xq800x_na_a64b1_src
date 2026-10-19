@@ -1,0 +1,50 @@
+{
+	"HEADER": {
+		"id": 11,
+		"category": 2
+	},
+	"DCXO_CALI": {
+		"AFCCal": {
+			"CalFreq": {
+				"value": 9420,
+				"type": "unsigned short",
+				"description": "1 Bit:100KHz"
+			},
+			"CT": {
+				"value": 0,
+				"type": "unsigned short",
+				"description": "Coarse tune"
+			},
+			"AFCCal": {
+				"value": 0,
+				"type": "unsigned short",
+				"description": "afc cali"
+			},
+			"HPM_32K": {
+				"value": 0,
+				"type": "unsigned short",
+				"description": "div_dcoeff_hp"
+			},
+			"LPM_32K": {
+				"value": 0,
+				"type": "unsigned short",
+				"description": "div_dcoeff_lp"
+			}
+		},
+		"AfcCalFlag": {
+			"value": 0,
+			"type": "unsigned short",
+			"description": "Cal=1,default=0"
+		},
+		"CalToolVersion": {
+			"value": 0,
+			"type": "unsigned short",
+			"description": "ToolVersion"
+		},
+		"Ct_Lp": {
+			"value": 0,
+			"type": "unsigned char",
+			"description": "ct_lp"
+		}
+	}
+}

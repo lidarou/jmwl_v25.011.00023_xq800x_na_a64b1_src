@@ -1,0 +1,91 @@
+menu "Common Config"
+    config PLAT_PRINTF
+        bool "Printf Function Enable"
+        default y
+        help
+          Enable the printf function.
+
+    config AIC_OSA
+        bool "AIC OSA Enable"
+        default y
+        help
+          Enable AIC OSA function.
+
+    config FSMMSG_FEATURE
+        bool "FSMMSG Enable"
+        default n
+        help
+          Enable The FSMMSG Feature.
+
+    config OSA_RMTE_MSG
+        bool "Remote msg support"
+        depends on AIC_OSA
+        default n
+        help
+          Enable The Remote MSG Feature.
+
+    config FILENAME_TO_ID
+        bool "Enable filename convert to file id."
+        default n
+        help
+          Enable filename convert to file id.
+
+    config ASSERT_FEWER_PARAM
+        bool "Enable assert pass fewer param."
+        default n
+        help
+          Enable it can decrease the code size.
+
+    config AOS_INT_DEBUG
+        bool "AIC OSA interrupt debug"
+        depends on AIC_OSA
+        default n
+        help
+          Enable AIC OSA interrupt debug.
+
+    config AIC_OSA_TEST
+        bool "AIC OSA TEST Enable"
+        depends on AIC_OSA
+        default n
+        help
+          Enable AIC OSA test function.
+
+    config CUSTOMER_MEM_LAYOUT
+        bool "Enable Customer Memory Layout"
+        default n
+        help
+          Enable Customer Memory Layout.
+
+    config RTOS_THREADX
+        bool "RTOS Threadx Enable"
+        depends on AIC_OSA
+        default y
+        help
+          Enable RTOS Threadx.
+
+    config RTOS_LITEOS_M
+        bool "RTOS Liteos-m"
+        depends on !RTOS_THREADX && AIC_OSA
+        default n
+        help
+          Enable RTOS Liteos-m.
+
+    config MEM_MODE_TLSF
+        bool "TLSF Memory Mode Enable"
+        default n
+        help
+          Enable TLSF Memory Mode.
+
+    config MEM_BLOCK_POOL
+        bool "Enable Block Pool"
+        default n
+        help
+          Enable Block Pool Support.
+
+    config TX_CMSIS
+        bool "Enable CMSIS-RTOSv2 API Adaptation Layer for ThreadX"
+        default n
+        help
+          Enable CMSIS-RTOSv2 API Adaptation Layer for ThreadX.
+
+endmenu

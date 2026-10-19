@@ -1,0 +1,203 @@
+{
+    "HEADER": {
+        "id": 19,
+        "category": 1
+    },
+    "MOBILE_DM_CFG": {
+		"MOBILE_DM_FILED_CFG": {
+			"api_ver": {
+				"value": "4.0.1",
+				"len": 8,
+				"type": "string",
+				"description": "api version"
+			},
+			"app_key": {
+				"value": "M100001088",
+				"len": 16,
+				"type": "string",
+				"description": "app key"
+			},
+			"platform": {
+				"value": "I",
+				"len": 2,
+				"type": "string",
+				"description": "platform"
+			},
+			"mac": {
+				"value": "***",
+				"len": 18,
+				"type": "string",
+				"description": "mac address"
+			},
+			"rom": {
+				"value": "4MB",
+				"len": 6,
+				"type": "string",
+				"description": "rom size"
+			},
+			"ram": {
+				"value": "4MB",
+				"len": 6,
+				"type": "string",
+				"description": "ram size"
+			},
+			"cpu": {
+				"value": "CMStar",
+				"len": 10,
+				"type": "string",
+				"description": "cpu type"
+			},
+			"sys_ver": {
+				"value": "threadx 6.1.7",
+				"len": 16,
+				"type": "string",
+				"description": "system version"
+			},
+			"sw_ver": {
+				"value": "***",
+				"len": 16,
+				"type": "string",
+				"description": "software version"
+			},
+			"sw_name": {
+				"value": "***",
+				"len": 16,
+				"type": "string",
+				"description": "software name"
+			},
+			"volte": {
+				"value": 0,
+				"type": "int",
+				"description": "volte support flag, 0: enable, 1: disable, -1: not support"
+			},
+			"net_type": {
+				"value": "4G",
+				"len": 6,
+				"type": "string",
+				"description": "net type: wifi, 4G, 5G"
+			},
+			"router_mac": {
+				"value": "***",
+				"len": 18,
+				"type": "string",
+				"description": "router mac address"
+			},
+			"bt_mac": {
+				"value": "***",
+				"len": 18,
+				"type": "string",
+				"description": "bluetooth mac address"
+			},
+			"brand": {
+				"value": "AICXTEK",
+				"len": 10,
+				"type": "string",
+				"description": "brand name"
+			},
+			"model": {
+				"value": "***",
+				"len": 10,
+				"type": "string",
+				"description": "model"
+			},
+			"gpu": {
+				"value": "***",
+				"len": 16,
+				"type": "string",
+				"description": "gpu type"
+			},
+			"board": {
+				"value": "***",
+				"len": 16,
+				"type": "string",
+				"description": "board information"
+			},
+			"resolution": {
+				"value": "***",
+				"len": 10,
+				"type": "string",
+				"description": "resolution"
+			},
+			"battery_capacity": {
+				"value": 0,
+				"type": "unsigned int",
+				"description": "battery capacity (mah)"
+			},
+			"screen_size": {
+				"value": "***",
+				"len": 8,
+				"type": "string",
+				"description": "screen size"
+			},
+			"network_status": {
+				"value": 1,
+				"type": "int",
+				"description": "network status. 1: connect, 0: not connect, -1: not support"
+			},
+			"wearing_status": {
+				"value": -1,
+				"type": "int",
+				"description": "wearing status. 1: wearing, 0: not wearing, -1: not support"
+			},
+			"app_info": {
+				"value": "***",
+				"len": 16,
+				"type": "string",
+				"description": "app information"
+			}
+		},
+		"MOBILE_DM_REPORT_INFO": {
+			"report_num": {
+				"value": 0,
+				"type": "unsigned int",
+				"description": "statistics of report number."
+			},
+			"report_num_max": {
+				"value": 8,
+				"type": "unsigned int",
+				"description": "maximum report number from config."
+			},
+			"retry_num": {
+				"value": 0,
+				"type": "unsigned int",
+				"description": "statistics of retry number."
+			},
+			"retry_num_max": {
+				"value": 3,
+				"type": "unsigned int",
+				"description": "maximum retry number from config"
+			},
+			"report_start_time": {
+				"value": 0,
+				"type": "unsigned long long",
+				"description": "start time of first report."
+			},
+			"report_time": {
+				"value": 1440,
+				"type": "unsigned int",
+				"description": "maximum report time."
+			},
+			"retry_interval": {
+				"value": 10,
+				"type": "unsigned int",
+				"description": "retry interval."
+			}
+		},
+		"MOBILE_DM_HTTP_INFO": {
+			"url": {
+				"value": "https://b.fxltsbl.com",
+				"len": 64,
+				"type": "string",
+				"description": "http url"
+			}
+		},
+		"MOBILE_DM_ENCRYPT_INFO": {
+			"key": {
+				"value": "62dcacd80d304eed9e03190357113c10",
+				"len": 34,
+				"type": "string",
+				"description": "aes key"
+			}
+		}
+    }
+}

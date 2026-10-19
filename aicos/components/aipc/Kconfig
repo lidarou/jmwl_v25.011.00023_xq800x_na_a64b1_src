@@ -1,0 +1,28 @@
+menu "Aipc Config"
+    config AIPC_SUPPORT
+        bool "Enable aipc feature"
+        default y
+        help
+          Enable aipc feature. Contain amsg protocol and ablk protocol.
+
+    config AIPC_ABUF_SUPPORT
+        bool "Enalbe abuf protocol"
+        depends on AIPC_SUPPORT
+        default y
+        help
+          Enalbe the abuf protocol for buffer data transmission.
+
+    config AIPC_CUSTOMER_CFG
+        bool "Enalbe aipc coustomer config"
+        depends on AIPC_SUPPORT
+        default n
+        help
+          Enalbe aipc coustomer config.
+
+    config ADSP_AIPC
+        bool "Enable adsp aipc."
+        depends on AIPC_SUPPORT
+        default n
+        help
+          Enable adsp aipc.
+endmenu

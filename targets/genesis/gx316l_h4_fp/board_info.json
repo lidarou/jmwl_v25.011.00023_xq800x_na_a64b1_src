@@ -1,0 +1,18 @@
+{
+	"Board info": {
+		"genesis": [
+			{
+				"project board name":   "gx316l_h4_fp",
+				"ap board name":        "gx316l_h4_fp",
+				"md board name":        "gx316l_h4_fp",
+				"cp board name":        "gx31xl_volte",
+				"nv board name":        "gx316h_h3",
+				"dsp board name":       "gx316l",
+				"bootloader board name":"gx316l_h4_fp",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "4+4+4 feature phone board"
+			}
+		]
+	}
+}

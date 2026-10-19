@@ -1,0 +1,9 @@
+menu "D2D Management Module"
+    config D2D
+        bool "d2d module"
+        depends on NX_BSD
+        default n
+        help
+          Enable d2d management module.
+
+endmenu

@@ -1,0 +1,21 @@
+#define AVT_P2P_ENABLED
+/* #undef AVT_MJPG_ENABLED */
+/* #undef AVT_AACENC_ENABLED */
+/* #undef AVT_LAN_ENABLED */
+/* #undef AVT_SEI_ENABLED */
+//#define CLOUD_STORAGE_ENABLED
+#define CS_AACENC_ENABLED
+#define CS_USE_HTTPS
+/* #undef CS_DUMP_AT_WRITE */
+/* #undef CS_DUMP_AT_UPLOAD */
+#define SYS_DEV_DYN_REG_ENABLED
+#define OTA_COMM_ENABLED
+#define DM_USE_MQTT_ENABLE
+#define CS_FORMAT_TS
+#define CS_FORMAT_FMP4
+/* #undef AVT_VOIP_ENABLE */
+#define LOG_COLOR_ENABLED
+
+#define IOT_VIDEO_SDK_VERSION "2.4.45"
+#define GIT_BRANCH_NAME       "dev/V2.4.45_GX316"
+#define GIT_COMMIT_HASH       "1b76ed8"

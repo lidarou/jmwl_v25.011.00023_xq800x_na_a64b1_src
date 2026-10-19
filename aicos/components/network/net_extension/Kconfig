@@ -1,0 +1,23 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Network Extension"
+
+config NET_EXT
+    bool "Network Extended Function"
+    depends on USE_LWIP || USE_NETXDUO
+    default n
+
+config SOCK_CB_MGR
+    bool "Socket Callback Manager"
+    depends on NET_EXT
+    default n
+
+config MOBILE_DM
+    bool "Supports Mobile Terminal Management"
+    depends on NET_EXT
+    depends on CRYPTO_MBEDTLS
+    default n
+
+endmenu # Network Extension

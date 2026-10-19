@@ -1,0 +1,23 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+#config DRIVER_EXAMPLE
+#    bool "Driver example"
+#    default n
+#
+#choice
+#    prompt "Select example driver version"
+#    default EXAMPLE_VER_1
+#config EXAMPLE_VER_1
+#    bool "version 1"
+#    depends on DRIVER_EXAMPLE
+#    help
+#      Select version 1 of example driver
+#
+#config EXAMPLE_VER_2
+#    bool "version 2"
+#    depends on DRIVER_EXAMPLE
+#    help
+#      Select version 2 of example driver
+#endchoice

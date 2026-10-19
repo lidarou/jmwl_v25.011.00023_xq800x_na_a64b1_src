@@ -1,0 +1,8 @@
+{
+    "file_path": "aicos/components/network/netxduo/pdp_mgr/res",
+    "header_path": "aicos/components/network/netxduo/common/inc",
+    "aic": [
+        "aic_fixed_apns",
+        "aic_additional_apns"
+    ]
+}

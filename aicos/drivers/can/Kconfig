@@ -1,0 +1,24 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# lzma software decoder configurations
+#
+
+menuconfig CAN
+    bool "CAN Drivers"
+    depends on SUBSYS_AP
+    help
+      Enable config options for CAN drivers.
+
+if CAN
+
+config DRIVER_CAN
+    bool "CAN Driver"
+    default n
+
+config DRIVER_CAN_TEST
+    bool "CAN Driver Test"
+    depends on DRIVER_CAN
+    default n
+
+endif

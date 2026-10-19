@@ -1,0 +1,46 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PMIC_PMU
+    bool "pmu subsys & driver"
+    default y
+    help
+      Enable config options for pmic pmu subsys & drivers.
+
+if PMIC_PMU
+
+config DRIVER_PMIC_PMU
+    bool "pmic pmu driver"
+    default y
+    help
+      pmic pmu operate driver.
+
+config DRIVER_PMIC_PMU_DEMO
+    bool "pmic pmu user demo"
+    depends on DRIVER_PMIC_PMU
+    default n
+    help
+      pmu users demo.
+
+config MHA_PA_POWER
+    bool "multi-hardware adapt pa power supply"
+    default n
+    help
+      multi-hardware adapt pa power supply.
+
+config PMIC_PMU_AT
+    bool "pmic pmu at"
+    depends on SUBSYS_AP
+    default n
+    help
+      pmic pmu at cmd operate.
+
+config PA_VBAT_POWER
+    bool "VBAT Power RF PA"
+    depends on SUBSYS_AP
+    depends on PMIC_GP201
+    default n
+    help
+      VBAT Power RF PA.
+endif

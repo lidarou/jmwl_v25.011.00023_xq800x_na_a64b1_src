@@ -1,0 +1,25 @@
+{
+    "HEADER": {
+        "id": 9,
+        "category": 1
+    },
+
+"APN_INFO_FIXED": {
+    "APN_INFO": [
+           {
+                "imsi": {
+                    "value": "46002",
+                    "len":16,
+                    "type": "string",
+                    "description": "imsi"
+                },
+                "apn": {
+                    "value": "cmnet",
+                    "len":40,
+                    "type": "string",
+                    "description": "apn"
+                }
+            }
+        ]
+    }
+}

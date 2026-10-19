@@ -1,0 +1,30 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PIN_CTRL
+    bool "Pin control drivers"
+    help
+      Enable config options for pin control drivers.
+
+if PIN_CTRL
+
+config DRIVER_PIN_CTRL
+    bool "Pin control driver"
+    default y
+    help
+      Pin module driver.
+
+config FIX_BID012
+    bool "fix bug 012"
+    default n
+    help
+      Pin module driver.
+
+config FIX_BID013
+    bool "fix bug 013"
+    default n
+    help
+      Pin module driver.
+
+endif

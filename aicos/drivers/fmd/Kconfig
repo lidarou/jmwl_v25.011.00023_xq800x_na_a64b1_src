@@ -1,0 +1,17 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig FMD
+    tristate "Flash Managemant Device (FMD) support"
+    help
+        FMD used for flash managemant.
+
+if FMD
+
+source "drivers/fmd/ftl/Kconfig"
+
+source "drivers/fmd/snor/Kconfig"
+
+endif

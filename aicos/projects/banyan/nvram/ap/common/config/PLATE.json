@@ -1,0 +1,11 @@
+{
+    "file_path": "aicos/components/misc/mdfile/",
+    "header_path": "aicos/components/misc/mdfile/inc",
+    "aic": [
+        "AIC_DEBUG"
+    ],
+    "custom": [
+        "VERSION",
+        "RTC_NV"
+    ]
+}

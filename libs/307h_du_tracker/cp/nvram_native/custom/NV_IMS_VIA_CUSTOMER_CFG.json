@@ -1,0 +1,40 @@
+{
+    "HEADER": {
+        "id": 802,
+        "category": 1
+    },
+    "NV_IMS_VIA_CUSTOMER_CFG_T": {
+        "user_agent_c": {
+            "value": "AIC VoLTE",
+            "len": 64,
+            "type": "string",
+            "description": "user agent name"
+        },
+        "reg_refresh_react_pdn_c": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "1:react ims pdn when refresh reg"
+        },
+        "reserve_0": {
+            "value": "",
+            "len": 3,
+            "type": "string",
+            "description": "reserve"
+        },
+        "reserve_1": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "reserve"
+        },
+        "reserve_2": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "reserve"
+        },
+        "reserve_3": {
+            "value": 0,
+            "type": "unsigned int",
+            "description": "reserve"
+        }
+    }
+}

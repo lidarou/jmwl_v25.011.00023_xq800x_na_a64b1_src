@@ -1,0 +1,77 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Network Driver Configurations"
+
+config NET_DRIVER
+    bool "net driver component"
+	depends on AZURE_NETXDUO || USE_LWIP
+    default n
+
+config NET_ALTE_DRIVER
+    bool "cellular network driver component"
+    depends on NET_DRIVER
+    default n
+
+config NET_IMS_NIC
+    bool "ims nic component"
+    depends on NET_DRIVER
+    default n
+
+config NET_PPP_CODEC
+    bool "ppp codec accelerate"
+    depends on NET_DRIVER
+    default n
+
+config NET_PPP_CODEC_PHY_V1
+    bool "ppp codec HW accelerate version v1.0"
+    depends on NET_PPP_CODEC
+    default n
+
+config NET_DATA_FORWARD
+    bool "network data forward"
+    depends on NET_DRIVER
+    default n
+
+config D2D_DATA_FORWARD
+    bool "d2d data forward"
+    depends on NET_DRIVER
+    default n
+
+config NET_VIRT_NIC
+    bool "Virtual nic driver"
+    depends on NET_DRIVER && CMUX
+    default n
+
+config NET_DRIVER_TEST
+    bool "Network driver test component"
+    depends on NET_DRIVER
+    default n
+
+config NET_DRIVER_IPV4_TCP_TEST
+    bool "Network driver ipv4 tcp test component"
+    depends on NET_DRIVER && NET_DRIVER_TEST
+    default n
+
+config NET_DRIVER_IPV4_UDP_TEST
+    bool "Network driver ipv4 udp test component"
+    depends on NET_DRIVER && NET_DRIVER_TEST
+    default n
+
+config NET_DRIVER_IPV6_TCP_TEST
+    bool "Network driver ipv6 tcp test component"
+    depends on NET_DRIVER && NET_DRIVER_TEST
+    default n
+
+config NET_DRIVER_IPV6_UDP_TEST
+    bool "Network driver ipv6 udp test component"
+    depends on NET_DRIVER && NET_DRIVER_TEST
+    default n
+
+config NET_DRIVER_IPV4_RAW_TEST
+    bool "bsd raw socket ipv4 test"
+    depends on NET_DRIVER && NET_DRIVER_TEST
+    default n
+
+endmenu

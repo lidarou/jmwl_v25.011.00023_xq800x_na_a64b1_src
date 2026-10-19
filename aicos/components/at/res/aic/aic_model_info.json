@@ -1,0 +1,14 @@
+{
+    "HEADER": {
+        "id": 8,
+        "category": 1
+    },
+    "MODEL_INFO": {
+        "model_name": {
+            "value": "GX316",
+            "len": 60,
+            "type": "string",
+            "description": "model_info"
+        }
+    }
+}

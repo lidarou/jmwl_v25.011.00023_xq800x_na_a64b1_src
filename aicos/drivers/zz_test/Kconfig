@@ -1,0 +1,23 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Drivers Test Configurations"
+
+config DRIVER_TEST
+    bool "Test driver"
+    default n
+    help
+      Select driver test function.Note, it should not be selected
+      normally.
+
+# source test driver components kconfig
+source "drivers/zz_test/example/Kconfig"
+source "drivers/zz_test/lzma/Kconfig"
+source "drivers/zz_test/fmd/Kconfig"
+source "drivers/zz_test/ftl/Kconfig"
+source "drivers/zz_test/serial/Kconfig"
+source "drivers/zz_test/memdfs/Kconfig"
+source "drivers/zz_test/ssp/Kconfig"
+
+endmenu # Drivers Test Configurations

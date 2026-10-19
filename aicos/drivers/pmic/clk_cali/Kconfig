@@ -1,0 +1,30 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+menu "clk cali driver"
+
+config CLK_CALI
+    bool "clock calibrate driver"
+    depends on PMIC
+    help
+      Clock calibrate driver
+
+config DCXO_DIAG_CALI_AP
+    bool "DCXO diag ap calibrate"
+    depends on CLK_CALI && SUBSYS_AP
+    help
+      Dcxo diag calibrate
+
+config DCXO_DIAG_CALI_CP
+    bool "DCXO diag cp calibrate"
+    depends on CLK_CALI && SUBSYS_CP
+    help
+      Dcxo diag calibrate
+
+config RCO32K_CALI
+    bool "Rco32k calibrate driver"
+    depends on CLK_CALI
+    help
+      Rco32k calibrate
+
+endmenu

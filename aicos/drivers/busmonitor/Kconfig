@@ -1,0 +1,38 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig BUSMON
+    bool "BUSMON Drivers"
+    default n
+    help
+      Enable config options for bus monitor drivers.
+
+if BUSMON
+
+config DRIVER_BUSMON
+    bool "BusMonitor module"
+    help
+      BusMonitor module.
+
+config DRIVER_PERF
+    bool "Performance Monitor"
+    depends on SUBSYS_AP
+    help
+      Performance Monitor module.
+
+config DRIVER_BUSMON_VER
+    string "Bus monitor driver IP version"
+    depends on DRIVER_BUSMON || DRIVER_PERF
+    default "r1p0"
+    help
+      Bus monitor IP version, different chip will use different version
+      of bus monitor IP.
+
+config DRIVER_TRANS_MON
+    bool "Transfer Monitor"
+    depends on DRIVER_BUSMON
+    help
+      Transfer Monitor module for debug bus.
+
+endif # BUSMON

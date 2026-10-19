@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PHY_IT|Win32">
+      <Configuration>PHY_IT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS_IT|Win32">
+      <Configuration>PS_IT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D25E2070-A2DE-4FB9-9A30-F5E46B7081F6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>osa</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS_IT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PHY_IT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS_IT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PHY_IT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\out\win32\osa\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS_IT|Win32'">
+    <OutDir>..\..\..\..\out\win32\osa\DEBUG\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PHY_IT|Win32'">
+    <OutDir>..\..\..\..\out\win32\osa\DEBUG\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>..\..\..\..\out\win32\osa\Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS_IT|Win32'">
+    <IntDir>..\..\..\..\out\win32\osa\DEBUG\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PHY_IT|Win32'">
+    <IntDir>..\..\..\..\out\win32\osa\DEBUG\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CONFIG_RTOS_THREADX;CONFIG_AIC_OSA;WIN32_PLATFORM;_CRT_SECURE_NO_WARNINGS;CONFIG_SDK_ENABLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\os\kernel\threadx\ports\win32\vs_2019\inc;..\..\..\os\kernel\\threadx\common\inc;..\..\..\os\osa\include;..\..\..\os\osa\common\inc;..\config;..\..\..\components\include;..\..\..\components\include\module;..\..\..\drivers\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>..\..\..\..\out\win32\osa\Debug\</AssemblerListingLocation>
+      <ObjectFileName>..\..\..\..\out\win32\osa\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\..\..\out\win32\osa\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\osa.lib</OutputFile>
+    </Lib>
+    <Xdcmake>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS_IT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CONFIG_RTOS_THREADX;CONFIG_AIC_OSA;_CRT_SECURE_NO_WARNINGS;CONFIG_COMM_PS;CONFIG_COMM_IMS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\os\kernel\threadx\ports\win32\vs_2019\inc;..\..\..\os\kernel\threadx\common\inc;..\..\..\os\osa\include;..\..\..\os\osa\common\inc;..\config;..\..\..\components\include;..\..\..\components\include\module;..\..\..\comm\ps\code\inc;..\..\..\drivers\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>..\..\..\..\out\win32\osa\Debug\</AssemblerListingLocation>
+      <ObjectFileName>..\..\..\..\out\win32\osa\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\..\..\out\win32\osa\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\osa.lib</OutputFile>
+    </Lib>
+    <Xdcmake>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PHY_IT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CONFIG_RTOS_THREADX;CONFIG_AIC_OSA;_CRT_SECURE_NO_WARNINGS;PHY_IT_TEST;CONFIG_COMM_PHY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\os\kernel\threadx\ports\win32\vs_2019\inc;..\..\..\os\kernel\threadx\common\inc;..\..\..\os\osa\include;..\..\..\os\osa\common\inc;..\config;..\..\..\components\include;..\..\..\components\include\module;..\..\..\comm\ps\code\inc;..\..\..\drivers\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>false</ExceptionHandling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <AssemblerListingLocation>..\..\..\..\out\win32\osa\Debug\</AssemblerListingLocation>
+      <ObjectFileName>..\..\..\..\out\win32\osa\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>..\..\..\..\out\win32\osa\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\osa.lib</OutputFile>
+    </Lib>
+    <Xdcmake>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\$(TargetName).xml</OutputFile>
+    </Xdcmake>
+    <Bscmake>
+      <OutputFile>..\..\..\..\out\win32\osa\Debug\$(TargetName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\components\include\aic_system_assert.h" />
+    <ClInclude Include="..\..\..\os\osa\common\inc\aos_mem.h" />
+    <ClInclude Include="..\..\..\os\osa\common\inc\aos_thread.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_assert.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_bitmap.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_checksum.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_errno.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_io.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_osa.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_printf.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_seg_alloc.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_size.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aic_type.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aos_bitop.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aos_bitstream.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aos_list.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aos_ssl.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aos_syscall.h" />
+    <ClInclude Include="..\..\..\os\osa\include\aos_utl.h" />
+    <ClInclude Include="..\config\aos_config.h" />
+    <ClInclude Include="..\config\tx_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_bitmap.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_checksum.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_convert.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_mini_os_adapter.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_seg_alloc.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_bitop.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_bitstream.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_list.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_mem.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_ssl.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_syscall.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_test.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\string_ex.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aic_list_os_components.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_event.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_interrupt.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_msg.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_mutex.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_queue.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_semaphore.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_thread.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_time.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_timer.c" />
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_utl.c" />
+    <ClCompile Include="..\config\aos_config.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

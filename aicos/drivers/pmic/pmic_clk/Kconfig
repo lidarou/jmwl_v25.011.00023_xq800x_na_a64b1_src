@@ -1,0 +1,12 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+menu "pmic clk driver"
+
+config PMIC_CLK
+    bool "pmic clock driver"
+    depends on PMIC
+    help
+      pmic clock driver
+
+endmenu

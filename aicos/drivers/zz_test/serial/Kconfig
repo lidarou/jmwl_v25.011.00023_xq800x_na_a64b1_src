@@ -1,0 +1,10 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+# serial test configurations
+config SERIAL_UT
+    bool "Unit test of SERIAL"
+    depends on DRIVER_TEST && DRIVER_UART_AIC
+    help
+      Select SERIAL unit test function.

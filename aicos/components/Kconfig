@@ -1,0 +1,41 @@
+menu "Components Options"
+
+source "components/aipc/Kconfig"
+source "components/alog/Kconfig"
+source "components/almsg/Kconfig"
+source "components/assert/Kconfig"
+source "components/at/Kconfig"
+source "components/benchmark/Kconfig"
+source "components/console/Kconfig"
+source "components/connmgr/Kconfig"
+source "components/crypto/Kconfig"
+source "components/diag/Kconfig"
+source "components/blt/Kconfig"
+if SUBSYS_AP
+source "components/fota/Kconfig"
+endif
+source "components/fs/Kconfig"
+source "components/graphics/Kconfig"
+source "components/gps/Kconfig"
+source "components/init/Kconfig"
+source "components/mcx/Kconfig"
+source "components/misc/Kconfig"
+source "components/network/Kconfig"
+source "components/nvram/Kconfig"
+source "components/secure/Kconfig"
+source "components/subsys_ctrl/Kconfig"
+source "components/aic_ctrl/Kconfig"
+source "components/tele/Kconfig"
+source "components/usb/Kconfig"
+source "components/wifi/Kconfig"
+source "components/tmr/Kconfig"
+if SUBSYS_AP
+source "components/location/Kconfig"
+source "components/iconv/Kconfig"
+source "components/prodinfo/Kconfig"
+source "components/d2d_mgr/Kconfig"
+source "components/d2d/Kconfig"
+osource "components/d2d_app/Kconfig"
+endif
+
+endmenu

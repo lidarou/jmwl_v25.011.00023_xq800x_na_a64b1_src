@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <TargetName>$(ProjectName)</TargetName>
+    <ProjectTypes>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}</ProjectTypes>
+    <ProjectGUID>{B4C2A668-72FF-4B47-9726-43629E2F8E5E}</ProjectGUID>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>at</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>Safe</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup>
+    <PostBuildEventCommand>if exist app.config copy app.config "$(OutDir)app.config"</PostBuildEventCommand>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\out\win32\at\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\..\out\win32\at\Debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CONFIG_RTOS_THREADX;CONFIG_AIC_OSA;CONFIG_AT_PROC;CONFIG_MISC_SUPPORT;_CRT_SECURE_NO_WARNINGS;CONFIG_D2D_L3_DUMMY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\config;..\..\..\components\connmgr\inc;..\..\..\os\osa\include;..\..\..\os\kernel\threadx\ports\win32\vs_2019\inc;..\..\..\components\include\module;..\..\..\components\include;..\..\..\components\misc\inc;..\..\..\components\include\at;..\..\..\projects\genesis\nvram\ap\common;..\..\..\components\nvram\nvfile\inc;..\..\..\components\prodinfo\nvfile\include;..\..\..\genesis\nvram\ap\common;..\..\..\os\kernel\threadx\common\inc;..\..\..\drivers\include;..\..\..\components\d2d\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\components\include\at\aic_at_cmd_handle.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_at_interact_cp.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_at_parse_utils.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_at_process_common.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_at_resp_handle.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_at_urc_handle.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_general_at_handle.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_manufacturer_info.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_model_info.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_net_at_resp_handle.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_net_cfg.h" />
+    <ClInclude Include="..\..\..\components\include\at\aic_serial_recv_send.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\components\at\src\aic_at_cmd_handle.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_at_interact_cp.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_at_parse_utils.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_at_resp_handle.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_at_urc_handle.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_general_at_handle.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_net_at_resp_handle.c" />
+    <ClCompile Include="..\..\..\components\at\src\aic_serial_recv_send.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\components\at\res\aic\aic_manufacturer_info.json" />
+    <None Include="..\..\..\components\at\res\aic\aic_model_info.json" />
+    <None Include="..\..\..\components\at\res\aic\aic_net_cfg.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

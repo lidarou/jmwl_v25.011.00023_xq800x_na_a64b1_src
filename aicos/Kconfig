@@ -1,0 +1,330 @@
+# General configuration options
+#
+# Copyright (c) 2021 AIC Inc.
+
+mainmenu "AIC Software Menuconfig"
+
+menu "Build Env Options"
+    config OS_SYSTEM
+        string "The Software System"
+        default "azure-rtos"
+        help
+          Select the sw system, it could be azure-rtos, freertos e.g.
+
+    config RTOS_OS_NAME
+        string "The rtos os name"
+        default "threadx"
+        help
+          Config rtos os name.
+
+    choice
+        prompt "Compiler selection"
+        help
+          This menu uses to select the compiler aicos used.
+          It includes gcc/ac5/ac6 compilers.
+
+        config COMPILER_GCC
+            bool "Compiler GCC"
+            help
+              Compiler is GCC.
+
+        config COMPILER_AC5
+            bool "Compiler ARM AC5"
+            help
+              Compiler is ARM AC5.
+
+        config COMPILER_AC6
+            bool "Compiler ARM AC6"
+            help
+              Compiler is ARM AC6.
+    endchoice
+
+    config TOOLCHAIN_VARIANT
+        string
+        default "gnuarmemb" if COMPILER_GCC
+        default "llvm" if COMPILER_AC5 || COMPILER_AC6
+        help
+          Select toolchain as the compiler.
+
+    config COMPILER_NAME
+        string
+        default "gnu" if COMPILER_GCC
+        default "ac5" if COMPILER_AC5
+        default "ac6" if COMPILER_AC6
+        help
+          Set the compiler name, it will be used to
+          select different compiler config or source files.
+
+    choice
+        prompt "Optimization level"
+        default NO_OPTIMIZATIONS    if COVERAGE
+        default DEBUG_OPTIMIZATIONS if DEBUG
+        default SIZE_OPTIMIZATIONS
+        help
+          Note that these flags shall only control the compiler
+          optimization level, and that no extra debug code shall be
+          conditionally compiled based on them.
+
+        config FAST_OPTIMIZATIONS
+            bool "Optimize for fast"
+            help
+              Compiler optimizations will be set to -Ofast independently of other
+              options.
+
+        config SIZE_OPTIMIZATIONS
+            bool "Optimize for size"
+            help
+              Compiler optimizations will be set to -Os independently of other
+              options.
+
+        config SPEED_OPTIMIZATIONS
+            bool "Optimize for speed"
+            help
+              Compiler optimizations will be set to -O2 independently of other
+              options.
+
+        config DEBUG_OPTIMIZATIONS
+            bool "Optimize debugging experience"
+            help
+              Compiler optimizations will be set to -Og independently of other
+              options.
+
+        config NO_OPTIMIZATIONS
+            bool "Optimize nothing"
+            help
+              Compiler optimizations will be set to -O0 independently of other
+              options.
+
+    endchoice
+
+    menu "Compiler Options"
+
+        config COMPILER_COLOR_DIAGNOSTICS
+                bool "Enable colored diganostics"
+                default y
+                help
+                  Compiler diagnostic messages are colorized.
+
+    endmenu # Compiler Options
+
+    menu "Linker Options"
+
+        config LINKER_SORT_BY_ALIGNMENT
+                bool "Sort input sections by alignment"
+                default y
+                help
+                  This turns on the linker flag to sort sections by alignment
+                  in decreasing size of symbols. This helps to minimize
+                  padding between symbols.
+
+        config LINKER_USE_LIBC
+            bool "linker use libc"
+            depends on COMPILER_GCC
+            default n
+            help
+              if it is true, link wtih libc, else link with libc_nano.
+
+        config LINKER_PRINT_FLOAT
+            bool "linker with printf float option."
+            depends on COMPILER_GCC
+            default n
+            help
+              if it is true, link wtih printf float option.
+
+        config MULTI_BIN_SUPPORT
+            bool "Multiple binary support"
+            depends on COMPILER_GCC
+            help
+              Generate multiple binary files from elf, only used with GCC.
+
+        config SUPPORT_4_PSRAM_BIN
+            bool "support 4 psram binary"
+            default n
+            depends on SUBSYS_CP
+            help
+              Generate 4 psram binary files.
+
+        config SUPPORT_6_PSRAM_BIN
+            bool "support 6 psram binary"
+            default n
+            depends on SUPPORT_4_PSRAM_BIN
+            help
+              Generate 6 psram binary files.
+
+        choice
+            prompt "Linker Orphan Section Handling"
+            default LINKER_ORPHAN_SECTION_PLACE
+
+            config LINKER_ORPHAN_SECTION_PLACE
+                bool "Place"
+                help
+                  Linker puts orphan sections in place without warnings
+                  or errors.
+
+            config LINKER_ORPHAN_SECTION_WARN
+                bool "Warn"
+                help
+                  Linker places the orphan sections in output and issues
+                  warning about those sections.
+
+            config LINKER_ORPHAN_SECTION_ERROR
+                bool "Error"
+                help
+                  Linker exits with error when an orphan section is found.
+
+        endchoice
+    endmenu # Linker Options
+
+endmenu # Build Env Options
+
+# AIC SoC chip options
+menu "Chip Options"
+    # AIC SoC subsystem select configurations
+    choice
+        prompt "AIC SoC SubSYS Selection"
+
+        config SUBSYS_AP
+            bool "Select AP subsys"
+            help
+              SoC includes mult subsys, this select ap subsys.
+
+        config SUBSYS_AP_ONLY
+            bool "AP subsys only"
+            depends on SUBSYS_AP
+            default n
+            help
+              This config ap subsys only, it mean no other subsys co-work with ap.
+
+        config SUBSYS_CP
+            bool "Select CP subsys"
+            help
+              SoC includes mult subsys, this select cp subsys.
+
+        config SUBSYS_CP_ONLY
+            bool "CP subsys only"
+            depends on SUBSYS_CP
+            default n
+            help
+              This config cp subsys only, it mean no other subsys co-work with cp.
+    endchoice
+
+    # AIC SoC PMIC Selection configurations
+    menuconfig PMIC
+        bool "PMIC Chips Select"
+        select PMIC_I2C
+        select PMIC_I2C_DRIVER
+        help
+          Enable config options for PMIC Chips.
+
+    if PMIC
+        choice
+            prompt "AIC SoC PMIC Selection"
+            default PMIC_GP201
+
+            config PMIC_GP201
+                bool "PMIC GP201"
+                help
+                    select pmic gp201 for aicos.
+
+            config PMIC_GP202
+                bool "PMIC GP202"
+                help
+                    select pmic gp202 for aicos.
+
+            config PMIC_GP301
+                bool "PMIC GP301"
+                help
+                    select pmic gp301 for aicos.
+        endchoice
+
+        if PMIC_GP201
+            config PMIC_VERSION
+                string
+                default "gp201"
+        endif
+
+        if PMIC_GP202
+            config PMIC_VERSION
+                string
+                default "gp202"
+        endif
+
+        if PMIC_GP301
+            config PMIC_VERSION
+                string
+                default "gp301"
+        endif
+    endif
+
+    # AIC chip fimaly configuration
+    config AIC_CHIP_GENESIS
+        bool "Select GENESIS chip"
+        select CPU_ARCH_ARM
+        select CPU_CORTEX_MSTAR if SUBSYS_AP
+        select CPU_CORTEX_R5 if SUBSYS_CP
+        select COMPILER_ISA_THUMB2
+        help
+          Select GENESIS chip.
+
+    #AIC chip FPGA options
+    config CHIP_FPGA
+        bool "Chip FPGA Options"
+        default n
+        help
+          If chip in FPGA stage, should define
+          this configuration.
+endmenu # Board Options
+
+# AIC Release options
+menu "Release Options"
+
+    config CP_OPEN_SOURCE
+        bool "Set CP code as open source"
+        depends on SUBSYS_CP
+        default n
+        help
+          If yes means that CP code will be set as open source.
+
+    config SDK_ENABLE
+        bool "Platform SDK Enable"
+        depends on SUBSYS_AP || CP_OPEN_SOURCE
+        default n
+        help
+          This configuration used to compile platform SDK code.
+
+    config CONSUMER_SDK
+        bool "Consumer SDK Enable"
+        depends on SUBSYS_AP
+        default n
+        help
+          This configuration used to compile consumer SDK code.
+
+endmenu # Release Options
+
+# AIC Product options
+menu "Product Options"
+    config LOW_THROUGHPUT
+        bool "Low Throughput Enable"
+        default n
+        help
+          This configuration used to enable Low Throughput Feature.
+endmenu # Product Options
+
+source "drivers/Kconfig"
+source "components/Kconfig"
+if RTOS_THREADX
+osource "os/kernel/threadx/utility/rtos_compatibility_layers/Kconfig"
+endif
+if RTOS_LITEOS_M
+osource "os/kernel/liteos_m/Kconfig"
+endif
+source "os/osa/Kconfig"
+source "mm/Kconfig"
+source "app/Kconfig"
+source "vendors/Kconfig"
+
+if SUBSYS_CP && !SDK_ENABLE
+osource "comm/ims/Kconfig"
+osource "comm/ps/Kconfig"
+osource "comm/phy/Kconfig"
+endif

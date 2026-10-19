@@ -1,0 +1,17 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig MM
+    bool "Multi Media Options"
+    depends on SUBSYS_AP
+    help
+      Enable config options for Multi Media.
+
+if MM
+
+source "mm/audio/Kconfig"
+source "mm/codec/Kconfig"
+source "mm/camera/Kconfig"
+
+endif # MM Options

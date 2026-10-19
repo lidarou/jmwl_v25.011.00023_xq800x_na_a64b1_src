@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx308c_h6",
+				"ap board name":        "gx308c_h6",
+				"md board name":        "gx308c_h6",
+				"cp board name":        "gx30xc_volte",
+				"nv board name":        "gx308c_h6",
+				"bootloader board name":"gx308c_h6",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+4 ext modem board"
+			}
+        ]
+	}
+}

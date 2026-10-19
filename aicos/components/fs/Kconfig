@@ -1,0 +1,22 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menu "File System Config"
+    config FS
+        tristate "File System (FS) support"
+        help
+            This option will provide the generic support for users to transparently access the
+            file system.
+
+if FS
+source "components/fs/dev/Kconfig"
+source "components/fs/fatfs/Kconfig"
+source "components/fs/romfs/Kconfig"
+source "components/fs/littlefs/Kconfig"
+source "components/fs/at/Kconfig"
+source "components/fs/test/Kconfig"
+endif
+endmenu
+

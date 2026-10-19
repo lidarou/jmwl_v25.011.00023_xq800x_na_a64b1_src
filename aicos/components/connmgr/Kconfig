@@ -1,0 +1,15 @@
+menu "Connmgr Config"
+    config CONNECT_MGR
+        bool "Enable Connect mananger"
+        default n
+        help
+          Enable the connect manager module
+
+    config AT_BYPASS_TO_CP
+        depends on CONNECT_MGR
+        bool "Enable bypass at to cp feature"
+        default n
+        help
+          Enable the bypass at to cp feature
+
+endmenu

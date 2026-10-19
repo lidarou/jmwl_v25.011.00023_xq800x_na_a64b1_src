@@ -1,0 +1,35 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig GPIO
+    bool "GPIO Drivers"
+    default n
+    help
+      Enable config options for gpio drivers.
+
+if GPIO
+
+config DRIVER_GPIO
+    bool "GPIO driver"
+    default n
+    help
+      Timer IP, use for schedule or timestamp
+
+config DRIVER_GPIO_VER
+    string "GPIO driver IP version"
+    depends on DRIVER_GPIO
+    default "cnds"
+    help
+      GPIO IP version, different chip will use different version
+      of gpio IP.
+
+config GPIO_NETLIGHT_SAMPLE
+    bool "GPIO Network light sample"
+    depends on DRIVER_GPIO
+    depends on SUBSYS_AP
+    default n
+    help
+       Select GPIO network light sample.
+
+endif # GPIO

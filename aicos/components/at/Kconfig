@@ -1,0 +1,179 @@
+menu "AT Config"
+    config AT_PROC
+        bool "AT process"
+        default n
+
+    config AT_WAKEUP_TARGET_MCU
+        bool "AT Wakeup Target Mcu"
+        depends on AT_PROC
+        select DRIVER_GPIO_WAKEUP
+        default n
+
+    config AT_PROC_MINI
+        bool "Mini AT Process"
+        depends on AT_PROC
+        default n
+
+    config CUSTOMER_AT
+        bool "Customer AT"
+        select NET_AT
+        select NET_SNTP
+        default n
+
+    config CUSTOMER_JQ_AT
+        bool "Customer JQ AT"
+        default n
+
+    menuconfig NET_AT
+        bool "Net AT"
+        depends on AZURE_NETXDUO && NX_BSD
+        default n
+
+    if NET_AT
+    choice
+    prompt "Net AT selection"
+
+    config GX_AT_V2
+        bool "GX AT V2"
+        if GX_AT_V2
+        config GX_TCPIP_AT
+            bool "GX TCPIP AT Command"
+            select NET_SNTP
+            default n
+
+        config GX_SSL_AT
+            bool "GX SSL AT Command"
+            select CRYPTO_MBEDTLS
+            default n
+
+        config GX_HTTP_AT
+            bool "GX HTTP AT"
+            default n
+
+            choice
+                prompt "seletct HTTP AT type"
+                depends on GX_HTTP_AT
+                default GX_HTTP
+
+                config GX_HTTP
+                    bool "Only support HTTP AT"
+                    select NET_HTTP
+
+                config GX_HTTPS
+                    bool "Support HTTP and HTTPS AT"
+                    select CRYPTO_MBEDTLS
+                    select NET_HTTPS
+            endchoice
+
+        config GX_MQTT_AT
+            bool "GX MQTT AT"
+            default n
+
+            choice
+                prompt "seletct MQTT AT type"
+                depends on GX_MQTT_AT
+                default GX_MQTT
+
+                config GX_MQTT
+                    bool "Only support MQTT AT"
+                    select NET_MQTT
+
+                config GX_MQTTS
+                    bool "Support MQTT and MQTTS AT"
+                    select CRYPTO_MBEDTLS
+                    select NET_MQTTS
+            endchoice
+
+        config GX_USB_DIAL_AT
+            bool "GX USB DIAL AT Command"
+            depends on USB_NET_SHARE
+            default n
+        endif
+
+    config CUSTOMER_CM_AT
+        bool "Customer CM AT"
+        if CUSTOMER_CM_AT
+        config CM_TCPIP_AT
+            bool "CM TCPIP AT Command"
+            select NET_SNTP
+            default n
+
+        config CM_SSL_AT
+            bool "CM SSL AT Command"
+            select CRYPTO_MBEDTLS
+            default n
+
+        config CM_MQTT_AT
+            bool "CM MQTT AT Command"
+            select CRYPTO_MBEDTLS
+            select NET_MQTTS
+            select CM_SSL_AT
+            default n
+
+        config CM_HTTP_AT
+            bool "CM HTTP AT Command"
+            select CRYPTO_MBEDTLS
+            select NET_HTTPS
+            select CM_SSL_AT
+            default n
+
+        config CM_USB_DIAL_AT
+            bool "CM USB DIAL AT Command"
+            depends on USB_NET_SHARE
+            default n
+
+        config CM_LWM2M_AT
+            bool "LWM2M AT"
+            select NET_LWM2M
+            default n
+        endif
+
+    config GX_AT_V1
+        bool "GX AT V1"
+    if GX_AT_V1
+        config NET_AT_IPERF
+            bool "Supports aic Iperf AT Command"
+            default n
+
+        config NET_AT_TCPIP
+            bool "Supports TCPIP AT Command"
+            default n
+
+        config NET_AT_PING
+            bool "Supports PING AT Command"
+            select NET_AT_TCPIP
+            default n
+
+        config NET_AT_SNTP
+            bool "Supports SNTP AT Command"
+            select NET_SNTP
+            select NET_AT_TCPIP
+            default n
+
+        config NET_AT_TCP
+            bool "Supports TCP AT Command"
+            select NET_AT_TCPIP
+            default n
+
+        config NET_AT_UDP
+            bool "Supports UDP AT Command"
+            select NET_AT_TCPIP
+            default n
+
+        config NET_AT_TLS
+            bool "Supports TLS AT Command"
+            select NET_AT_TCPIP
+            default n
+
+        config GX_USB_DIAL_AT
+            bool "GX USB DIAL AT Command"
+            depends on USB_NET_SHARE
+            default y
+
+        config NET_AT_TEST
+            bool "AT Test Component"
+            default n
+    endif
+    endchoice
+    endif
+endmenu

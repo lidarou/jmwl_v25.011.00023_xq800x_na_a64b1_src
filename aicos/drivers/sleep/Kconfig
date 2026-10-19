@@ -1,0 +1,50 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig DEEP_SLEEP
+    bool "SLEEP Drivers"
+    help
+      Enable config options for SLEEP drivers.
+
+if DEEP_SLEEP
+choice
+    prompt "sleep controller selection"
+    default SLEEP_R1P0
+
+    config SLEEP_R1P0
+        bool "sleep r1p0"
+        help
+            gx31x sleep
+
+    config SLEEP_R2P0
+        bool "sleep r2p0"
+        help
+            gx30x sleep
+endchoice
+
+if SLEEP_R1P0
+    config SLEEP_VERSION
+        string
+        default "r1p0"
+endif
+
+if SLEEP_R2P0
+    config SLEEP_VERSION
+        string
+        default "r2p0"
+endif
+
+config SLP_AT
+    bool "SLP AT CMD"
+    default y
+
+config CHECK_APLL
+    bool "CHECK APLL"
+    default y
+
+endif
+
+config DVFS
+    bool "dvfs"
+    default n

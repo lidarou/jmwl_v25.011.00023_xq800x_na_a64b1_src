@@ -1,0 +1,19 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig ADRMAP
+    bool "ADRMAP Drivers"
+    depends on SUBSYS_CP
+    help
+      Enable config options for adrmap drivers.
+
+if ADRMAP
+
+config ADRMAP_DRIVER
+    bool "ADRMAP module driver"
+    default n
+    help
+      adrmap module driver.
+
+endif # ADRMAP

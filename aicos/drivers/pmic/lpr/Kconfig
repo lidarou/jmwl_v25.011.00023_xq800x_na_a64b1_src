@@ -1,0 +1,21 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+menu "LongPressReset Configurations"
+
+config LPR
+    bool "lpc driver"
+    depends on SUBSYS_AP
+    default y
+    help
+        long press reset api.
+
+if LPR
+config DRIVER_AT_LPR
+    bool "lpr at command"
+    depends on LPR
+    default y
+    help
+      Monitor system temperature.
+endif
+endmenu # lpr Configurations

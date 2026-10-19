@@ -1,0 +1,24 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+choice
+    bool "lvgl demo app" if APP_ENTRY_LVGL_DEMO
+    depends on LV_CONF_MINIMAL
+    default LV_USE_DEMO_BENCHMARK
+    help
+      select which demo app should be added.
+      Depends on LV_CONF_MINIMAL at "Components Options → Graphics Options → LVGL configuration"
+
+    config LV_USE_DEMO_STRESS
+        bool "stress test app"
+    config LV_USE_DEMO_BENCHMARK
+        bool "benchmark app"
+    config LV_USE_DEMO_KEYPAD_AND_ENCODER
+        bool "keypad and encoder demo app"
+    config LV_USE_DEMO_MUSIC
+        bool "music demo app"
+    config LV_USE_DEMO_WIDGETS
+        bool "widgets demo app"
+endchoice
+

@@ -1,0 +1,953 @@
+
+#
+# Build Env Options
+#
+CONFIG_OS_SYSTEM="azure-rtos"
+CONFIG_RTOS_OS_NAME="threadx"
+CONFIG_COMPILER_GCC=y
+# CONFIG_COMPILER_AC5 is not set
+# CONFIG_COMPILER_AC6 is not set
+CONFIG_TOOLCHAIN_VARIANT="gnuarmemb"
+CONFIG_COMPILER_NAME="gnu"
+# CONFIG_FAST_OPTIMIZATIONS is not set
+CONFIG_SIZE_OPTIMIZATIONS=y
+# CONFIG_SPEED_OPTIMIZATIONS is not set
+# CONFIG_DEBUG_OPTIMIZATIONS is not set
+# CONFIG_NO_OPTIMIZATIONS is not set
+
+#
+# Compiler Options
+#
+CONFIG_COMPILER_COLOR_DIAGNOSTICS=y
+# end of Compiler Options
+
+#
+# Linker Options
+#
+CONFIG_LINKER_SORT_BY_ALIGNMENT=y
+CONFIG_LINKER_USE_LIBC=y
+# CONFIG_LINKER_PRINT_FLOAT is not set
+CONFIG_MULTI_BIN_SUPPORT=y
+CONFIG_LINKER_ORPHAN_SECTION_PLACE=y
+# CONFIG_LINKER_ORPHAN_SECTION_WARN is not set
+# CONFIG_LINKER_ORPHAN_SECTION_ERROR is not set
+# end of Linker Options
+# end of Build Env Options
+
+#
+# Chip Options
+#
+CONFIG_SUBSYS_AP=y
+# CONFIG_SUBSYS_AP_ONLY is not set
+# CONFIG_SUBSYS_CP is not set
+CONFIG_PMIC=y
+# CONFIG_PMIC_GP201 is not set
+CONFIG_PMIC_GP202=y
+# CONFIG_PMIC_GP301 is not set
+CONFIG_PMIC_VERSION="gp202"
+# CONFIG_AIC_CHIP_GENESIS is not set
+# CONFIG_CHIP_FPGA is not set
+# end of Chip Options
+
+#
+# Release Options
+#
+# CONFIG_SDK_ENABLE is not set
+# CONFIG_CONSUMER_SDK is not set
+# end of Release Options
+
+#
+# Product Options
+#
+CONFIG_LOW_THROUGHPUT=y
+# end of Product Options
+
+#
+# Drivers Options
+#
+CONFIG_CPU_ARCH_ARM=y
+CONFIG_CPU_CORTEX_MSTAR=y
+# CONFIG_CPU_CORTEX_R5 is not set
+# CONFIG_ARMV8_M_DSP is not set
+CONFIG_ISA_THUMB2=y
+CONFIG_ASSEMBLER_ISA_THUMB2=y
+CONFIG_COMPILER_ISA_THUMB2=y
+# CONFIG_CPREMAP is not set
+
+#
+# AMBOX Drivers
+#
+CONFIG_DRIVER_AMBOX=y
+# CONFIG_ENABLE_AMBOX_SW_FIFO is not set
+CONFIG_DRIVER_AMBOX_R1PX=y
+CONFIG_DRIVER_AMBOX_PHY=y
+# end of AMBOX Drivers
+
+# CONFIG_BUSMON is not set
+
+#
+# Clock Drivers
+#
+CONFIG_AIC_CLK=y
+CONFIG_AIC_IOT_CLK=y
+# CONFIG_AIC_STANDARD_CLK is not set
+# end of Clock Drivers
+
+CONFIG_CORESIGHT=y
+CONFIG_DRIVER_CORESIGHT=y
+CONFIG_DRIVER_CORESIGHT_MTB=y
+
+#
+# Crypto Component Configurations
+#
+# CONFIG_CRYPTO is not set
+# end of Crypto Component Configurations
+
+CONFIG_CHIP_DEBUG=y
+# CONFIG_DRIVER_BREAKPOINT is not set
+# CONFIG_DRIVER_DBGBUS is not set
+CONFIG_DRIVER_DUMPADDR=y
+CONFIG_DMA=y
+CONFIG_DRIVER_DMA=y
+CONFIG_DRIVER_DMA_VER="r2p0"
+CONFIG_EFUSE=y
+CONFIG_DRIVER_EFUSE=y
+CONFIG_DRIVER_EFUSE_VER="r1p0"
+# CONFIG_DRIVER_EFUSE_DEMO is not set
+CONFIG_UID_GX316=y
+CONFIG_UID_VERSION="gx316"
+CONFIG_EIPU=y
+# CONFIG_EIPU_R1P0 is not set
+CONFIG_EIPU_R2P0=y
+CONFIG_EIPU_VERSION="r2p0"
+CONFIG_EIPU_DRIVER=y
+CONFIG_FMD=y
+CONFIG_FTL=y
+CONFIG_AZURE_LEVELX=y
+# CONFIG_LX_USE_NAND_FLASH is not set
+CONFIG_LX_USE_NOR_FLASH=y
+CONFIG_FMD_SNOR=y
+CONFIG_FLASH_XIP=y
+# CONFIG_GPD is not set
+CONFIG_GPIO=y
+CONFIG_DRIVER_GPIO=y
+CONFIG_DRIVER_GPIO_VER="r1p0"
+
+#
+# GPO Drivers
+#
+CONFIG_DRIVER_GPO=y
+CONFIG_DRIVER_GPO_VER="r1p0"
+# end of GPO Drivers
+
+# CONFIG_GRAPHICS is not set
+CONFIG_HLZMA=y
+CONFIG_DRIVER_HLZMA=y
+CONFIG_DRIVER_HLZMA_VER="r1p0"
+CONFIG_BYPASS_HLZMA_EB=y
+CONFIG_I2C=y
+CONFIG_DRIVER_I2C=y
+# CONFIG_DRIVER_I2C_TEST is not set
+CONFIG_IIS=y
+# CONFIG_IIS_R1P0 is not set
+CONFIG_IIS_R2P0=y
+CONFIG_IIS_VERSION="r2p0"
+CONFIG_DRIVER_IIS=y
+CONFIG_IPU=y
+CONFIG_IPU_DRIVER=y
+# CONFIG_KPC is not set
+# CONFIG_LZMA is not set
+CONFIG_MISC=y
+CONFIG_DRIVER_MISC=y
+
+#
+# Network Driver Configurations
+#
+CONFIG_NET_DRIVER=y
+CONFIG_NET_ALTE_DRIVER=y
+# CONFIG_NET_IMS_NIC is not set
+# CONFIG_NET_PPP_CODEC is not set
+# CONFIG_NET_DATA_FORWARD is not set
+# CONFIG_D2D_DATA_FORWARD is not set
+# CONFIG_NET_DRIVER_TEST is not set
+# end of Network Driver Configurations
+
+# CONFIG_PCDUMP is not set
+CONFIG_PIN_CTRL=y
+CONFIG_DRIVER_PIN_CTRL=y
+CONFIG_FIX_BID012=y
+CONFIG_FIX_BID013=y
+
+#
+# PMIC Drivers Options
+#
+CONFIG_ADC=y
+CONFIG_DRIVER_ADC=y
+CONFIG_ADC_R2P0=y
+CONFIG_DRIVER_ADC_VER="r2p0"
+# CONFIG_DRIVER_ADC_DEMO is not set
+CONFIG_ADC_BLT_AT_CMD=y
+
+#
+# clk cali driver
+#
+CONFIG_CLK_CALI=y
+CONFIG_DCXO_DIAG_CALI_AP=y
+CONFIG_RCO32K_CALI=y
+# end of clk cali driver
+
+CONFIG_PMIC_EFUSE=y
+CONFIG_DRIVER_PMIC_EFUSE=y
+CONFIG_EFUSE_R1P0=y
+# CONFIG_EFUSE_R2P0 is not set
+CONFIG_DRIVER_PMIC_EFUSE_VER="r1p0"
+# CONFIG_DRIVER_PMIC_EFUSE_DEMO is not set
+CONFIG_PMIC_GPIO=y
+CONFIG_DRV_GPIO_PMIC=y
+CONFIG_DRV_GPIO_PMIC_VER="gp202"
+# CONFIG_KPLED is not set
+# CONFIG_LAMP is not set
+
+#
+# LongPressReset Configurations
+#
+CONFIG_LPR=y
+CONFIG_DRIVER_AT_LPR=y
+# end of LongPressReset Configurations
+
+CONFIG_PMIC_2ND_IRQ=y
+CONFIG_DRIVER_PMIC_PMU_VER="GP202"
+
+#
+# pmic clk driver
+#
+# CONFIG_PMIC_CLK is not set
+# end of pmic clk driver
+
+CONFIG_PMIC_IRQ=y
+CONFIG_PMIC_IPU_R1P0=y
+# CONFIG_PMIC_IPU_R2P0 is not set
+CONFIG_DRIVER_PMIC_IPU_VER="r1p0"
+CONFIG_PMIC_PMU=y
+CONFIG_DRIVER_PMIC_PMU=y
+# CONFIG_DRIVER_PMIC_PMU_DEMO is not set
+# CONFIG_MHA_PA_POWER is not set
+# CONFIG_PMIC_PMU_AT is not set
+CONFIG_POWER_SUPPLY=y
+CONFIG_AIC_POWER_SUPPLY_AT=y
+CONFIG_POWER_SUPPLY_CORE=y
+CONFIG_BAT=y
+CONFIG_BAT_R1P0=y
+# CONFIG_BAT_R2P0 is not set
+CONFIG_BAT_IP="r1p0"
+CONFIG_BCD=y
+CONFIG_BCD_R1P0=y
+# CONFIG_BCD_R2P0 is not set
+CONFIG_BCD_DUMMY=y
+CONFIG_BCD_IP="r1p0"
+# CONFIG_BCD_DEMO is not set
+CONFIG_CHGR=y
+# CONFIG_CHGR_GP201 is not set
+CONFIG_CHGR_AUTO_IC=y
+# CONFIG_FAST_CHARGER_IC is not set
+CONFIG_CHGR_IP="dummy"
+CONFIG_PWRKEY_SW_ACTION=y
+CONFIG_PWR_KEY_LONG_PRESS_SHUTDOWN=y
+# CONFIG_PWR_KEY_KICK_SHUTDOWN is not set
+# CONFIG_PWR_KEY_GND is not set
+# CONFIG_DISABLE_CHG_IN_BOOT_LPR is not set
+# CONFIG_PWR_KEY_KICK_SWITCH_BACKLIGHT is not set
+CONFIG_PMIC_RTC=y
+CONFIG_DRV_RTC_PMIC=y
+CONFIG_DRV_RTC_PMIC_VER="gp202"
+# CONFIG_STATUS_LIGHT is not set
+# CONFIG_PMIC_UPS is not set
+
+#
+# pmic watchdog Configurations
+#
+# CONFIG_PMIC_WDT is not set
+# end of pmic watchdog Configurations
+# end of PMIC Drivers Options
+
+CONFIG_PMIC_I2C=y
+CONFIG_PMIC_I2C_DRIVER=y
+# CONFIG_PMIC_I2C_TEST is not set
+# CONFIG_PMIC_I2C_GP201 is not set
+CONFIG_PSRAM=y
+CONFIG_PSRAM_DRIVER=y
+CONFIG_PSRAM_DRIVER_VER="r2p0"
+# CONFIG_PWM is not set
+CONFIG_SNC_QSPI=y
+CONFIG_QSPI_DRIVER=y
+CONFIG_QSPI_DRIVER_VER="r1p1"
+# CONFIG_DRIVER_SDMMC is not set
+CONFIG_UART=y
+CONFIG_DRIVER_UART=y
+# CONFIG_DRIVER_UART_XIL is not set
+CONFIG_DRIVER_UART_AIC=y
+CONFIG_DRIVER_UART_AIC_VERSION="r2p0"
+# CONFIG_PIN_WAKEUP is not set
+# CONFIG_DRIVER_GPIO_WAKEUP is not set
+# CONFIG_DRIVER_QUAD_PIN_WAKEUP is not set
+CONFIG_DEEP_SLEEP=y
+# CONFIG_SLEEP_R1P0 is not set
+CONFIG_SLEEP_R2P0=y
+CONFIG_SLEEP_VERSION="r2p0"
+CONFIG_SLP_AT=y
+# CONFIG_CHECK_APLL is not set
+CONFIG_DVFS=y
+
+#
+# SOUND Configurations
+#
+CONFIG_SOUND_SUPPORT=y
+# CONFIG_SOUND_AIC_CODEC is not set
+# CONFIG_SOUND_STREAM_IPC is not set
+CONFIG_SND_STREAM_VOICE_MIX=y
+# CONFIG_SOUND_CODEC_ES8374 is not set
+# CONFIG_SOUND_CODEC_ES8311 is not set
+# CONFIG_SOUND_CODEC_ES7243L is not set
+# CONFIG_SOUND_CODEC_CJC8910 is not set
+# CONFIG_SOUND_CODEC_CJC8911 is not set
+# CONFIG_SOUND_CODEC_NO_CTRL is not set
+# CONFIG_SOUND_PA_NONE is not set
+CONFIG_SOUND_GPIO_CTRL_PA=y
+# CONFIG_SOUND_PA_CODEC_NONE is not set
+# CONFIG_SOUND_PA_CODEC_AUX is not set
+CONFIG_SOUND_PA_CODEC_MASTER=y
+# CONFIG_SOUND_PA_AW87390 is not set
+# CONFIG_SOUND_PA_AW88261 is not set
+# CONFIG_SOUND_PA_HAA9210 is not set
+# CONFIG_SOUND_BIAS_DVDD3V is not set
+CONFIG_SND_IPC=y
+# CONFIG_ADSP_MNG is not set
+CONFIG_MUSIC_FIX_48K=y
+CONFIG_RECORD_FIX_16K=y
+CONFIG_SOUND_CONV=y
+# CONFIG_VOICE_TRANS is not set
+# CONFIG_SND_SIMU is not set
+# end of SOUND Configurations
+
+CONFIG_SPINLOCK=y
+CONFIG_DRIVER_SPINLOCK=y
+
+#
+# SYSOFF Config
+#
+CONFIG_AIC_SYSOFF=y
+CONFIG_AIC_SYSOFF_AT=y
+# CONFIG_AIC_SYSOFF_CHARGE is not set
+# end of SYSOFF Config
+
+CONFIG_SUBSYS_CTRL=y
+CONFIG_DRIVER_SUBSYS_CTRL=y
+
+#
+# Timer Drivers
+#
+CONFIG_DRIVER_TIMER=y
+CONFIG_DRIVER_TIMER_VER="r2p0"
+CONFIG_TIMER_TX_NO_TICK_IRQ=y
+# CONFIG_TIMER_TX_NO_TICK_DBG is not set
+# end of Timer Drivers
+
+CONFIG_USB=y
+CONFIG_AZURE_USBX=y
+CONFIG_USBX_DEVICE=y
+CONFIG_USBX_DEVICE_STACK=y
+# CONFIG_USBX_DEVICE_SIMLATOR is not set
+# CONFIG_USBX_DEVICE_CLASS_DPUMP is not set
+CONFIG_USBX_DEVICE_CLASS_CDC_ACM=y
+CONFIG_USBX_DEVICE_CLASS_CDC_ECM=y
+CONFIG_USBX_DEVICE_CLASS_RNDIS=y
+# CONFIG_USBX_DEVICE_CLASS_PIMA is not set
+# CONFIG_USBX_DEVICE_CLASS_HID is not set
+# CONFIG_USBX_DEVICE_CLASS_DFU is not set
+# CONFIG_USBX_DEVICE_CLASS_STORAGE is not set
+# CONFIG_USBX_DEVICE_CLASS_AUDIO is not set
+# CONFIG_USBX_HOST is not set
+CONFIG_USBX_NETWORK=y
+CONFIG_USB_AIC=y
+CONFIG_USB_DETECT_BCD=y
+# CONFIG_USB_DETECT_GPIO is not set
+
+#
+# watchdog Configurations
+#
+CONFIG_DRIVER_WDT=y
+CONFIG_DRIVER_WDT_VER="r1p0"
+# CONFIG_DRIVER_WDT_PMIC is not set
+CONFIG_WATCHDOG_INDEPENDENT_THREAD=y
+CONFIG_WDT_RETENTION=y
+# CONFIG_WDT_MODE_IRQ is not set
+CONFIG_WDT_MODE_HYBRID=y
+CONFIG_WDT_WORK_MODE=2
+CONFIG_SW_WATCHDOG_MONITOR=y
+# end of watchdog Configurations
+
+# CONFIG_SSP is not set
+
+#
+# THERMC Configurations
+#
+# CONFIG_DRIVER_THERMC is not set
+# end of THERMC Configurations
+
+#
+# CMUX Drivers
+#
+# CONFIG_CMUX is not set
+# end of CMUX Drivers
+
+# CONFIG_EXT_MODEM is not set
+# CONFIG_MHA is not set
+# CONFIG_CAN is not set
+
+#
+# DMC MPU SoC Drivers
+#
+CONFIG_DRIVER_DMC_MPU=y
+CONFIG_DRIVER_DMC_MPU_VER="r2p0"
+# end of DMC MPU SoC Drivers
+
+#
+# Performance Monitor Options
+#
+# CONFIG_DRIVER_PERFORMANCE is not set
+# end of Performance Monitor Options
+
+# CONFIG_ZJTAG is not set
+
+#
+# Drivers Test Configurations
+#
+# CONFIG_DRIVER_TEST is not set
+# end of Drivers Test Configurations
+
+# CONFIG_AIC_TRNG is not set
+CONFIG_AIC_BB_CALI=y
+# end of Drivers Options
+
+#
+# Components Options
+#
+
+#
+# Aipc Config
+#
+CONFIG_AIPC_SUPPORT=y
+CONFIG_AIPC_ABUF_SUPPORT=y
+CONFIG_AIPC_CUSTOMER_CFG=y
+# CONFIG_ADSP_AIPC is not set
+# end of Aipc Config
+
+#
+# Alog Config
+#
+CONFIG_ALOG_SUPPORT=y
+CONFIG_ALOG_CUSTOMER_CFG=y
+CONFIG_ALOG_STATIC_LEVEL=3
+CONFIG_ALOG_TRACE_IDX=y
+CONFIG_ALOG_FRAME_SUPPORT=y
+# CONFIG_ALOG_BITMAP_STRING is not set
+# CONFIG_LOG_FILE_LINE is not set
+CONFIG_NET_PCAP_DUMP=y
+# CONFIG_ALOG_STORE_FS is not set
+# end of Alog Config
+
+#
+# Almsg Config
+#
+# CONFIG_ALOG_MSG_SUPPORT is not set
+# end of Almsg Config
+
+#
+# Assert Configure
+#
+# CONFIG_ASSERT_TEST is not set
+# end of Assert Configure
+
+#
+# AT Config
+#
+CONFIG_AT_PROC=y
+# CONFIG_AT_WAKEUP_TARGET_MCU is not set
+# CONFIG_AT_PROC_MINI is not set
+# CONFIG_CUSTOMER_AT is not set
+# CONFIG_CUSTOMER_JQ_AT is not set
+CONFIG_NET_AT=y
+CONFIG_GX_AT_V2=y
+# CONFIG_GX_TCPIP_AT is not set
+# CONFIG_GX_SSL_AT is not set
+CONFIG_GX_HTTP_AT=y
+CONFIG_GX_HTTP=y
+# CONFIG_GX_HTTPS is not set
+CONFIG_GX_MQTT_AT=y
+CONFIG_GX_MQTT=y
+# CONFIG_GX_MQTTS is not set
+# CONFIG_CUSTOMER_CM_AT is not set
+# CONFIG_GX_AT_V1 is not set
+# end of AT Config
+
+#
+# Benchmark Configurations
+#
+# CONFIG_BENCHMARK is not set
+# end of Benchmark Configurations
+
+#
+# Console Config
+#
+CONFIG_PLAT_CONSOLE=y
+# end of Console Config
+
+#
+# Connmgr Config
+#
+CONFIG_CONNECT_MGR=y
+# CONFIG_AT_BYPASS_TO_CP is not set
+# end of Connmgr Config
+
+#
+# Crypto Component Configurations
+#
+# CONFIG_CRYPTO_MBEDTLS is not set
+# end of Crypto Component Configurations
+
+#
+# Diag Config
+#
+CONFIG_DIAG_SUPPORT=y
+# end of Diag Config
+
+#
+# BLT Config
+#
+# CONFIG_BLT_SUPPORT is not set
+# end of BLT Config
+
+#
+# FOTA
+#
+CONFIG_FOTA_SUPPORT=y
+# CONFIG_FOTA_HTTPS_SUPPORT is not set
+CONFIG_FOTA_HTTP_SUPPORT=y
+# CONFIG_FOTA_FTP_SUPPORT is not set
+# CONFIG_FOTA_BY_UART is not set
+# CONFIG_FOTA_BY_MCU is not set
+CONFIG_ATFOTA=y
+# CONFIG_FOTA_CERT_SUPPORT is not set
+CONFIG_COMPLETE_UPGRADE_PKG=y
+# CONFIG_FOTA_CMIOT_CMD is not set
+# end of FOTA
+
+#
+# File System Config
+#
+CONFIG_FS=y
+
+#
+# File System Device Select
+#
+# CONFIG_FS_DEV_FLASH is not set
+# CONFIG_FS_DEV_FTL is not set
+# CONFIG_FS_DEV_FILE is not set
+CONFIG_FS_DEV_BD=y
+# CONFIG_FS_DEV_RAM is not set
+# CONFIG_FS_DEV_WIN32 is not set
+# end of File System Device Select
+
+# CONFIG_FS_FATFS is not set
+# CONFIG_FS_ROMFS is not set
+CONFIG_FS_LITTLEFS=y
+CONFIG_FS_LITTLEFS_BLOCK_SIZE=4096
+CONFIG_FS_LITTLEFS_RW_SIZE=256
+CONFIG_FS_LITTLEFS_LOOKAHEAD_SIZE=32
+CONFIG_FS_LITTLEFS_BLOCK_CYCLES=512
+# CONFIG_FS_LFS_IMAGE_GEN is not set
+
+#
+# File System AT Config
+#
+CONFIG_FS_AT=y
+# CONFIG_FS_CUSTOM_AT is not set
+# end of File System AT Config
+
+#
+# File System Test Select
+#
+# CONFIG_FS_TEST is not set
+# CONFIG_FS_LIBC_TEST is not set
+# end of File System Test Select
+# end of File System Config
+
+#
+# GPS
+#
+# CONFIG_GPS is not set
+# end of GPS
+
+#
+# Init Config
+#
+CONFIG_PLAT_AUTO_INIT=y
+CONFIG_PLAT_CMDLINE=y
+# CONFIG_PLAT_THREADX_SAMPLE is not set
+# end of Init Config
+
+#
+# MCX Configure
+#
+CONFIG_MCX_SUPPORT=y
+CONFIG_MCX_DEBUG=y
+# CONFIG_MCX_TEST is not set
+# end of MCX Configure
+
+#
+# MISC Config
+#
+CONFIG_MISC_SUPPORT=y
+# CONFIG_MISC_TEST_SUPPORT is not set
+# end of MISC Config
+
+#
+# Network Configurations
+#
+CONFIG_USE_NETXDUO=y
+
+#
+# Netxduo Configurations
+#
+
+#
+# Network Protocol
+#
+CONFIG_NET_PROTOCOL=y
+# CONFIG_NET_SNTP is not set
+CONFIG_NET_HTTP=y
+# CONFIG_NET_FTP is not set
+CONFIG_NET_MQTT=y
+# CONFIG_NET_LIBCOAP is not set
+# CONFIG_NET_LWM2M is not set
+# end of Network Protocol
+
+#
+# Network Tethering
+#
+# CONFIG_NET_SHARE_COMMON is not set
+
+#
+# PPP Network module
+#
+# end of PPP Network module
+
+#
+# Softap
+#
+# end of Softap
+
+#
+# USB Tethering
+#
+# end of USB Tethering
+
+#
+# USB SEMI Tethering
+#
+# end of USB SEMI Tethering
+# end of Network Tethering
+
+#
+# Network Basic Configurations
+#
+CONFIG_AZURE_NETXDUO=y
+
+#
+# Network Kernel Configurations
+#
+CONFIG_NET_COMMON=y
+# CONFIG_DISABLE_IPV4_ARP is not set
+# CONFIG_DISABLE_IPV4_RARP is not set
+# CONFIG_NET_IPSEC is not set
+# CONFIG_NX_RAM_DRIVER is not set
+CONFIG_NET_EXTERNEL_API=y
+CONFIG_NET_NEW_PACKET_MANAGE=y
+CONFIG_NET_LOW_POWER=y
+# CONFIG_NET_DRIVER_DIRECT_FORWARD is not set
+CONFIG_NET_IPV6_PACKET_ROUTER=y
+# CONFIG_NET_TRAFFIC_CONTROL is not set
+# CONFIG_NET_NAT64 is not set
+# end of Network Kernel Configurations
+
+#
+# Network Addons Configurations
+#
+CONFIG_NET_ADDONS=y
+CONFIG_NX_DNS=y
+CONFIG_NX_BSD=y
+CONFIG_PDP_MGR=y
+CONFIG_NX_DHCP=y
+CONFIG_NX_NAT=y
+# CONFIG_NET_PING is not set
+# CONFIG_NET_IFCONFIG is not set
+# CONFIG_IMS_NET_MGR is not set
+# end of Network Addons Configurations
+
+#
+# Network Crypto And Secure Configurations
+#
+# CONFIG_NET_CRYPTO_LIBRARIES is not set
+# CONFIG_NET_CRYPTO_LITE_LIBRARIES is not set
+# CONFIG_NET_SECURE is not set
+# end of Network Crypto And Secure Configurations
+
+#
+# Network Unility Configurations
+#
+# CONFIG_NET_UTILITY is not set
+# end of Network Unility Configurations
+
+#
+# Network Test Configurations
+#
+# CONFIG_NET_TEST is not set
+# end of Network Test Configurations
+# end of Network Basic Configurations
+
+#
+# CTCPIP extended configuration
+#
+# end of CTCPIP extended configuration
+# end of Netxduo Configurations
+
+#
+# Network Extension
+#
+# CONFIG_NET_EXT is not set
+# end of Network Extension
+# end of Network Configurations
+
+#
+# NVRAM Config
+#
+CONFIG_NVRAM_SUPPORT=y
+# CONFIG_NVRAM_WTRD_COMPARE is not set
+# end of NVRAM Config
+
+#
+# security
+#
+# CONFIG_SECURE is not set
+# CONFIG_SECURE_BOOT is not set
+# end of security
+
+#
+# Subsys Config
+#
+CONFIG_SUBSYS_CTRL_SUPPORT=y
+# CONFIG_SUPPORT_ADSP is not set
+# CONFIG_COMPRESS_EXTEND_AP is not set
+CONFIG_MEMMOVE_BASE_REGION_IMG=y
+# end of Subsys Config
+
+#
+# aic ctrl Config
+#
+# end of aic ctrl Config
+
+#
+# Tele Config
+#
+# CONFIG_VOICE_CALL is not set
+CONFIG_TELE_CTRL_BY_AT=y
+# CONFIG_TELE_CTRL_BY_CUSTOMER is not set
+CONFIG_TELE_SERVICE_EX=y
+
+#
+# Enable Tele Sub-modules
+#
+# CONFIG_TELE_RADIO_SIM is not set
+# CONFIG_TELE_CALL is not set
+# CONFIG_TELE_DATA is not set
+# CONFIG_TELE_SMS is not set
+# CONFIG_TELE_PB is not set
+# end of Enable Tele Sub-modules
+
+# CONFIG_MODEM_DRIVER is not set
+# end of Tele Config
+
+#
+# USB Instance Config
+#
+CONFIG_CDC_ACM_INSTANCE=y
+CONFIG_RNDIS_INSTANCE=y
+CONFIG_CDC_ECM_INSTANCE=y
+CONFIG_USB_SERVICE=y
+# end of USB Instance Config
+
+#
+# Wifi Config
+#
+# CONFIG_WIFI_SCAN is not set
+# end of Wifi Config
+
+CONFIG_SRV_TIMER=y
+
+#
+# Location Config
+#
+# CONFIG_LOCATION is not set
+# end of Location Config
+
+#
+# ICONV Config
+#
+CONFIG_USE_ICONV=y
+CONFIG_ICONV_UTF8=y
+# CONFIG_ICONV_GB2312 is not set
+# CONFIG_ICONV_GBK is not set
+# end of ICONV Config
+
+#
+# PRODINFO Config
+#
+# CONFIG_RESET_ENTER_GXEM_SUPPORT is not set
+# end of PRODINFO Config
+
+#
+# D2D Management Module
+#
+# CONFIG_D2D is not set
+# end of D2D Management Module
+
+#
+# D2D Config
+#
+# CONFIG_D2D_SWITCH is not set
+# end of D2D Config
+# end of Components Options
+
+#
+# POSIX Options
+#
+
+#
+# POSIX Config
+#
+# CONFIG_AIC_POSIX is not set
+# end of POSIX Config
+# end of POSIX Options
+
+#
+# Osa Options
+#
+
+#
+# Common Config
+#
+CONFIG_PLAT_PRINTF=y
+CONFIG_AIC_OSA=y
+# CONFIG_FSMMSG_FEATURE is not set
+# CONFIG_OSA_RMTE_MSG is not set
+CONFIG_FILENAME_TO_ID=y
+CONFIG_ASSERT_FEWER_PARAM=y
+# CONFIG_AIC_OSA_TEST is not set
+CONFIG_CUSTOMER_MEM_LAYOUT=y
+CONFIG_RTOS_THREADX=y
+CONFIG_MEM_MODE_TLSF=y
+# CONFIG_MEM_BLOCK_POOL is not set
+# CONFIG_TX_CMSIS is not set
+# end of Common Config
+
+#
+# Reent and ext libc Config
+#
+CONFIG_PLAT_RAC_LIBC=y
+# CONFIG_PLAT_RAC_LIBC_MEM is not set
+# CONFIG_PLAT_RAC_LIBC_TIME is not set
+# end of Reent and ext libc Config
+
+#
+# Rom Function Call Support Config
+#
+# CONFIG_ROM_CALL_SUPPORT is not set
+# end of Rom Function Call Support Config
+# end of Osa Options
+
+CONFIG_MM=y
+
+#
+# Audio Configurations
+#
+CONFIG_AUDIO_SUPPORT=y
+CONFIG_MCU_AUDIO=y
+CONFIG_VOICE_EFFECT=y
+CONFIG_MCU_AUDIO_VOICE_CLIENT=y
+CONFIG_MCU_AUDIO_VOIP_CLIENT=y
+CONFIG_PLAYBACK_EFFECT=y
+CONFIG_REC_EFFECT=y
+# CONFIG_AUDIO_LIB_EXT is not set
+CONFIG_AUDIO_LIB_NORMAL=y
+CONFIG_TONE_SUPPORT=y
+CONFIG_FS_AUDIO_SUPPORT=y
+CONFIG_SAVE_REC_FILE_ASYNC=y
+# CONFIG_VOICE_ACC is not set
+# CONFIG_VOLUME_NO_CODEC is not set
+# CONFIG_AUDIO_AT_COMM is not set
+CONFIG_AUDIO_AT_CMIOT=y
+CONFIG_AUDIO_STREAM_TEST=y
+# CONFIG_NV_SUPPORT is not set
+# CONFIG_VOLTE_SIMU_TEST is not set
+# CONFIG_ADSP_EDA_MP3 is not set
+# CONFIG_AUDIO_TTS is not set
+# CONFIG_FILE_NONE is not set
+# CONFIG_PCM_48K_MONO is not set
+# CONFIG_PCM_16K_MONO is not set
+# CONFIG_PCM_8K_MONO is not set
+# CONFIG_PCM_48K_DUAL is not set
+# CONFIG_PCM_16K_DUAL is not set
+# CONFIG_PCM_8K_DUAL is not set
+CONFIG_MP3_NORMAL=y
+# CONFIG_MP3_8K_MONO is not set
+# CONFIG_CHIRP_48K_MP3 is not set
+# CONFIG_CHIRP_48K_WAV is not set
+# CONFIG_MIDI_FILE is not set
+# CONFIG_VOLTE_SIMU is not set
+CONFIG_AUDIO_LIB_TYPE="lib"
+# end of Audio Configurations
+
+#
+# codec Configurations
+#
+CONFIG_SW_CODEC_SUPPORT=y
+# CONFIG_HW_CODEC_SUPPORT is not set
+# CONFIG_CODEC_HW_SPECIAL is not set
+CONFIG_WAV_SUPPORT=y
+CONFIG_MP3_SUPPORT=y
+# CONFIG_DEC_CODEC_MP3_COMPR is not set
+CONFIG_DEC_CODEC_MP3_AD=y
+CONFIG_AMR_SUPPORT=y
+# CONFIG_DEC_CODEC_AMR_COMPR is not set
+CONFIG_DEC_CODEC_AMR_AD=y
+# CONFIG_DEC_CODEC_AMR_NB_AD is not set
+CONFIG_DEC_CODEC_AMR_WB_AD=y
+# CONFIG_ENC_CODEC_AMR_COMPR is not set
+CONFIG_ENC_CODEC_AMR_AD=y
+# CONFIG_ENC_CODEC_AMR_NB_AD is not set
+CONFIG_ENC_CODEC_AMR_WB_AD=y
+CONFIG_VOICE_DTMF=y
+# CONFIG_MIDI_SUPPORT is not set
+# end of codec Configurations
+
+#
+# Camera Configurations
+#
+# CONFIG_CAMERA_SUPPORT is not set
+# end of Camera Configurations
+
+# CONFIG_APP is not set
+CONFIG_VENDORS=y
+# CONFIG_SSV_WIFI is not set
+# CONFIG_FOTA_SUPPORT_ABUP is not set
+CONFIG_TTS_IFLY=y

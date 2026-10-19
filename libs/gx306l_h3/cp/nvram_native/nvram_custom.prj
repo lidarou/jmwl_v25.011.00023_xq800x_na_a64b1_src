@@ -1,0 +1,32 @@
+{
+    "custom": [
+        "IMEI",
+        "IMEI1",
+        "NV_IMS_VIA_CUSTOMER_CFG",
+        "NV_PS_CFG_CUSTOMER",
+        "NV_PS_CID_CFG_PARAM",
+        "NV_PS_SIM_DET_CONFIG",
+        "RF_COMMON_CALIBRATION",
+        "RF_COMMON_DOWNLOADER",
+        "RF_COMMON_SSMH",
+        "RF_CalTool_Parameter",
+        "RF_LTE_CALIBRATION_BandIndex_02",
+        "RF_LTE_CALIBRATION_BandIndex_03",
+        "RF_LTE_CALIBRATION_BandIndex_06",
+        "RF_LTE_CALIBRATION_BandIndex_07",
+        "RF_LTE_CALIBRATION_BandIndex_09",
+        "RF_LTE_CALIBRATION_BandIndex_10",
+        "RF_LTE_CALIBRATION_BandIndex_11",
+        "RF_LTE_CALIBRATION_BandIndex_19",
+        "RF_LTE_DOWNLOADER_BandIndex_02",
+        "RF_LTE_DOWNLOADER_BandIndex_03",
+        "RF_LTE_DOWNLOADER_BandIndex_06",
+        "RF_LTE_DOWNLOADER_BandIndex_07",
+        "RF_LTE_DOWNLOADER_BandIndex_09",
+        "RF_LTE_DOWNLOADER_BandIndex_10",
+        "RF_LTE_DOWNLOADER_BandIndex_11",
+        "RF_LTE_DOWNLOADER_BandIndex_19",
+        "RF_LTE_DOWNLOADER_FunSW",
+        "VERSION"
+    ]
+}

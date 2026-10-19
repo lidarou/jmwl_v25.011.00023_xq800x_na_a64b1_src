@@ -1,0 +1,70 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "FOTA"
+
+config FOTA_SUPPORT
+    bool "fota"
+    depends on SUBSYS_AP
+    default n
+    help
+        Say Y if you want to open FOTA.
+
+choice
+    prompt "seletct fota download type"
+    default FOTA_HTTP_SUPPORT
+    depends on FOTA_SUPPORT
+    help
+      Select fota download type.
+
+    config FOTA_HTTPS_SUPPORT
+        bool "HTTPS type"
+        help
+          HTTPS download type
+
+    config FOTA_HTTP_SUPPORT
+        bool "HTTP type"
+        help
+          HTTP download type
+
+    config FOTA_FTP_SUPPORT
+        bool "FTP type"
+        help
+          FTP download type
+
+    config FOTA_BY_UART
+        bool "fota via uart"
+        help
+          uart download type
+
+    config FOTA_BY_MCU
+        bool "fota via mcu"
+        help
+          mcu download type
+endchoice
+
+config ATFOTA
+    bool "fota AT command support"
+    default y
+    depends on FOTA_SUPPORT
+    help
+        Say Y if you want to open FOTA AT command.
+
+config FOTA_CERT_SUPPORT
+    bool "fota https certificate support"
+    default n
+    depends on FOTA_SUPPORT
+    help
+        Say N if you want to disable https certificate.
+
+config COMPLETE_UPGRADE_PKG
+    bool "fota use a complete upgrade package."
+    default y
+    depends on FOTA_SUPPORT
+
+config FOTA_CMIOT_CMD
+    bool "fota support cmiot at command"
+    default n
+    depends on FOTA_SUPPORT
+endmenu

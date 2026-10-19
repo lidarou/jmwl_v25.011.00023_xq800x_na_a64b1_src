@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx306u_h3_audc",
+				"ap board name":        "gx306u_h3_audc",
+				"md board name":        "gx306u_h3_audc",
+				"cp board name":        "gx30xu_lite_u",
+				"nv board name":        "gx306u_h3_audc",
+				"bootloader board name":"gx306u_h3_aud",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "2+2 board"
+			}
+        ]
+	}
+}

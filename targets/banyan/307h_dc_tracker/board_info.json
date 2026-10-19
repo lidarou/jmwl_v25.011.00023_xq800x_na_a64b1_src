@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "307h_dc_tracker",
+				"ap board name":        "307h_dc_tracker",
+				"md board name":        "307h_dc_tracker",
+				"cp board name":        "gx30xl_ims",
+				"nv board name":        "307h_dc_tracker",
+				"bootloader board name":"gx306l_h3",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "4+4 board"
+			}
+        ]
+	}
+}

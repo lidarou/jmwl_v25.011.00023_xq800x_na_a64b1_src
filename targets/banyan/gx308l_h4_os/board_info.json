@@ -1,0 +1,17 @@
+{
+	"Board info": {
+        "banyan": [
+			{
+				"project board name":   "gx308l_h4_os",
+				"ap board name":        "gx308l_h4_os",
+				"md board name":        "gx308l_h4",
+				"cp board name":        "gx30xl_volte",
+				"nv board name":        "gx308l_h4_os",
+				"bootloader board name":"gx308l_h4",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "4+4 volte board"
+			}
+        ]
+	}
+}

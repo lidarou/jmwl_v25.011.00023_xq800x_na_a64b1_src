@@ -1,0 +1,19 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PCDUMP
+    bool "PCDUMP CR5 Drivers"
+    depends on SUBSYS_AP
+    help
+      Enable config options for CR5 pc dump drivers.
+
+if PCDUMP
+
+config DRIVER_PCDUMP
+    bool "PCDump driver"
+    default n
+    help
+      PCDump IP used to dump CR5 generic register by AP.
+
+endif # PCDUMP

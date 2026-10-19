@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\os\osa\common\inc\aos_mem.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\common\inc\aos_thread.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_assert.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_bitmap.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_errno.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_io.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_osa.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_printf.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_size.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_type.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\aos_config.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\config\tx_config.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\components\include\aic_system_assert.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aos_ssl.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aos_utl.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aos_list.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aos_syscall.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aos_bitstream.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aos_bitop.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_seg_alloc.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\os\osa\include\aic_checksum.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_mem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_test.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\config\aos_config.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_ssl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_syscall.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_bitop.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aos_bitstream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_bitmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_mini_os_adapter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_seg_alloc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_checksum.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\aic_convert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aic_list_os_components.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_event.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_interrupt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_msg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_mutex.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_queue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_semaphore.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_thread.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_time.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_timer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\threadx\aos_utl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\os\osa\common\src\string_ex.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

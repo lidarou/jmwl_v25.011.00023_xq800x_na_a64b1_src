@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3BD4BAD0-C6CB-4E61-951B-1C71019200D6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>alog</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\..\out\win32\alog\debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>..\..\..\..\out\win32\alog\debug\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CONFIG_RTOS_THREADX;CONFIG_AIC_OSA;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\components\fs\inc;..\config;..\..\..\comm\ps\code\inc;..\..\..\os\kernel\threadx\common\inc;..\..\..\os\osa\common\inc;..\..\..\os\osa\include;..\..\..\os\kernel\threadx\ports\win32\vs_2019\inc;..\..\..\components\almsg\inc;..\..\..\components\alog\inc;..\..\..\components\include\module;..\..\..\components\nvram\nvfile\inc;..\..\..\components\include;..\..\..\drivers\include;..\..\..\components\fs\manager\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\components\alog\inc\alog_buffer.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_cfg.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_data.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_data_format.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_formater.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_inner.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_msg_filter.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_outputer.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_pftrace_format.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_store_mgr.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_trace.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_trace_filter.h" />
+    <ClInclude Include="..\..\..\components\alog\inc\alog_trace_format.h" />
+    <ClInclude Include="..\..\..\components\include\alog_api.h" />
+    <ClInclude Include="..\..\..\components\include\alog_init.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\components\alog\src\alog_buffer.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_cfg.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_cmd.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_data.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_data_format.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_formater.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_main.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_outputer.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_store_mgr.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_trace.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_trace_filter.c" />
+    <ClCompile Include="..\..\..\components\alog\src\alog_trace_format.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

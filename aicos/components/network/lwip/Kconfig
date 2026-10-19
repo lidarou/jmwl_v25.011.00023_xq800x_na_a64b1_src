@@ -1,0 +1,56 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Lwip Configurations"
+
+config TCPIP_LWIP
+    bool "support tcpip lwip library"
+    depends on USE_LWIP
+    default n
+
+menu "Lwip Socket test Configurations"
+config TCPIP_LWIP_TEST
+    bool "support tcpip lwip test"
+    depends on TCPIP_LWIP
+    default n
+
+config TCPIP_LWIP_TEST_TCP
+    bool "support tcpip lwip tcp test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+config TCPIP_LWIP_TEST_UDP
+    bool "support tcpip lwip udp test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+config TCPIP_LWIP_TEST_UDP6
+    bool "support tcpip lwip udp6 test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+config TCPIP_LWIP_IPSEC_TEST_TCP
+    bool "support tcpip lwip ipsec tcp test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+config TCPIP_LWIP_IPSEC_TEST_UDP
+    bool "support tcpip lwip ipsec udp test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+config TCPIP_LWIP_IPSEC_TEST_TCP6
+    bool "support tcpip lwip ipsec tcp6 test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+config TCPIP_LWIP_IPSEC_TEST_UDP6
+    bool "support tcpip lwip ipsec udp6 test"
+    depends on TCPIP_LWIP_TEST
+    default n
+
+endmenu # Lwip Socket Test Configurations
+
+endmenu # Lwip Configurations
+

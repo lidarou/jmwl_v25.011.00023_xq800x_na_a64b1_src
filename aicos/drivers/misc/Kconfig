@@ -1,0 +1,17 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig MISC
+    bool "MISC Drivers"
+    help
+      Enable config options for misc drivers.
+
+if MISC
+
+config DRIVER_MISC
+    bool "misc driver, such as fpga id,eda debug"
+    default y
+
+endif

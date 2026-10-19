@@ -1,0 +1,41 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# pmic irq configurations
+
+menuconfig PMIC_IRQ
+    bool "pmic irq driver"
+    depends on SUBSYS_AP
+    select PMIC_2ND_IRQ
+    default y
+    help
+      Select pmic irq driver for support pmic irq request.
+
+    choice
+        prompt "pmic ipu phy driver"
+        default PMIC_IPU_R1P0
+
+        config PMIC_IPU_R1P0
+            bool "pmic ipu r1p0 driver."
+            depends on PMIC_IRQ
+            help
+              pmic ipu r1p0 driver.
+
+        config PMIC_IPU_R2P0
+            bool "pmic ipu r2p0 driver."
+            depends on PMIC_IRQ
+            help
+              pmic ipu r1p0 driver.
+    endchoice
+
+    if PMIC_IPU_R1P0
+        config DRIVER_PMIC_IPU_VER
+            string
+            default "r1p0"
+    endif
+
+    if PMIC_IPU_R2P0
+        config DRIVER_PMIC_IPU_VER
+            string
+            default "r2p0"
+    endif

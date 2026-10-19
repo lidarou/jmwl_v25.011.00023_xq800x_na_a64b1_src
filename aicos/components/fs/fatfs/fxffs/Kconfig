@@ -1,0 +1,32 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+menuconfig AZURE_FILEX
+    tristate "Azure FILEX support"
+    default y
+    help
+        filex provides fat12/16/32 format for file system..
+
+if AZURE_FILEX
+    config FX_ENABLE_FAULT_TOLERANT
+        default y
+        tristate "filex fault tolerant enable"
+        depends on AZURE_FILEX
+        help
+            Enable filex fault tolerant
+
+    config FX_ENABLE_EXFAT
+        tristate "filex exfat format enable"
+        depends on AZURE_FILEX
+        help
+            Enable filex exfat format
+
+    config FX_UTF8_SUPPORT
+        bool "Support utf-8 file/directory name as input."
+        default y
+        depends on AZURE_FILEX
+        help
+            Enable FileX UTF8 support
+endif

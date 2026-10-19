@@ -1,0 +1,21 @@
+# General configuration options
+#
+# Copyright 2024 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "GPO Drivers"
+
+config DRIVER_GPO
+    bool "GPO driver"
+    default n
+    help
+      GPO IP, use for GPO pin
+
+config DRIVER_GPO_VER
+    string "GPO driver IP version"
+    depends on DRIVER_GPO
+    default "r1p0"
+    help
+      GPO IP version, different chip will use different version
+      of gpo IP.
+
+endmenu # GPO Drivers

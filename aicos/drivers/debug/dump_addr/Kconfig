@@ -1,0 +1,11 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+config DRIVER_DUMPADDR
+    bool "Dump address driver"
+    depends on SUBSYS_AP
+    depends on CHIP_DEBUG
+    default n
+    help
+      Dump address in console.

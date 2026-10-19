@@ -1,0 +1,36 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Timer Drivers"
+
+config DRIVER_TIMER
+    bool "Timer driver"
+    default n
+    help
+      Timer IP, use for schedule or timestamp
+
+config DRIVER_TIMER_VER
+    string "Timer driver IP version"
+    depends on DRIVER_TIMER
+    default "r1p0"
+    help
+      Timer IP version, different chip will use different version timer IP.
+
+config TIMER_TX_NO_TICK_IRQ
+    bool "Timer no tick irq"
+#   depends on DRIVER_TIMER
+    depends on RTOS_THREADX
+    default n
+    help
+      Threadx use systimer for timer, instand of systick irq.
+
+config TIMER_TX_NO_TICK_DBG
+    bool "Timer no tick dbg"
+    depends on TIMER_TX_NO_TICK_IRQ
+    depends on RTOS_THREADX
+    default n
+    help
+      Add threadx timer debug fucntions, used to store timer parameters.
+
+endmenu # Timer Drivers

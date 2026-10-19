@@ -1,0 +1,109 @@
+Copyright (c) 2014-2022 by Rambus, Inc. and/or its subsidiaries.
+
+Release Identification:
+-----------------------
+Product Name         : DDK_EIP130_BSD v3.1
+Package Creation Date: 2022-Feb-14
+
+
+This DDK supports the EIP-130HW3.x hardware and EIP-130FW3.x firmware and
+includes the following SW components:
+    - Example Drivers
+    - Linux kernel Support Driver for user-space deployment (UMDevXS)
+    - Test Tool for the VAL API
+    - Demo Applications that use the VAL API
+    - MemXS
+    - Automated Regression System
+
+Note for legacy purposes the EIP-130HW2.x hardware and EIP-130FW2.x firmware
+are still supported.
+
+The software components provided in this DDK were tested with the Example
+Drivers using the Test Tool and Demo Application for the VAL API.
+Please refer to the DDK-130 Test Report.
+
+
+Getting Started:
+----------------
+Please refer to the User Guides for details about the package and use.
+
+
+Version History:
+----------------
+Note: Case numbers below refer to Rambus internal cases, to specific
+      customer cases or may only be applicable for specific configurations.
+      Therefore, it is possible that some cases are not accessible to you.
+
+v3.1:
+- Added SM4-GCM support.
+- Added NoRandomIV indication for GCM operations.
+- Added cutoff support for TRNG configuration and provision random HUK.
+- Added TRNG raw data function.
+- Added Hash/MAC indication for format v2.
+- Extended the functionality of the da_val_special example.
+- Unified logging output.
+- Adapted BufManager to separate input and output buffers better.
+- Corrected VEX lock behavior.
+- Corrected VEX data mapping for ChaCha20.
+- Improved VEX token handling and tracing.
+- Adapted Adapter_SleepMS() to perform a reschedule when 0 ms is specified.
+- Improved the reporting of the da_val example.
+- Marked TRNG related configurations that are done, as "IntegrationItem"
+  because it could require an update to meet custom TRNG FRO behavior.
+
+v3.0.2:
+- Added ECIES support.
+- Added SM4 keywrap support.
+- Added firmware anti-rollback protection and check support.
+- Added Private decrypt (ST_ANY) support for asymmetric crypto private keys.
+- Added SM2 Encrypt (wrap) and Decrypt (unwrap) support.
+- Extended SM2 sign & verify functionality with support for explicit digest.
+- Fixed a race condition in Resume from Sleep handling.
+
+v3.0.1:
+- Add SM2 support.
+- Improved Asset(s) pass on for Asymmetric Shared Secret generation.
+- Improved token serialization mechanism.
+- Improved interrupt initialization/uninitialization.
+- Improved token tracing.
+- Changed the functions EIP130_MailboxWriteAndSubmitToken() and
+  EIP130_MailboxCanWriteToken() to improve token timeout functionality.
+- Improved the VAL TestTool logging and memory allocation.
+- Updated Copyright headers.
+
+v3.0:
+- This release is based on DDK-130v2.4 and it combines the support for
+  EIP-130 HW2.x and EIP-130 HW3.x hardware, and EIP-130 FW2.x and
+  EIP-130 FW3.x firmware.
+- Support for the new Asset Policy and OTP structure of the EIP-130.
+- The Demo Application VAL Specials is extended with monotonic counter
+  functionality to take care of the OTP version differences (two monotonic
+  counters versus none).
+- Removed not used DemoApps for EncryptedVector and BlueTooth.
+
+
+Missing Items from the Release:
+-------------------------------
+- None
+
+
+Known Issues:
+-------------
+- None
+
+
+Technical Support:
+------------------
+The preferred method for getting technical support is to use our online support
+system at https://sipsupport.rambus.com. If you do not have an account yet for
+this system, please contact Rambus technical support (sipsupport@rambus.com).
+
+
+<end-of-document>
+
+
+
+
+
+
+

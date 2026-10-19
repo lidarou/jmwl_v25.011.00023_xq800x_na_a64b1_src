@@ -1,0 +1,156 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Sample codes"
+    depends on APP
+
+    config I2C_SAMPLE
+        bool "I2C sample"
+        help
+           Select i2c sample.
+
+    config UART_SAMPLE
+        bool "UART sample"
+        help
+           Select uart sample.
+
+    config POWER_SUPPLY_SAMPLE
+        bool "power supply sample"
+        select POWER_SUPPLY
+        select POWER_SUPPLY_CORE
+        help
+           Select power supply sample.
+
+    config BACKLIGHT_SAMPLE
+        bool "backlight operate sample code"
+        depends on DRIVER_BACKLIGHT
+        default n
+        help
+            lcd panel backlight user demo.
+
+    config SMS_SAMPLE
+        bool "sms sample"
+        default n
+        help
+           Select sms sample.
+
+    config RADIO_CFUN_SAMPLE
+        bool "radio cfun sample"
+        default n
+        help
+           Select radio cfun sample.
+
+    config WIFISCAN_SAMPLE
+        bool "wifi scan sample"
+        help
+           Select wifi scan sample.
+
+    config APP_AUDIO_MP3_SAMPLE
+        bool "app audio mp3 sample"
+        help
+           Select app audio mp3 sample.
+
+    config WAKEUP_SAMPLE
+        bool "wakeup sample"
+        default n
+        help
+           Select wakeup sample.
+
+    config SSP_SAMPLE
+        bool "ssp sample"
+        default n
+        help
+           Select ssp sample.
+
+    config AUTO_REG_IMS_SAMPLE
+        bool "auto reg ims sample"
+        default n
+        help
+           Select auto reg ims sample.
+
+menu "Network sample"
+    config NET_SOCKET_IPV4_UDP_TEST
+        bool "ipv4 udp socket test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+
+    config NET_SOCKET_IPV4_RAW_TEST
+        bool "ipv4 raw socket test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+
+    config NET_SOCKET_IPV4_TCP_TEST
+        bool "ipv4 tcp socket test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+
+    config NET_SOCKET_IPV6_UDP_TEST
+        bool "ipv6 udp socket test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+
+    config NET_SOCKET_IPV6_TCP_TEST
+        bool "ipv6 tcp socket test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+
+    config NET_SOCKET_IPV6_RAW_TEST
+        bool "ipv6 raw socket test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+
+    config NET_SOCKET_DEMO_TEST
+        bool "socket demo test"
+        depends on NX_BSD
+        help
+          Select NX_BSD.
+endmenu
+
+menu "Telephony sample"
+    config TELE_RADIO_SAMPLE
+        bool "Tele radio sample"
+        help
+          Select Tele radio sample.
+
+    config TELE_SIM_SAMPLE
+        bool "Tele SIM sample"
+        help
+          Select Tele SIM sample.
+
+    config TELE_DATA_SAMPLE
+        bool "Tele data sample"
+        help
+          Select Tele data sample.
+
+    config TELE_CALL_SAMPLE
+        bool "Tele call sample"
+        help
+          Select Tele call sample.
+
+    config TELE_SMS_SAMPLE
+        bool "Tele SMS sample"
+        help
+          Select Tele SMS sample.
+
+    config TELE_SMS_EX_SAMPLE
+        bool "Tele SMS EX sample"
+        help
+          Select Tele SMS EX sample.
+
+    config TELE_PB_SAMPLE
+        bool "Tele phonebook sample"
+        default n
+        help
+            Select Tele phonebook sample.
+
+endmenu
+
+endmenu
+

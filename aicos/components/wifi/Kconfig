@@ -1,0 +1,9 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Wifi Config"
+
+source "components/wifi/wifi_scan/Kconfig"
+
+endmenu

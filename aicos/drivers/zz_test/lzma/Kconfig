@@ -1,0 +1,10 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+# driver lzma software decoder test configurations
+config LZMA_DEC_UT
+    bool "Unit test of LAMZ decoder"
+    depends on DRIVER_TEST && DRIVER_LZMA_DEC
+    help
+      Select LZMA decoder unit test function.

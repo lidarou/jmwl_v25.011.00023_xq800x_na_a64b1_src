@@ -1,0 +1,156 @@
+/*****************************************************************************/
+/*                                                                           */
+/*    Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.   */
+/*                                                                           */
+/*****************************************************************************/
+
+#ifndef USB_BUF_CONFIG_H
+#define USB_BUF_CONFIG_H
+
+//Endpoint IN available in USB Controller
+#define EP0IN_EXIST 1
+#define EP1IN_EXIST 1
+#define EP2IN_EXIST 1
+#define EP3IN_EXIST 1
+#define EP4IN_EXIST 1
+#define EP5IN_EXIST 0
+#define EP6IN_EXIST 0
+#define EP7IN_EXIST 0
+#define EP8IN_EXIST 0
+#define EP9IN_EXIST 0
+#define EP10IN_EXIST 0
+#define EP11IN_EXIST 0
+#define EP12IN_EXIST 0
+#define EP13IN_EXIST 0
+#define EP14IN_EXIST 0
+#define EP15IN_EXIST 0
+
+//Endpoint OUT available in USB Controller
+#define EP0OUT_EXIST 1
+#define EP1OUT_EXIST 1
+#define EP2OUT_EXIST 1
+#define EP3OUT_EXIST 1
+#define EP4OUT_EXIST 1
+#define EP5OUT_EXIST 0
+#define EP6OUT_EXIST 0
+#define EP7OUT_EXIST 0
+#define EP8OUT_EXIST 0
+#define EP9OUT_EXIST 0
+#define EP10OUT_EXIST 0
+#define EP11OUT_EXIST 0
+#define EP12OUT_EXIST 0
+#define EP13OUT_EXIST 0
+#define EPOUTIN_EXIST 0
+#define EP15OUT_EXIST 0
+
+//Max packet size for endpoints IN
+#define EP0IN_MAX_PACKET_SIZE 64
+#define EP1IN_MAX_PACKET_SIZE 1024
+#define EP2IN_MAX_PACKET_SIZE 1024
+#define EP3IN_MAX_PACKET_SIZE 1024
+#define EP4IN_MAX_PACKET_SIZE 1024
+#define EP5IN_MAX_PACKET_SIZE 1024 //0
+#define EP6IN_MAX_PACKET_SIZE 1024 //0
+#define EP7IN_MAX_PACKET_SIZE 1024 //0
+#define EP8IN_MAX_PACKET_SIZE 1024 //0
+#define EP9IN_MAX_PACKET_SIZE  0
+#define EP10IN_MAX_PACKET_SIZE 0
+#define EP11IN_MAX_PACKET_SIZE 0
+#define EP12IN_MAX_PACKET_SIZE 0
+#define EP13IN_MAX_PACKET_SIZE 0
+#define EP14IN_MAX_PACKET_SIZE 0
+#define EP15IN_MAX_PACKET_SIZE 0
+
+//Max packet size for endpoints OUT
+#define EP0OUT_MAX_PACKET_SIZE 64
+#define EP1OUT_MAX_PACKET_SIZE 1024
+#define EP2OUT_MAX_PACKET_SIZE 1024
+#define EP3OUT_MAX_PACKET_SIZE 1024
+#define EP4OUT_MAX_PACKET_SIZE 1024
+#define EP5OUT_MAX_PACKET_SIZE 1024 //0
+#define EP6OUT_MAX_PACKET_SIZE 1024 //0
+#define EP7OUT_MAX_PACKET_SIZE 1024 //0
+#define EP8OUT_MAX_PACKET_SIZE 1024 //0
+#define EP9OUT_MAX_PACKET_SIZE 0
+#define EP10OUT_MAX_PACKET_SIZE 0
+#define EP11OUT_MAX_PACKET_SIZE 0
+#define EP12OUT_MAX_PACKET_SIZE 0
+#define EP13OUT_MAX_PACKET_SIZE 0
+#define EP14OUT_MAX_PACKET_SIZE 0
+#define EP15OUT_MAX_PACKET_SIZE 0
+
+//Buffering value for endpoints IN
+#define EP0IN_BUFFER 1
+#define EP1IN_BUFFER 2
+#define EP2IN_BUFFER 2
+#define EP3IN_BUFFER 0
+#define EP4IN_BUFFER 0
+#define EP5IN_BUFFER 0
+#define EP6IN_BUFFER 0
+#define EP7IN_BUFFER 0
+#define EP8IN_BUFFER 0
+#define EP9IN_BUFFER 0
+#define EP10IN_BUFFER 0
+#define EP11IN_BUFFER 0
+#define EP12IN_BUFFER 0
+#define EP13IN_BUFFER 0
+#define EP14IN_BUFFER 0
+#define EP15IN_BUFFER 0
+
+//Buffering value for endpoints OUT
+#define EP0OUT_BUFFER 1
+#define EP1OUT_BUFFER 2
+#define EP2OUT_BUFFER 2
+#define EP3OUT_BUFFER 0
+#define EP4OUT_BUFFER 0
+#define EP5OUT_BUFFER 0
+#define EP6OUT_BUFFER 0
+#define EP7OUT_BUFFER 0
+#define EP8OUT_BUFFER 0
+#define EP9OUT_BUFFER 0
+#define EP10OUT_BUFFER 0
+#define EP11OUT_BUFFER 0
+#define EP12OUT_BUFFER 0
+#define EP13OUT_BUFFER 0
+#define EP14OUT_BUFFER 0
+#define EP15OUT_BUFFER 0
+
+//Start address for buffer in USB memory for endpoints IN
+#define EP0IN_STARTADDR 0
+#define EP1IN_STARTADDR 64
+#define EP2IN_STARTADDR 2112
+#define EP3IN_STARTADDR 4160
+#define EP4IN_STARTADDR 6208
+#define EP5IN_STARTADDR 8256
+#define EP6IN_STARTADDR 10304 //8256
+#define EP7IN_STARTADDR 12352 //8256
+#define EP8IN_STARTADDR 14400 //8256
+#define EP9IN_STARTADDR  14400 //8256
+#define EP10IN_STARTADDR 14400 //8256
+#define EP11IN_STARTADDR 14400 //8256
+#define EP12IN_STARTADDR 14400 //8256
+#define EP13IN_STARTADDR 14400 //8256
+#define EP14IN_STARTADDR 14400 //8256
+#define EP15IN_STARTADDR 14400 //8256
+
+//Start address for buffer in USB memory for endpoints OUT
+#define EP0OUT_STARTADDR 0
+#define EP1OUT_STARTADDR 64
+#define EP2OUT_STARTADDR 2112
+#define EP3OUT_STARTADDR 4160
+#define EP4OUT_STARTADDR 6208
+#define EP5OUT_STARTADDR 8256
+#define EP6OUT_STARTADDR 10304 //8256
+#define EP7OUT_STARTADDR 12352 //8256
+#define EP8OUT_STARTADDR 14400 //8256
+#define EP9OUT_STARTADDR 14400 //8256
+#define EP10OUT_STARTADDR 14400 //8256
+#define EP11OUT_STARTADDR 14400 //8256
+#define EP12OUT_STARTADDR 14400 //8256
+#define EP13OUT_STARTADDR 14400 //8256
+#define EP14OUT_STARTADDR 14400 //8256
+#define EP15OUT_STARTADDR 14400 //8256
+
+#define USB_ENDPOINT_NUM    4
+#endif
+

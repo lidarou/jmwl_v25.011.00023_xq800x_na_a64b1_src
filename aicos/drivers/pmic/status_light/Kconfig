@@ -1,0 +1,28 @@
+# General configuration options
+#
+# Copyright 2024 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig STATUS_LIGHT
+    bool "status_light"
+    depends on SUBSYS_AP
+    default n
+    help
+        status light driver.
+
+if STATUS_LIGHT
+
+config DRIVER_STATUS_LIGHT
+    bool "device/net status light"
+    depends on STATUS_LIGHT
+    default n
+    help
+        device net status light.
+
+config NET_STATUS_LIGHT_API
+    bool "net status light api support."
+    depends on STATUS_LIGHT
+    select PIN_WAKEUP
+    default n
+    help
+        device net status light api.
+endif

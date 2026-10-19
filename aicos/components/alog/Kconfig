@@ -1,0 +1,71 @@
+menu "Alog Config"
+    config ALOG_SUPPORT
+        bool "Enable alog feature"
+        default y
+        help
+          Enable alog feature.
+
+    config ALOG_CUSTOMER_CFG
+        bool "Enable alog customer config"
+        depends on ALOG_SUPPORT
+        default n
+        help
+          Enable alog customer config.
+
+    config ALOG_STATIC_LEVEL
+        int "Alog static level"
+        depends on ALOG_SUPPORT
+        default 3
+        help
+          Set the static log level, 0--none, 1--error,
+          2--warn, 3--info, 4--debug,
+
+    config ALOG_TRACE_IDX
+        bool "Convert strings to ID"
+        depends on ALOG_SUPPORT
+        default y
+        help
+          Enable Convert strings to ID feature.
+
+    config ALOG_FRAME_SUPPORT
+        bool "Enable alog frame feature"
+        depends on ALOG_SUPPORT
+        default y
+        help
+         Enable alog frame feature.
+
+    config ALOG_BITMAP_STRING
+        bool "Enable alog bitmap string function."
+        depends on ALOG_SUPPORT
+        default n
+        help
+         Enable alog bitmap string function.
+
+    config LOG_FILE_LINE
+        bool "Enable alog record fileid and line number."
+        depends on ALOG_TRACE_IDX
+        default n
+        help
+         Enable alog record fileid and line number.
+
+    config NET_PCAP_DUMP
+        bool "network pcap dump"
+        depends on ALOG_SUPPORT
+        default n
+
+    config ALOG_STORE_FS
+        bool "Log save to file system."
+        depends on FS
+        default n
+
+    config ALOG_STORE_ENABLE_COPY
+        bool "Enable copy log to a buffer before save."
+        depends on ALOG_STORE_FS
+        default n
+
+    config DBG_CPPC_SAMP
+        bool "Enable CP PC sample fucntion."
+        depends on ALOG_SUPPORT
+        default n
+
+endmenu

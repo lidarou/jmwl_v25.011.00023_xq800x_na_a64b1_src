@@ -1,0 +1,18 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# lzma software decoder configurations
+#
+
+menuconfig LZMA
+    bool "LZMA Drivers"
+    help
+      Enable config options for LZMA drivers.
+
+if LZMA
+
+config DRIVER_LZMA_DEC
+    bool "LZMA sw decoder"
+    default y
+
+endif

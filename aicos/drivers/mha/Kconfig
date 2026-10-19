@@ -1,0 +1,40 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig MHA
+    bool "MHA Drivers"
+    help
+      Enable config options for MHA drivers.
+
+if MHA
+
+config MHA_PIN
+    bool "MHA PIN"
+    default n
+    depends on MHA
+    help
+      Enable config options for MHA PIN.
+
+config MHA_LCD
+    bool "MHA LCD"
+    default n
+    depends on MHA
+    help
+      Enable config options for MHA LCD.
+
+config MHA_CAMERA
+    bool "MHA CAMERA"
+    default n
+    depends on MHA
+    help
+      Enable config options for MHA CAMERA.
+
+config MHA_SOUND
+    bool "MHA SOUND"
+    default n
+    depends on MHA
+    help
+      Enable config options for MHA SOUND.
+
+endif # MHA

@@ -1,0 +1,167 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "codec Configurations"
+
+config SW_CODEC_SUPPORT
+    bool "sw codec support"
+    default n
+    help
+        Enable sw codec
+
+config HW_CODEC_SUPPORT
+    bool "hw codec support"
+    default n
+    help
+        Enable hw codec
+
+config CODEC_HW_SPECIAL
+    bool "hw special support"
+    default n
+    help
+        Enable hw special codec
+
+config WAV_SUPPORT
+    bool "wav support"
+    default n
+    help
+        Enable wav codec.
+
+config MP3_SUPPORT
+    bool "mp3 support"
+    default n
+    help
+        Enable mp3 codec.
+
+config DEC_CODEC_MP3_COMPR
+    bool "dec compress support"
+    default y
+    depends on MP3_SUPPORT
+    help
+        Enable compress codec for mp3 decoder
+
+config DEC_CODEC_MP3_HWCODEC
+    bool "dec hwcodec support"
+    default n
+    depends on MP3_SUPPORT
+    depends on HW_CODEC_SUPPORT
+    help
+        Enable hwcodec for mp3 decoder
+
+config DEC_CODEC_MP3_AD
+    bool "dec adcodec support"
+    default n
+    depends on MP3_SUPPORT
+    depends on SW_CODEC_SUPPORT
+    help
+        Enable ad mp3 codec for mp3 decoder
+
+config AMR_SUPPORT
+    bool "amr support"
+    default n
+    help
+        Enable amr codec.
+
+config DEC_CODEC_AMR_COMPR
+    bool "dec compress support"
+    default y
+    depends on AMR_SUPPORT
+    help
+        Enable compress codec for amr decoder
+
+config DEC_CODEC_AMR_AD
+    bool "dec ad support"
+     default n
+     depends on AMR_SUPPORT
+     depends on SW_CODEC_SUPPORT
+     help
+        Enable ad codec for amr decoder
+
+config DEC_CODEC_AMR_NB_AD
+    bool "amr nb"
+    default n
+    depends on DEC_CODEC_AMR_AD
+    help
+        Enable ad codec for amr nb decoder
+
+config DEC_CODEC_AMR_WB_AD
+    bool "amr wb"
+    default n
+    depends on DEC_CODEC_AMR_AD
+    help
+        Enable ad codec for amr wb decoder
+
+config ENC_CODEC_AMR_COMPR
+    bool "enc compress support"
+    default y
+    depends on AMR_SUPPORT
+    help
+        Enable compress codec for amr encoder
+
+config ENC_CODEC_AMR_AD
+    bool "enc ad support"
+     default n
+     depends on AMR_SUPPORT
+     depends on SW_CODEC_SUPPORT
+     help
+        Enable ad codec for amr encoder
+
+config ENC_CODEC_AMR_NB_AD
+    bool "amr nb"
+    default n
+    depends on ENC_CODEC_AMR_AD
+    help
+        Enable ad codec for amr nb encoder
+
+config ENC_CODEC_AMR_WB_AD
+    bool "amr wb"
+    default n
+    depends on ENC_CODEC_AMR_AD
+    help
+        Enable ad codec for amr wb encoder
+
+config VOICE_DTMF
+    bool "voice DTMF"
+    default n
+    depends on SW_CODEC_SUPPORT
+    help
+        Enable voice DTMF
+
+config MIDI_SUPPORT
+    bool "midi support"
+    default n
+    help
+        Enable midi codec.
+
+config MIDI_TEST_SUPPORT
+    bool "midi test support"
+    default n
+    depends on MIDI_SUPPORT
+    help
+        Enable midi codec test.
+
+choice
+    prompt "midi level"
+    default MIDI_LOW
+    depends on MIDI_SUPPORT
+    help
+      Select MIDI quality level, the quality is higher the size is bigger.
+
+    config MIDI_HIGH
+        bool "High quality midi"
+        help
+          Hight quality midi liberary.
+
+    config MIDI_MID
+        bool "Mid quality midi"
+        help
+          Middle quality midi liberary.
+
+    config MIDI_LOW
+        bool "Low quality midi"
+        help
+          Low quality midi liberary.
+endchoice
+
+endmenu # Drivers Configurations

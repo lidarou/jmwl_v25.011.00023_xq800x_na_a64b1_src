@@ -1,0 +1,11 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_IPV4_UDP_TEST aic_socket_ipv4_udp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_IPV4_TCP_TEST aic_socket_ipv4_tcp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_IPV6_UDP_TEST aic_socket_ipv6_udp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_IPV6_TCP_TEST aic_socket_ipv6_tcp_test.c)
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_IPV4_RAW_TEST aic_socket_ipv4_raw_test.c)
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_IPV6_RAW_TEST aic_socket_ipv6_raw_test.c)
+aic_library_sources_ifdef(CONFIG_NET_SOCKET_DEMO_TEST aic_socket_demo_test.c)

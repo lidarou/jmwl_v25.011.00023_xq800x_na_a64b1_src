@@ -1,0 +1,18 @@
+{
+	"Board info": {
+		"genesis": [
+			{
+				"project board name":   "gx318f_os",
+				"ap board name":        "gx318f_os",
+				"md board name":        "gx318l_h4",
+				"cp board name":        "gx31xl_volte",
+				"nv board name":        "gx318f_os",
+				"dsp board name":       "gx316l",
+				"bootloader board name":"gx318l_h1",
+				"tfm board name":       "NA",
+				"SW version":           "0",
+				"Comments":             "4+4 oversea board"
+			}
+		]
+	}
+}

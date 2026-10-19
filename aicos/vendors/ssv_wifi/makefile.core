@@ -1,0 +1,118 @@
+#
+# Makefile for the iComm wifi host sw stack.
+#
+include $(TOP_DIR)/aicos/components/wifi/ssv_wifi_all/config.mk
+include $(TOP_DIR)/aicos/components/wifi/ssv_wifi_all/include.mk
+
+SSV_LIB_FILE := wifi_lib_core.a
+
+SSV_SRC_DIRS := $(SSV_HOST_DIR)
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/ap
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/ap/common
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/ap/crypto
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/sta
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/eap_common
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/eap_peer
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/eap_server
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/eapol_auth
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/tls
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/utils
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/mlme/wpa_supplicant/wps
+
+#SSV_SRC_DIRS += $(SSV_HOST_DIR)/app/cli/cmds
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/app/netmgr
+#SSV_SRC_DIRS += $(SSV_HOST_DIR)/app/netapp/udhcp
+
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/lib
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/lib/apps
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/core
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/drv
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/drv/$(DRV_INTERFACE)
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/hal
+SSV_SRC_DIRS += $(SSV_HOST_DIR)/hal/ssv6020
+#SSV_SRC_DIRS += $(SSV_HOST_DIR)/platform/$(CUSTOMER_ID)
+
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/main.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/ethermac.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/init.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/macaddr.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/ssv_frame.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/country_cfg.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/custom_cfg.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/lib/apps/pbuf.c
+
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/d6_dhcpc.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/d6_packet.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/d6_socket.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/dhcprelay.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/domain_codec.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/signalpipe.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/dhcpc.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/udhcp/dumpleases.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/app/netapp/getopt.c
+SSV_EXCLUDE_FILES +=  $(SSV_HOST_DIR)/mlme/wpa_supplicant/tls/libtommath.c
+
+
+COMMON_OBJS = 
+COMMON_LIBS =
+
+SSV_CSRC=$(foreach dir, $(SSV_SRC_DIRS), $(wildcard $(dir)/*.c))
+
+SSV_CFILES=$(filter-out $(SSV_EXCLUDE_FILES), $(SSV_CSRC))
+SSV_COBJS= $(patsubst %.c, %.o, $(SSV_CFILES))
+
+COMMON_OBJS += $(SSV_COBJS)
+COMMON_LIBS += $(SSV_LIB_DIR)/$(SSV_LIB_FILE)
+
+COMMON_OBJS :=$(subst $(SSV_HOST_DIR),.,$(COMMON_OBJS))
+COMMON_DIRS = $(subst $(SSV_HOST_DIR),.,$(SSV_SRC_DIRS))
+
+OUTPUT_OBJS := $(addprefix $(WIFI_OUTDIR)/,$(COMMON_OBJS))  
+
+OUTPUT_DEPS:= $(OUTPUT_OBJS:.o=.d)
+ 
+ALL_OUTDIR := $(WIFI_OUTDIR) 
+
+ALL_OUTDIR += $(addprefix $(WIFI_OUTDIR)/,$(COMMON_DIRS))  
+
+vpath %.c $(SSV_HOST_DIR):$(SSV_HOST_DIR)/..
+
+.PHONY:all
+
+all:$(COMMON_LIBS) 
+
+$(COMMON_LIBS):$(OUTPUT_OBJS)
+	@echo  make $(SSV_LIB_DIR)/$(SSV_LIB_FILE) 
+	@$(AR) -rcs $@ $(OUTPUT_OBJS)
+	$(COPYTO) $@ $(TOP_DIR)/aicos/components/wifi/ssv_wifi_all/outdir/lib/
+	@$(CHMOD) 777 $(TOP_DIR)/aicos/components/wifi/ssv_wifi_all/outdir/lib/$(SSV_LIB_FILE)
+	
+$(OUTPUT_OBJS):$(WIFI_OUTDIR)/%.o:%.c
+	@$(TESTDIR) -d $(WIFI_OUTDIR)/$(dir $*) || $(MKDIR) -p $(WIFI_OUTDIR)/$(dir $*)
+	@echo compile $(notdir $<)
+	@echo -e "compile $(notdir $<)\r\n" >>output.txt
+ifeq ($(OSTYPE),linux)
+	@$(CC) $(CFLAGS) $(SSV_INC_DIR) $(SSV_INC_DIR_EXT) -c $< -o $@ 2>output.txt
+else
+	@$(CC) $(CFLAGS) $(SSV_INC_DIR) $(SSV_INC_DIR_EXT) -c $< -o $@ 
+endif
+#	$(CC) $(CFLAGS) $(SSV_INC_DIR) $(SSV_INC_DIR_EXT) -c $< -o $@ 
+
+
+ifneq "$(MAKECMDGOALS)" "clean"
+#sinclude $(OUTPUT_DEPS)
+
+$(WIFI_OUTDIR)/%.d:%.c
+	@test -d $(WIFI_OUTDIR)/$(dir $*) || $(MKDIR) -p $(WIFI_OUTDIR)/$(dir $*)
+	@echo "dep "$(notdir $*).d
+	@set -e;$(MAKEDEPS) $(CFLAGS) $(SSV_INC_DIR) $(SSV_INC_DIR_EXT) $< > $@.temp; \
+	sed 's,\($(notdir $*)\)\.o[ :]*,$(WIFI_OUTDIR)/$(dir $*)\1.o $@ : ,g' < $@.temp > $@.temp1;\
+	sed /ADSv1_2/d $@.temp1 > $@;\
+	$(RM) -f $@.temp*
+endif		
+
+.PHONY:clean    
+clean:
+	@$(RM) $(COMMON_LIBS) $(OUTPUT_OBJS) $(OUTPUT_DEPS)
+

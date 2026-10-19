@@ -1,0 +1,19 @@
+menu "Init Config"
+    config PLAT_AUTO_INIT
+        bool "Auto init Enable"
+        default y
+        help
+          Enable the auto init function.
+
+    config PLAT_CMDLINE
+        bool "Command Line Enable"
+        default y
+        help
+          Enable the command line function.
+
+    config PLAT_THREADX_SAMPLE
+        bool "Threax sample Enable"
+        default n
+        help
+          Enable the sample threadx.
+endmenu

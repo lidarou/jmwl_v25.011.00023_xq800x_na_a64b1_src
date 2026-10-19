@@ -1,0 +1,5 @@
+menu "Osa Options"
+source "os/osa/common/Kconfig"
+source "os/osa/rae_libc/Kconfig"
+source "os/osa/rom_call/Kconfig"
+endmenu

@@ -1,0 +1,14 @@
+menu "Rom Function Call Support Config"
+    config ROM_CALL_SUPPORT
+        bool "Rom Function Call Support Enable"
+        default n
+        help
+          Enable Rom Function Call Suppor. 
+    config ROM_BIN_BUILD
+        bool "Build For Rom Bin"
+        depends on ROM_CALL_SUPPORT
+        default n
+        help
+          Enable Build For Rom Bin.
+
+endmenu

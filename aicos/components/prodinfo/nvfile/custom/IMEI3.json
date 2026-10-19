@@ -1,0 +1,55 @@
+{
+	"HEADER": {
+		"id": 8,
+		"category": 2
+	},
+	"IMEI_T": {
+		"IMEI": [
+			{
+				"value": 18,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 52,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 86,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 120,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 144,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 18,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 55,
+				"type": "unsigned char",
+				"description": "imei"
+			},
+			{
+				"value": 15,
+				"type": "unsigned char",
+				"description": "imei"
+			}
+		],
+		"SVN": {
+			"value": 0,
+			"type": "unsigned char",
+			"description": "software version number, for IMEISV"
+		}
+	}
+}

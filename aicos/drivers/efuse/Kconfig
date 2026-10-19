@@ -1,0 +1,47 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig EFUSE
+    bool "EFUSE Drivers"
+    depends on SUBSYS_AP
+    select DRIVER_EFUSE if SUBSYS_AP
+    help
+      Enable config options for EFUSE drivers.
+
+if EFUSE
+
+config DRIVER_EFUSE
+    bool "Efuse driver"
+    default y
+    help
+      SoC efuse operate driver.
+
+config DRIVER_EFUSE_VER
+    string "Efuse driver version"
+    depends on DRIVER_EFUSE
+    default "r1p0"
+    help
+      Select version that match witch SoC efuse IP.
+
+config DRIVER_EFUSE_DEMO
+    bool "efuse driver demo"
+    depends on DRIVER_EFUSE
+    default n
+    help
+      efuse driver demo for user.
+
+choice
+    prompt "UID version"
+    default UID_GX316
+    help
+        SoC UID Version.
+
+    config UID_GX316
+        bool "gx316 uid"
+endchoice
+
+config UID_VERSION
+    string
+    default "gx316" if UID_GX316
+endif # EFUSE

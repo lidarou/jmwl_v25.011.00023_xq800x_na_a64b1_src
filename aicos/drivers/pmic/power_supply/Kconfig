@@ -1,0 +1,31 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# pmic irq configurations
+
+menuconfig POWER_SUPPLY
+    bool "Power Supply"
+    depends on SUBSYS_AP && PMIC_IRQ
+    default y
+    help
+      Select pmic power supply (batteries, AC, USB) driver for power supply service.
+
+    config AIC_POWER_SUPPLY_AT
+        bool "aic power supply at cmd support."
+        depends on POWER_SUPPLY
+        default y
+        help
+            aic power supply at cmd support.
+
+    config POWER_SUPPLY_CORE
+        bool "power supply core logic"
+        depends on POWER_SUPPLY
+        select CHGR
+        default y
+        help
+            power supply core logic.
+
+if POWER_SUPPLY
+#source other power supply driver components Kconfig
+source "drivers/pmic/power_supply/*/Kconfig"
+endif

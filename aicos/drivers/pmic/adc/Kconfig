@@ -1,0 +1,61 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig ADC
+    bool "adc Drivers"
+    depends on SUBSYS_AP
+    default y
+    help
+      Enable config options for adc drivers.
+
+if ADC
+
+config DRIVER_ADC
+    bool "pmic adc driver"
+    default y
+    help
+      adc operate driver.
+
+if PMIC_GP201
+    config ADC_R1P0
+        bool
+        default y
+        help
+            select adc r1p0 for adc interface.
+endif
+
+if PMIC_GP202
+    config ADC_R2P0
+        bool
+        default y
+        help
+            select adc r2p0 for adc interface.
+endif
+
+if ADC_R1P0
+    config DRIVER_ADC_VER
+        string
+        default "r1p0"
+endif
+
+if ADC_R2P0
+    config DRIVER_ADC_VER
+        string
+        default "r2p0"
+endif
+
+config DRIVER_ADC_DEMO
+    bool "pmic adc driver demo"
+    depends on DRIVER_ADC
+    default n
+    help
+      adc driver demo for user.
+
+config ADC_BLT_AT_CMD
+    bool "adc blt(board level test)driver"
+    default y
+    help
+        adc board level test.
+
+endif # adc

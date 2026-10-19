@@ -1,0 +1,55 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PMIC_EFUSE
+    bool "pmic efuse Drivers"
+    depends on SUBSYS_AP
+    default y
+    help
+      Enable config options for PMIC EFUSE drivers.
+
+if PMIC_EFUSE
+
+config DRIVER_PMIC_EFUSE
+    bool "pmic efuse driver"
+    default y
+    help
+      pmic efuse operate driver.
+
+#PMIC efuse version Selection configurations
+choice
+    prompt "pmic efuse version Selection"
+    default EFUSE_R1P0
+
+    config EFUSE_R1P0
+        bool "R1P0 efuse ip"
+        help
+            select efuse r1p0 for efuse interface.
+
+    config EFUSE_R2P0
+        bool "R2P0 efuse ip"
+        help
+            select efuse r2p0 for efuse interface.
+endchoice
+
+if EFUSE_R1P0
+    config DRIVER_PMIC_EFUSE_VER
+        string
+        default "r1p0"
+endif
+
+if EFUSE_R2P0
+    config DRIVER_PMIC_EFUSE_VER
+        string
+        default "r2p0"
+endif
+
+config DRIVER_PMIC_EFUSE_DEMO
+    bool "pmic efuse driver demo"
+    depends on DRIVER_PMIC_EFUSE
+    default n
+    help
+      efuse driver demo for user.
+
+endif # EFUSE

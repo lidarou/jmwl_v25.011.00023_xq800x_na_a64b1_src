@@ -1,0 +1,25 @@
+menu "D2D Config"
+    config D2D_SWITCH
+    bool "Enable D2D feature"
+    default n
+    help
+      Enable D2D feature.
+
+    choice
+    prompt "L3 selection"
+    depends on D2D_SWITCH
+    help
+      This menu uses to select the profile for D2D L3.
+
+    config D2D_L3
+        bool "D2D L3 real"
+        help
+          Use D2D L3 real.
+
+    config D2D_L3_DUMMY
+        bool "D2D L3 dummy"
+        help
+          Use D2D L3 dummy.
+    endchoice
+
+endmenu

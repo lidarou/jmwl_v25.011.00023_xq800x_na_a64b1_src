@@ -1,0 +1,38 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+add_subdirectory_ifdef(CONFIG_AZURE_NETXDUO core)
+add_subdirectory_ifdef(CONFIG_NET_IPSEC ipsec)
+add_subdirectory_ifdef(CONFIG_NET_NAT64 nat64)
+add_subdirectory_ifdef(CONFIG_NET_EXTERNEL_API common)
+add_subdirectory_ifdef(CONFIG_NET_DRIVER_DIRECT_FORWARD direct_forward)
+#add_subdirectory_ifdef(CONFIG_NET_PCAP_DUMP pcap)
+add_subdirectory_ifdef(CONFIG_NET_TEST test)
+
+add_subdirectory_ifdef(CONFIG_NET_PING ping)
+add_subdirectory_ifdef(CONFIG_NET_IFCONFIG ifconfig)
+add_subdirectory_ifdef(CONFIG_NET_SEMI_TETHER usb_semi_tether)
+add_subdirectory_ifdef(CONFIG_PDP_MGR pdp_mgr)
+add_subdirectory_ifdef(CONFIG_NET_SHARE_COMMON net_share/net_share_common)
+add_subdirectory_ifdef(CONFIG_NET_DRIVER_DIRECT_FORWARD net_share/port_mgr)
+add_subdirectory_ifdef(CONFIG_PPP_DIAL net_share/ppp_dial)
+add_subdirectory_ifdef(CONFIG_USB_NET_SHARE net_share/usb_net_share)
+add_subdirectory_ifdef(CONFIG_SOFTAP_SHARE net_share/softap_mgr)
+add_subdirectory_ifdef(CONFIG_IMS_NET_MGR ims_net_mgr)
+
+add_subdirectory_ifdef(CONFIG_NET_IPV6_PACKET_ROUTER ipv6_forward)
+add_subdirectory_ifdef(CONFIG_NET_AT at_net)
+add_subdirectory_ifdef(CONFIG_NET_SNTP sntp)
+add_subdirectory_ifdef(CONFIG_NET_HTTP http)
+add_subdirectory_ifdef(CONFIG_NET_FTPS ftps)
+add_subdirectory_ifdef(CONFIG_NET_FTP ftp)
+add_subdirectory_ifdef(CONFIG_NET_MQTT mqtt)
+add_subdirectory_ifdef(CONFIG_NET_LWM2M lwm2m)
+
+add_subdirectory_ifdef(CONFIG_NET_TLS_API tls)
+
+add_subdirectory_ifdef(CONFIG_NET_LIBCOAP libcoap-4.3.1/examples/netxduo)
+
+add_subdirectory_ifdef(CONFIG_NET_TRAFFIC_CONTROL traffic_control)
+add_subdirectory_ifdef(CONFIG_MOBILE_DM mobile_dm)

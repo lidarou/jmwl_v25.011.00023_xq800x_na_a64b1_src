@@ -1,0 +1,9 @@
+{
+    "file_path": "aicos/components/prodinfo/nvfile/",
+    "header_path": "aicos/components/prodinfo/nvfile/include",
+    "custom": [
+        "SN",
+        "SN1",
+        "DEVINFO"
+    ]
+}

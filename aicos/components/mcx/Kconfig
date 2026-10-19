@@ -1,0 +1,28 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+
+#
+# Support AP&CP MCX on flash.
+#
+
+menu "MCX Configure"
+    config MCX_SUPPORT
+        bool "MCX support"
+        default n
+        help
+          Enable AP&CP MCX on flash.
+
+    config MCX_DEBUG
+        bool "MCX debug"
+        default n
+        help
+          Enable AP&CP MCX debug.
+
+    config MCX_TEST
+        bool "MCX test"
+        default n
+        help
+          Enable MCX test.
+endmenu

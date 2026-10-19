@@ -1,0 +1,6 @@
+config AIC_TRNG
+    bool "aic trng module"
+    default n
+    help
+      "enable aic trng module"
+

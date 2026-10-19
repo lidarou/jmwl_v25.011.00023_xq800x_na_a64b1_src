@@ -1,0 +1,164 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig GRAPHICS
+    bool "Graphics Drivers"
+    depends on SUBSYS_AP
+    help
+      Enable config options for gpio drivers.
+
+if GRAPHICS
+
+config DRIVER_LCDC
+    bool "lcdc driver"
+    default y
+    help
+      SoC efuse operate driver.
+
+config SYNC_FLIP
+    bool "lcdc flip sync"
+    depends on DRIVER_LCDC
+    default n
+    help
+        lcdc flip interface return until flip finish.
+
+choice
+    prompt "lcd panel selection."
+    default ST7789
+
+    config ST7789
+        bool "ST7789 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          ST7789 lcd panel.
+
+    config GC9306
+        bool "GC9306 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          GC9306 lcd panel.
+
+    config GC9307
+        bool "GC9307 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          GC9307 lcd panel.
+
+    config IPS9107
+        bool "IPS9107 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          IPS9107 lcd panel.
+
+    config ST7315
+        bool "ST7315 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          ST7315 lcd panel.
+
+    config ST7365
+        bool "ST7365 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          ST7365 lcd panel.
+
+    config ST7567
+        bool "ST7567 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          ST7567 lcd panel.
+
+    config ST7735
+        bool "ST7735 lcd panel"
+        depends on DRIVER_LCDC
+        help
+          ST7735 lcd panel.
+
+    config AXS15231B
+        bool "AXS15231B lcd panel"
+        depends on DRIVER_LCDC
+        help
+          AXS15231B lcd panel.
+endchoice
+
+config DRIVER_BACKLIGHT
+    bool "lcd panel backlight"
+    depends on DRIVER_LCDC
+    default y
+    help
+      lcd panel backlight.
+
+choice
+    prompt "lcd panel backlight type selection"
+    default KPLED_BACKLIGHT
+
+    config KPLED_BACKLIGHT
+        bool "KPLED panel backlight"
+        depends on DRIVER_BACKLIGHT
+        help
+            kpled lcd panel backlight.
+
+    config PWM_BACKLIGHT
+        bool "PWM panel backlight"
+        depends on DRIVER_BACKLIGHT
+        help
+            kpled lcd panel backlight.
+
+    config PULSE_DIMMING_BACKLIGHT
+        bool "pluse dimming panel backlight"
+        depends on DRIVER_BACKLIGHT
+        help
+            pluse dimming panel backlight.
+
+    config LED_RGBW_BACKLIGHT
+        bool "LED RGBW panel backlight"
+        depends on DRIVER_BACKLIGHT
+        select LAMP
+        help
+            led_rgbw lcd panel backlight.
+endchoice
+
+if LED_RGBW_BACKLIGHT
+config LED_RGBW_BACKLIGHT_MAX_CURRENT
+    int "led rgbw backlight max current"
+    default 81600
+    help
+        led rgbw backlight max current.
+endif
+
+config DISPLAY_SHOWLOGO
+    bool "display show startup logo"
+    default y
+    help
+      display show startup logo.
+
+config AIC_DISPLAY_AT
+    bool "display aic at support"
+    default y
+    help
+      display aic at support.
+
+config PANEL_POWER_PMIC
+    bool "lcd panel power supply from pmic ldo"
+    default y
+    help
+        lcd panel power supply from pmic ldo.
+
+config TP
+    bool "Enable touch panel support"
+    default n
+    
+choice
+    bool "Touch panel selection"
+    depends on TP
+    default BL6XX3
+
+    config BL6XX3
+        bool "BL6XX3 touch panel"
+        help
+          BL6XX3 touch panel.
+
+endchoice
+
+endif # graphics Configurations

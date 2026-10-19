@@ -1,0 +1,46 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig EIPU
+    bool "EIPU Drivers"
+    default n
+    help
+      Enable config options for eipu drivers.
+
+if EIPU
+
+choice
+    prompt "sleep controller selection"
+    default EIPU_R1P0
+
+    config EIPU_R1P0
+        bool "eipu r1p0"
+        help
+            gx31x eipu
+
+    config EIPU_R2P0
+        bool "eipu r2p0"
+        help
+            gx30x eipu
+endchoice
+
+if EIPU_R1P0
+    config EIPU_VERSION
+        string
+        default "r1p0"
+endif
+
+if EIPU_R2P0
+    config EIPU_VERSION
+        string
+        default "r2p0"
+endif
+
+config EIPU_DRIVER
+    bool "Driver EIPU module"
+    default n
+    help
+      Select eipu module.
+
+endif

@@ -1,0 +1,27 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PMIC_GPIO
+    bool "GPIO Drivers"
+    depends on PMIC_GP201 || PMIC_GP202 || PMIC_GP301
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config options for gpio drivers.
+
+if PMIC_GPIO
+config DRV_GPIO_PMIC
+    bool "PMIC GPIO driver"
+    default n
+    help
+      PMIC GPIO IP
+
+config DRV_GPIO_PMIC_VER
+    string "PMIC GPIO driver IP version"
+    depends on DRV_GPIO_PMIC
+    default "gp201"
+    help
+      PMIC GPIO IP version, different chip will use different version
+      of pmic gpio IP.
+endif

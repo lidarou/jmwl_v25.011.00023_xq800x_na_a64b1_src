@@ -1,0 +1,42 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "codec Configurations"
+
+config MIDI_SUPPORT
+    bool "midi support"
+    default n
+    help
+        Enable midi codec.
+
+config MIDI_TEST_SUPPORT
+    bool "midi test support"
+    default n
+    depends on MIDI_SUPPORT
+    help
+        Enable midi codec test.
+choice
+    prompt "midi level"
+    default MIDI_LOW
+    depends on MIDI_SUPPORT
+    help
+      Select MIDI quality level, the quality is higher the size is bigger.
+
+    config MIDI_HIGH
+        bool "High quality midi"
+        help
+          Hight quality midi liberary.
+
+    config MIDI_MID
+        bool "Mid quality midi"
+        help
+          Middle quality midi liberary.
+
+    config MIDI_LOW
+        bool "Low quality midi"
+        help
+          Low quality midi liberary.
+endchoice
+
+endmenu # Drivers Configurations

@@ -1,0 +1,57 @@
+menu "NVRAM Config"
+    config NVRAM_SUPPORT
+        bool "Enable nvram"
+        default n
+        help
+          Enable nvram feature.
+
+if SUBSYS_CP
+    config NVRAM_SYNC_SUPPORT
+        bool "Enable nvram cp sync data to ap."
+        depends on NVRAM_SUPPORT
+        default n
+        help
+          Enable nvram cp sync data to ap feature.
+
+    config NVRAM_CALIBRATION_RECOVERY
+        bool "Enable calibration data recovery"
+        depends on NVRAM_SUPPORT
+        default n
+        help
+          After download new nvram binary, calibration data recovery
+          from download nvram, use for temp version.
+
+    config NVRAM_TEST_SUPPORT
+        bool "Enable nvram test feature"
+        depends on NVRAM_SUPPORT
+        default n
+        help
+          Enable nvram test feature.
+
+    choice
+        prompt "nvram hw diff selection"
+        depends on NVRAM_SUPPORT
+        default NVRAM_HW_DIFF_PAID
+
+        config NVRAM_HW_DIFF_PAID
+            bool "nvram hw diff select by pa id."
+            help
+                nvram hw diff select by pa id.
+
+        config NVRAM_HW_DIFF_BOARDID
+            bool "nvram hw diff select by board id."
+            help
+                nvram hw diff select by board id.
+    endchoice
+endif
+
+if SUBSYS_AP
+    config NVRAM_WTRD_COMPARE
+        bool "Enable data write and read back compare"
+        depends on NVRAM_SUPPORT
+        default n
+        help
+          After nvram data write to flash, read back data to compare it.
+endif
+
+endmenu

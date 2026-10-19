@@ -1,0 +1,10 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+config WIFI_SCAN
+    bool "Wifi Scan Support"
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config for wifi scan.

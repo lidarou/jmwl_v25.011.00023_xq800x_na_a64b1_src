@@ -1,0 +1,9 @@
+
+add_subdirectory_ifdef(CONFIG_NET_ALTE_DRIVER alte_network)
+add_subdirectory_ifdef(CONFIG_NET_IMS_NIC aic_ims_nic)
+add_subdirectory_ifdef(CONFIG_NET_PPP_CODEC ppp_codec)
+add_subdirectory_ifdef(CONFIG_NET_DATA_FORWARD aic_data_forward)
+add_subdirectory_ifdef(CONFIG_NET_VIRT_NIC aic_virt_nic)
+add_subdirectory_ifdef(CONFIG_D2D_DATA_FORWARD aic_d2d_forward)
+add_subdirectory_ifdef(CONFIG_NET_DRIVER_TEST test)
+

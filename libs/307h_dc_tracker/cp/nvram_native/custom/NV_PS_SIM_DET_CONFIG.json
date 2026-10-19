@@ -1,0 +1,28 @@
+{
+    "HEADER": {
+        "id": 320,
+        "category": 1
+    },
+    "NV_PS_SIM_DET_CONFIG_T": {
+        "sim0_polarity": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "0 : low signal indicate SIM Card insert. 1 : high signal indicate SIM Card insert."
+        },
+        "sim0_eiu_int": {
+            "value": 3,
+            "type": "unsigned char",
+            "description": "SIM_DET, EIU_INTX."
+        },
+        "sim1_polarity": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "0 : low signal indicate SIM Card insert. 1 : high signal indicate SIM Card insert."
+        },
+        "sim1_eiu_int": {
+            "value": 255,
+            "type": "unsigned char",
+            "description": "SIM_DET, EIU_INTX."
+        }
+    }
+}

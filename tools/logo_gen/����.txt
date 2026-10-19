@@ -1,0 +1,13 @@
+流程说明：原始图像png->RGB->lzma压缩成bin-> xxd把bin转成数组
+
+操作步骤说明：
+
+1. 将需要生成.h的原始logo图片放置此文件夹，命名为image.png（也可以修改脚本中infile）
+2. 使用git bash执行： python png2rgb2lzma2h.py
+3. 编辑：生成的logo.h，去掉头尾字符，只保留数字。（可参考logo.h）
+4. 把改好的logo.h 替换至对应位置，如：aicos/drivers/graphics/grage/test_img_240_320
+    (后续新版SDK中，可以按分辨率替换，位置为：aicos/drivers/graphics/grage/img_128_128）
+
+
+如果遇到报错：ModuleNotFoundError: No module named 'PIL'
+使用指令来安装：pip install pillow

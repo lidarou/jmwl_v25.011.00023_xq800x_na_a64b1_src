@@ -1,0 +1,112 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Tele Config"
+
+if !BYPASS_MD_AT
+if TELE_SERVICE
+config TELE_SERVICE_ENABLE
+    bool "Enable Tele Service"
+    depends on SUBSYS_AP
+    default n
+    help
+        Enable Tele Service
+endif
+endif
+
+if VOICE_CALL
+config VOICE_SERVICE_ENABLE
+    bool "Enable Voice Service"
+    depends on SUBSYS_AP
+    default n
+    help
+        Enable Voice Service
+endif
+
+config BYPASS_MD_AT
+    bool "Support Bypass MD AT"
+    depends on SUBSYS_AP && CMUX
+    default n
+    help
+        Support Bypass MD AT
+
+
+config VOICE_CALL
+    bool "Voice Call"
+    default n
+    depends on AT_PROC
+    depends on AUDIO_SUPPORT
+    help
+        Enable voice call
+
+choice
+    bool "Tele Control Config"
+    depends on SUBSYS_AP
+    default TELE_CTRL_BY_AT
+    help
+        select controller of modem init flow and URC process.
+
+    config TELE_CTRL_BY_AT
+        bool "Controlled by AT"
+        help
+            select AT control modem init flow and URC process
+
+    config TELE_CTRL_BY_CUSTOMER
+        bool "Controlled by Customer" #        depends on TELE_SERVICE
+        help
+            select customer control modem init flow and URC process
+endchoice
+
+
+config TELE_SERVICE_EX
+    bool "Tele Service Ex (Based on AT Cmd Support)"
+    depends on SUBSYS_AP
+    default n
+    help
+      Enable config for tele service which based on AT cmd, not depends on modem driver
+
+if !BYPASS_MD_AT
+
+menu "Enable Tele Sub-modules"
+
+    config TELE_RADIO_SIM
+        bool "Tele Radio and SIM"
+        default n
+        help
+          Enable config for Radio and SIM which are the base modules of tele service
+
+    config TELE_CALL
+        bool "Tele Call"
+        default n
+        help
+          Enable config for tele call which based on tele service
+
+    config TELE_DATA
+        bool "Tele Data"
+        default n
+        help
+          Enable config for tele data which based on tele service
+
+    config TELE_SMS
+        bool "Tele SMS"
+        select TELE_TRANSACTION
+        default n
+        help
+          Enable config for tele sms which based on tele service
+
+    config TELE_PB
+        bool "Tele PB"
+        default n
+        help
+          Enable config for tele pb which based on tele service
+
+endmenu #menu "Enable TELE Sub-modules"
+
+
+source "components/tele/modem_driver/Kconfig"
+source "components/tele/service/Kconfig"
+
+endif
+
+endmenu

@@ -1,0 +1,95 @@
+{
+    "HEADER": {
+        "id": 215,
+        "category": 1
+    },
+    "NV_PS_CFG_CUSTOMER_T": {
+        "ims_support": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "UE support ims functionality, Default is support(1)"
+        },
+        "NV_PS_CFG_CUSTOMER_OOSSRCH_INFO": {
+            "period1": {
+                "value": 5,
+                "type": "unsigned short",
+                "description": "First round search interval."
+            },
+            "times1": {
+                "value": 240,
+                "type": "unsigned short",
+                "description": "Number of searches in the first round."
+            },
+            "period2": {
+                "value": 8,
+                "type": "unsigned short",
+                "description": "Second round search interval, not less than period1."
+            },
+            "times2": {
+                "value": 225,
+                "type": "unsigned short",
+                "description": "Number of searches in the second round."
+            },
+            "period3": {
+                "value": 10,
+                "type": "unsigned short",
+                "description": "Third round search interval, not less than period2."
+            },
+            "times3": {
+                "value": 180,
+                "type": "unsigned short",
+                "description": "Number of searches in the third round."
+            },
+            "period4": {
+                "value": 12,
+                "type": "unsigned short",
+                "description": "Forth round search interval, not less than period3."
+            },
+            "type1_count": {
+                "value": 15,
+                "type": "unsigned short",
+                "description": "type1 search count per cycle"
+            },
+            "type2_count": {
+                "value": 1,
+                "type": "unsigned short",
+                "description": "type2 search count per cycle"
+            }
+        },
+        "imeisv_flag": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "UE set imeisv in SMC meassage when NW not request imeisv, defalut not set"
+        },
+        "svn": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "soft version number for IMEISV. the lower 4 bits is digit 0 and the higher 4 bits is digit 1"
+        },
+        "cemode_set": {
+            "value": 2,
+            "type": "unsigned char",
+            "description": "0:PS mode 1,1:PS mode 2, 2:CS/PS mode 1, 3;CS/PS mode 2"
+        },
+        "rel_type": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "release type, 0:R11 or earlier, 1:R12 or later"
+        },
+        "fgi_usercfg": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "0:default vaule; 1:user disable fgi bit13,16,28,29,102"
+        },
+        "cgdcont_flag": {
+            "value": 0,
+            "type": "unsigned char",
+            "description": "0: +cgdcont? always return UE defined param(spec); 1: +cgdcont? return dynamic alloc param when bearer was activated"
+        },
+        "limit_search_disable": {
+            "value": 1,
+            "type": "unsigned char",
+            "description": "0:default enable; 1:disable"
+        }
+    }
+}

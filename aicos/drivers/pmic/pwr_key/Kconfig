@@ -1,0 +1,63 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# pmic irq configurations
+
+menuconfig PWRKEY_SW_ACTION
+    bool "power key software behavior implement"
+    depends on SUBSYS_AP && PMIC_IRQ
+    default y
+    help
+      power key software action implement.
+
+if PWRKEY_SW_ACTION
+#Power key function select
+choice
+    prompt "power key function select"
+    default PWR_KEY_LONG_PRESS_SHUTDOWN
+        depends on PWRKEY_SW_ACTION
+
+config PWR_KEY_LONG_PRESS_SHUTDOWN
+    bool "power key control backlight & long press shutdown."
+    help
+      power key control backlight & long press shutdown.
+
+config PWR_KEY_KICK_SHUTDOWN
+    bool "power key kick shutdown."
+    help
+      press power key to turn off system.
+
+config PWR_KEY_GND
+    bool "power key connected to ground."
+    help
+      power key connected to ground
+
+config DISABLE_CHG_IN_BOOT_LPR
+    bool "disable charge_in boot LPR"
+    help
+      disable charge_in boot LPR
+endchoice
+
+config PWR_KEY_KICK_SWITCH_BACKLIGHT
+    bool "pmic pwr key kick switch backlight status"
+    depends on PWR_KEY_LONG_PRESS_SHUTDOWN
+    default y
+    help
+        pmic pwr key kick switch backlight status.
+
+if PWR_KEY_LONG_PRESS_SHUTDOWN
+config PWR_KEY_LINK_VBUS
+    bool "usb plug-in trigger pwrkey grounding"
+    default n
+    help
+        usb plug-in trigger pwrkey grounding.
+
+if !PWR_KEY_LINK_VBUS
+    config PWR_KEY_LINK_GND_QUICK_SLEEP
+        bool "HW Design pwrkey link GND quick sleep"
+        default n
+        help
+            HW Design pwrkey link GND quick sleep.
+endif
+endif
+endif

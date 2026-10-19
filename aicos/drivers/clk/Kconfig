@@ -1,0 +1,27 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Clock Drivers"
+
+config AIC_CLK
+    bool "AIC Clock"
+    default y
+
+choice
+    prompt "Select driver type"
+    default AIC_IOT_CLK
+config AIC_IOT_CLK
+    bool "aic iot clock driver"
+    depends on AIC_CLK
+    help
+      Select iot clock driver
+
+config AIC_STANDARD_CLK
+    bool "aic standard clock driver"
+    depends on AIC_CLK
+    help
+      Select standard clock driver
+endchoice
+
+endmenu # Clock Driver

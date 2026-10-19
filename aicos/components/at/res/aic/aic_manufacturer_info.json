@@ -1,0 +1,14 @@
+{
+    "HEADER": {
+        "id": 7,
+        "category": 1
+    },
+    "MANUFACTURER_INFO": {
+        "manufacturer_name": {
+            "value": "guixin",
+            "len": 40,
+            "type": "string",
+            "description": "manufacturer_info"
+        }
+    }
+}

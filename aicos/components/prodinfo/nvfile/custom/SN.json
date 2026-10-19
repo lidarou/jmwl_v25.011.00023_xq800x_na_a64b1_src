@@ -1,0 +1,14 @@
+{
+	"HEADER": {
+		"id": 12,
+		"category": 2
+	},
+	"SN_T": {
+		"SN": {
+			"value": "AIC1234567890000000",
+			"len": 64,
+			"type": "string",
+			"description": "SN"
+		}
+	}
+}

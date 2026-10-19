@@ -1,0 +1,133 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Camera Configurations"
+
+config CAMERA_SUPPORT
+    bool "MM Camera support"
+    default y
+    help
+        Enable camera support.
+
+config CSI_SUPPORT
+    bool "CSI Driver Support"
+    default y
+    depends on CAMERA_SUPPORT
+    help
+        Enable CSI Driver
+
+config GX316_CSI
+    bool "GX316 CSI Driver"
+    default y
+    depends on CSI_SUPPORT
+    help
+        Enable GX316 CSI Driver.
+
+config CAMERA_SENSOR_SUPPORT
+    bool "Camera Sensor Driver Support"
+    default y
+    depends on CAMERA_SUPPORT
+    help
+        Enable Camera Sensor Driver
+
+config CAMERA_SENSOR_GC032A
+    bool "Sensor Gc032a support"
+    default y
+    depends on CAMERA_SENSOR_SUPPORT && DRIVER_I2C
+    help
+        Enable sensor gc032a
+
+config CAMERA_SENSOR_BF20A6
+    bool "Sensor bf20a6 support"
+    default n
+    depends on CAMERA_SENSOR_SUPPORT && DRIVER_I2C
+    help
+        Enable sensor bf20a6
+
+config CAMERA_SENSOR_BF30A2
+    bool "Sensor bf30a2 support"
+    default n
+    depends on CAMERA_SENSOR_SUPPORT && DRIVER_I2C
+    help
+        Enable sensor bf30a2
+
+config CAMERA_SENSOR_BF3901UCS
+    bool "Sensor bf3901ucs support"
+    default n
+    depends on CAMERA_SENSOR_SUPPORT && DRIVER_I2C
+    help
+        Enable sensor bf3901ucs
+
+config CAMERA_SENSOR_GC6133
+    bool "Sensor Gc6133 support"
+    default n
+    depends on CAMERA_SENSOR_SUPPORT && DRIVER_I2C
+    help
+        Enable sensor gc6133
+
+config CAMERA_VIDEO_SUPPORT
+    bool "Camera video support"
+    depends on CAMERA_SUPPORT
+    default n
+    help
+        Enable Camera Video support
+
+config CAMERA_AT_CMD_SUPPORT
+    bool "Camera At Command Support"
+    default n
+    depends on CAMERA_SUPPORT && AT_PROC
+    help
+        Enable camera at command
+
+config CAMERA_OPEN_BY_DEFAULT
+    bool "Camera open by default"
+    default n
+    depends on CAMERA_SUPPORT
+    help
+        Camera open by default
+
+config JPEG_SUPPORT
+    bool "JPEG Driver Support"
+    default n
+    depends on CAMERA_SUPPORT
+    help
+        Enable JPEG Driver
+
+config LIBJPEG_SUPPORT
+    bool "LIBJPEG Driver Support"
+    default n
+    depends on JPEG_SUPPORT
+    help
+        Enable LIBJPEG Driver
+
+config LIBJPEG_DECODER_SUPPORT
+    bool "Libjpeg Decoder Support"
+    default n
+    depends on LIBJPEG_SUPPORT
+    help
+        Enable Libjpeg Decoder Support
+
+config LIBJPEG_ENCODER_SUPPORT
+    bool "Libjpeg Encoder Support"
+    default n
+    depends on LIBJPEG_SUPPORT
+    help
+        Enable Libjpeg Encoder Support
+
+config LIBJPEG_AIC_EXAMPLE_SUPPORT
+    bool "Libjpeg aic example support"
+    default n
+    depends on LIBJPEG_SUPPORT
+    help
+        Libjpeg aic example support
+
+#config LIBJPEG_TURBO_SUPPORT
+#    bool "LIBJPEG Turbo Driver Support"
+#    default n
+#    depends on JPEG_SUPPORT
+#    help
+#        Enable LIBJPEG Turbo Driver
+
+endmenu
+

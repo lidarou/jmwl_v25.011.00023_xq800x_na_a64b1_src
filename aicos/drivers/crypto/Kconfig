@@ -1,0 +1,15 @@
+menu "Crypto Component Configurations"
+
+config CRYPTO
+    bool "Crypto Component configurations"
+    default n
+
+
+config EIP130_DDK_3_1
+    bool "EIP130 DDK lib support"
+    depends on CRYPTO
+    default n
+
+
+endmenu # Crypto Component Configurations
+

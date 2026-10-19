@@ -1,0 +1,54 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+aic_library_include_directories(
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_DriverInit/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_DriverInit/incl
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_DriverInit/src/GX310
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_GlobalControl/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_GlobalControl/incl
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Generic/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Generic/src/GX310
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Interrupts/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Interrupts/incl
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Interrupts/src/GX310
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_VAL/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_VAL/incl
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_VEX/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/DriverFramework/src
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Generic/src/arm_threadx
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_VAL/src/
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/DriverFramework/src/arm_threadx
+    ${CMAKE_CURRENT_LIST_DIR}/DriverFramework/Basic_Defs_API/incl
+    ${CMAKE_CURRENT_LIST_DIR}/DriverFramework/CLib_Abstraction_API/incl
+    ${CMAKE_CURRENT_LIST_DIR}/DriverFramework/Device_API/incl
+    ${CMAKE_CURRENT_LIST_DIR}/DriverFramework/DMAResource_API/incl
+    ${CMAKE_CURRENT_LIST_DIR}/EIP130/TokenHelper/incl
+    ${CMAKE_CURRENT_LIST_DIR}/EIP130/TokenHelper/src
+    ${CMAKE_CURRENT_LIST_DIR}/EIP130/MailboxControl/incl
+    ${CMAKE_CURRENT_LIST_DIR}/EIP130/MailboxControl/src
+    ${CMAKE_CURRENT_LIST_DIR}/EIP201/incl
+    ${CMAKE_CURRENT_LIST_DIR}/EIP201/src
+    ${CMAKE_CURRENT_LIST_DIR}/Log/incl
+    ${CMAKE_CURRENT_LIST_DIR}/Log/src/printf
+    ${CMAKE_CURRENT_LIST_DIR}/config/
+    ${CMAKE_CURRENT_LIST_DIR}/config/GX310/
+)
+
+aic_library_sources(
+    ${CMAKE_CURRENT_LIST_DIR}/Kit/EIP130/MailboxControl/src/eip130.c
+    ${CMAKE_CURRENT_LIST_DIR}/Kit/EIP130/MailboxControl/TokenHelper/src/eip130_token_common.c
+    ${CMAKE_CURRENT_LIST_DIR}/Kit/EIP201/src/eip201.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_DriverInit/src/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_DriverInit/src/GC310/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Generic/src/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Generic/src/arm_threadx/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_GlobalControl/src/adapter_global_eip130.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_GlobalControl/src/um/adapter_memxs.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_Interrupts/src/um/adapter_interrupts.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_VAL/src/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/Adapter_VEX/src/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/DriverFramework/src/*.c
+    ${CMAKE_CURRENT_LIST_DIR}/Integration/DriverFramework/src/arm_threadx/*.c
+)

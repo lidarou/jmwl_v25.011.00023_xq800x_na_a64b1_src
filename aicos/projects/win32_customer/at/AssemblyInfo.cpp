@@ -1,0 +1,38 @@
+
+/* Auto gen by tool, don't change it. */
+#define AIC_THIS_FILE    0x04e0ad
+#define LOG_MODULE    AMOD_SYS
+#include "stdafx.h"
+
+using namespace System::Reflection;
+using namespace System::Runtime::CompilerServices;
+using namespace System::Runtime::InteropServices;
+
+//
+// 有关程序集的常规信息通过下列特性集
+// 控制。更改这些特性值可修改
+// 与程序集关联的信息。
+//
+[assembly:AssemblyTitleAttribute("at")];
+[assembly:AssemblyDescriptionAttribute("")];
+[assembly:AssemblyConfigurationAttribute("")];
+[assembly:AssemblyCompanyAttribute("")];
+[assembly:AssemblyProductAttribute("at")];
+[assembly:AssemblyCopyrightAttribute("Copyright (c)  2024")];
+[assembly:AssemblyTrademarkAttribute("")];
+[assembly:AssemblyCultureAttribute("")];
+
+//
+// 程序集的版本信息由下面四个值组成:
+//
+//      主版本
+//      次版本
+//      内部版本号
+//      修订号
+//
+// 您可以指定所有值，也可使用“内部版本号”和“修订号”的默认值，
+// 方法是按如下所示使用“*”:
+
+[assembly:AssemblyVersionAttribute("1.0.*")];
+[assembly:ComVisible(false)];
+

@@ -1,0 +1,30 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menu "Location Config"
+
+config LOCATION
+    bool "Location Support"
+    depends on SUBSYS_AP
+    depends on TELE_SERVICE_EX
+    default n
+    help
+      Enable config for location.
+
+choice
+    bool "Choice Location Server"
+    depends on LOCATION
+    default SERVER_ONE_OS
+    help
+        select which location server used.
+
+    config SERVER_ONE_OS
+        bool "Use OneOS Location Server"
+        help
+            Use OneOS Location Server.
+
+endchoice
+
+endmenu
+

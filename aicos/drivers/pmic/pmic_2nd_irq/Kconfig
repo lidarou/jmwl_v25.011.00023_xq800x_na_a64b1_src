@@ -1,0 +1,33 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# pmic irq configurations
+
+menuconfig PMIC_2ND_IRQ
+    bool "pmic 2nd irq driver"
+    depends on SUBSYS_AP && PMIC_IRQ
+    default y
+    help
+      Select pmic 2nd irq driver for support pmic 2nd irq request.
+
+if PMIC_2ND_IRQ
+
+if PMIC_GP201
+    config DRIVER_PMIC_PMU_VER
+        string
+        default "GP201"
+endif
+
+if PMIC_GP202
+    config DRIVER_PMIC_PMU_VER
+        string
+        default "GP202"
+endif
+
+if PMIC_GP301
+    config DRIVER_PMIC_PMU_VER
+        string
+        default "GP301"
+endif
+
+endif

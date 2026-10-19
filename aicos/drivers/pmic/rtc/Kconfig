@@ -1,0 +1,27 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig PMIC_RTC
+    bool "RTC Drivers"
+    depends on PMIC_GP201 || PMIC_GP202 || PMIC_GP301
+    default n
+    help
+      Enable config options for rtc drivers.
+
+if PMIC_RTC
+config DRV_RTC_PMIC
+    bool "PMIC RTC driver"
+    default n
+    help
+      PMIC RTC IP
+
+config DRV_RTC_PMIC_VER
+    string "PMIC RTC driver IP version"
+    depends on DRV_RTC_PMIC
+    default "gp201"
+    help
+      PMIC RTC IP version, different chip will use different version
+      of pmic rtc IP.
+
+endif

@@ -1,0 +1,19 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig IPU
+    bool "IPU Drivers"
+    default n
+    help
+      Enable config options for ipu drivers.
+
+if IPU
+
+config IPU_DRIVER
+    bool "Driver IPU module"
+    default n
+    help
+      Select ipu module.
+
+endif

@@ -1,0 +1,41 @@
+# General configuration options
+#
+# Copyright 2023 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig VENDORS
+    bool "Vendor Component Configurations"
+    depends on SUBSYS_AP
+    help
+      Enable config options for Vendors.
+
+if VENDORS
+config JC_NETWORK_VIDEO_CALL
+    bool "JC network video call"
+    depends on CAMERA_VIDEO_SUPPORT && JPEG_SUPPORT
+    default n
+
+config SSV_WIFI
+    bool "ssv wifi module"
+    depends on USE_NETXDUO
+    default n
+
+config BK7238
+    bool "BK7238 wifi module"
+    depends on USE_NETXDUO
+    default n
+
+config FOTA_SUPPORT_ABUP
+    bool "abup fota"
+    depends on SUBSYS_AP
+    default n
+
+config TTS_IFLY
+    bool "TTS IFLY"
+    depends on AUDIO_SUPPORT
+    default n
+
+config TC_IOT_VIDEO
+    bool "TC IOT VIDEO"
+    depends on SUBSYS_AP
+    default n
+endif

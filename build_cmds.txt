@@ -1,0 +1,75 @@
+1. 配置编译环境，并查看当前支持的芯片类型
+PS F:\AicxTek\XQ800X\aicos> python.exe .\build\env.py
+==========================  aic support boards  ==========================
+--  0 307h_dc_tracker                       /* 4+4 board */
+--  1 307h_du_ipc                           /* 2+2 307H-DU ipc board */
+--  2 307h_du_tracker                       /* 2+2 307H-DU tracker board */
+--  3 gx306l_h3                             /* 4+4 board */
+--  4 gx306l_h3_mifi                        /* 4+4 mifi board */
+--  5 gx306u_h1                             /* 2+2 board */
+--  6 gx306u_h1_b                           /* 2+2 cm board */
+--  7 gx306u_h1_d                           /* 2+2 cm data transfer board */
+--  8 gx306u_h1_dg                          /* 2+2 board */
+--  9 gx306u_h1_g                           /* 2+2 cm data transfer + gps board */
+-- 10 gx306u_h3                             /* 2+2 tracker board */
+-- 11 gx306u_h3_audc                        /* 2+2 board */
+-- 12 gx306u_h3_audnc                       /* 2+2 board */
+-- 13 gx308c_h4                             /* 2+4 volte board */
+-- 14 gx308c_h6                             /* 2+4 ext modem board */
+-- 15 gx308l_h4                             /* 4+4 volte board */
+-- 16 gx308l_h4_os                          /* 4+4 volte board */
+-- 17 gx316h_h1                             /* 8+8 board */
+-- 18 gx316h_h1_sec                         /* 8+8 security board */
+-- 19 gx316h_h2                             /* 8+8 kids watch board */
+-- 20 gx316h_h3                             /* 8+8 feature phone board */
+-- 21 gx316l_h1                             /* 4+4 board */
+-- 22 gx316l_h3                             /* 2+4 tracker board */
+-- 23 gx316l_h4                             /* 4+4 adult watch board */
+-- 24 gx316l_h4_fp                          /* 4+4+4 feature phone board */
+-- 25 gx318c_h1                             /* 2+4 board */
+-- 26 gx318c_h1_dg                          /* 2+4 dongle board */
+-- 27 gx318c_h3                             /* 2+4 tracker board */
+-- 28 gx318f_os                             /* 4+4 oversea board */
+-- 29 gx318h_h1                             /* 8+8 board */
+-- 30 gx318l_h4                             /* 4+4 volte board */
+
+以上命令会自动生成以下文:
+?       aicos/CMakeLists.txt
+?       aicos/Kconfig
+?       lunch.py
+?       make.py
+
+
+2. 配置当前编译的芯片类型：
+python lunch.py <芯片类型索引号>
+
+PS F:\AicxTek\XQ800X\aicos> python ./lunch.py 3
+===========================  aic lunch boards  ===========================
+-- lunched: gx306l_h3
+--  |
+-- board info:
+--            chip        -> banyan
+--            ap board    -> gx306l_h3
+--            md board    -> gx306l_h3
+--            cp board    -> gx30xl_ims
+--            nv board    -> gx306l_h3
+--            bl board    -> gx306l_h3
+--            tfm board   -> NA
+--            sw version  -> 0
+--            information :  4+4 board
+--            security :  NSEC
+PS F:\AicxTek\XQ800X\aicos>
+
+
+3. 查看帮助菜单
+python .\make.py -h
+
+4. 配置AP编译选项
+python .\make.py ap menuconfig
+
+5. 编译
+python .\make.py all  全编译
+python .\make.py ap   仅编译ap
+
+6. 清空编译
+python .\make.py clean

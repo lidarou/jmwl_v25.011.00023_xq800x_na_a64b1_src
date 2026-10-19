@@ -1,0 +1,74 @@
+#
+# Makefile for the iComm wifi host sw stack.
+#
+include $(TOP_DIR)/wifi/config.mk
+include $(TOP_DIR)/wifi/include.mk
+
+SSV_LIB_FILE                     := wifi_lib_iperf3.a
+
+SSV_SRC_DIRS := $(SSV_HOST_DIR)/app/netapp/iperf3.0/src
+
+COMMON_OBJS = 
+COMMON_LIBS =
+
+SSV_CSRC=$(foreach dir, $(SSV_SRC_DIRS), $(wildcard $(dir)/*.c))
+
+SSV_CFILES=$(filter-out $(SSV_EXCLUDE_FILES), $(SSV_CSRC))
+SSV_COBJS= $(patsubst %.c, %.o, $(SSV_CFILES))
+
+COMMON_OBJS += $(SSV_COBJS)
+COMMON_LIBS += $(SSV_LIB_DIR)/$(SSV_LIB_FILE)
+
+COMMON_OBJS :=$(subst $(SSV_HOST_DIR),.,$(COMMON_OBJS))
+COMMON_DIRS = $(subst $(SSV_HOST_DIR),.,$(SSV_SRC_DIRS))
+
+OUTPUT_OBJS := $(addprefix $(WIFI_OUTDIR)/,$(COMMON_OBJS))  
+
+#OUTPUT_OBJS := $(WIFI_OUTDIR)/custom_cfg.o
+#OUTPUT_OBJS += $(WIFI_OUTDIR)/ap/ap.o
+
+OUTPUT_DEPS:= $(OUTPUT_OBJS:.o=.d)
+ 
+ALL_OUTDIR := $(WIFI_OUTDIR) 
+ALL_OUTDIR += $(addprefix $(WIFI_OUTDIR)/,$(COMMON_DIRS))  
+
+vpath %.c $(SSV_HOST_DIR)
+
+.PHONY:all
+
+#ifeq ($(TCPIP_WRAPPER),icomm_lwIP)
+ifeq ($(TCPIP_WRAPPER),anyka_3918e_lwIP)
+all: $(COMMON_LIBS)
+
+$(COMMON_LIBS):$(OUTPUT_OBJS)
+	@echo  make $(SSV_LIB_DIR)/$(SSV_LIB_FILE) 
+	@$(AR) rcs $@ $(OUTPUT_OBJS)
+	
+$(OUTPUT_OBJS):$(WIFI_OUTDIR)/%.o:%.c
+	@test -d $(WIFI_OUTDIR)/$(dir $*) || $(MKDIR) -p $(WIFI_OUTDIR)/$(dir $*)
+	@echo compile $(notdir $<)
+	@echo -e "compile $(notdir $<)\r\n" >>output.txt
+	@$(CC) $(CFLAGS) $(SSV_INC_DIR) $(SSV_INC_DIR_EXT) -c $< -o $@
+
+
+ifneq "$(MAKECMDGOALS)" "clean"
+#sinclude $(OUTPUT_DEPS)
+
+$(WIFI_OUTDIR)/%.d:%.c
+	@test -d $(WIFI_OUTDIR)/$(dir $*) || $(MKDIR) -p $(WIFI_OUTDIR)/$(dir $*)
+	@echo "dep "$(notdir $*).d
+	@set -e;$(MAKEDEPS) $(CFLAGS) $(SSV_INC_DIR) $(SSV_INC_DIR_EXT) $< > $@.temp; \
+	sed 's,\($(notdir $*)\)\.o[ :]*,$(WIFI_OUTDIR)/$(dir $*)\1.o $@ : ,g' < $@.temp > $@.temp1;\
+	sed /ADSv1_2/d $@.temp1 > $@;\
+	$(RM) -f $@.temp*
+endif		
+else
+all: 
+	@echo USE_ICOMM_LWIP is 0, iperf3 unavailable
+
+endif
+
+.PHONY:clean    
+clean:
+	@$(RM) $(COMMON_LIBS) $(OUTPUT_OBJS) $(OUTPUT_DEPS)
+

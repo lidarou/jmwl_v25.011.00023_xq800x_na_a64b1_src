@@ -1,0 +1,392 @@
+{
+    "HEADER": {
+        "id": 144,
+        "category": 1
+    },
+    "RF_COMMON_SSMH": {
+        "RFFE_MIPI_ID": {
+            "ID_Num": {
+                "value": 0,
+                "type": "unsigned short",
+                "description": ""
+            },
+            "Reserved0": {
+                "value": 0,
+                "type": "unsigned short",
+                "description": ""
+            },
+            "Reserved1": {
+                "value": 0,
+                "type": "unsigned short",
+                "description": ""
+            },
+            "hw_01": {
+                "value": 0,
+                "type": "unsigned short",
+                "description": "Used for hw_01 default value"
+            },
+            "ID1": {
+                "USID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[3:0]"
+                },
+                "PID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1D[7:0]"
+                },
+                "MID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[7:4]+0x1E[7:0]"
+                },
+                "Reserved0": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved1": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved2": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                }
+            },
+            "ID2": {
+                "USID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[3:0]"
+                },
+                "PID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1D[7:0]"
+                },
+                "MID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[7:4]+0x1E[7:0]"
+                },
+                "Reserved0": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved1": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved2": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                }
+            },
+            "ID3": {
+                "USID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[3:0]"
+                },
+                "PID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1D[7:0]"
+                },
+                "MID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[7:4]+0x1E[7:0]"
+                },
+                "Reserved0": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved1": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved2": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                }
+            },
+            "ID4": {
+                "USID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[3:0]"
+                },
+                "PID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1D[7:0]"
+                },
+                "MID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[7:4]+0x1E[7:0]"
+                },
+                "Reserved0": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved1": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved2": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                }
+            },
+            "ID5": {
+                "USID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[3:0]"
+                },
+                "PID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1D[7:0]"
+                },
+                "MID": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": "0x1F[7:4]+0x1E[7:0]"
+                },
+                "Reserved0": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved1": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                },
+                "Reserved2": {
+                    "value": 0,
+                    "type": "unsigned short",
+                    "description": ""
+                }
+            }
+        },
+        "Reserved": [
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            },
+            {
+                "value": 0,
+                "type": "unsigned short",
+                "description": " "
+            }
+        ]
+    }
+}

@@ -1,0 +1,17 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig SUBSYS_CTRL
+    bool "Subsys Ctrl Drivers"
+    default n
+    help
+      Enable config options for Subsys Ctrl drivers.
+
+if SUBSYS_CTRL
+
+config DRIVER_SUBSYS_CTRL
+    bool "Subsys ctrl driver"
+    default n
+
+endif

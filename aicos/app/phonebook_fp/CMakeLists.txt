@@ -1,0 +1,12 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+file(GLOB SOURCES ./*.c)
+aic_library_sources_ifdef(CONFIG_APP_PHONEBOOK_FP ${SOURCES})
+
+
+if(CONFIG_RESOLUTION_240x320)
+    file(GLOB_RECURSE  SOURCES ./app_phonebook_240_320/*.c)
+    aic_library_sources_ifdef(CONFIG_APP_PHONEBOOK_FP ${SOURCES})
+endif()

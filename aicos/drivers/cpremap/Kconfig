@@ -1,0 +1,40 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig CPREMAP
+    bool "CP Remap Drivers"
+    default n
+    help
+      Enable config options for cpremap drivers.
+
+if CPREMAP
+
+config CPREMAP_DRIVER
+    bool "cp remap module driver"
+    default n
+    help
+      cpremap module driver.
+
+config CP_PSRAM_REMAP
+    bool "Enable cp psram remap"
+    default n
+    depends on CPREMAP_DRIVER
+    help
+      Enable cp psram remap.
+
+config CP_IRAM_REMAP
+    bool "Enable cp iram remap"
+    default n
+    depends on CPREMAP_DRIVER
+    help
+      Enable cp iram remap.
+
+config CP_REMAP_DIS_MDM
+    bool "Disable the modem remap"
+    default n
+    depends on CPREMAP_DRIVER
+    help
+      Disable the cp modem remap function.
+
+endif # CPREMAP

@@ -1,0 +1,86 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig LAMP
+    bool "lamp driver"
+    depends on SUBSYS_AP
+    select PMIC_PMU
+    default y
+    help
+      enalbe lamp driver.
+
+if LAMP
+
+config DRIVER_LAMP
+    bool "pmic lamp driver"
+    default y
+    help
+      pmic lamp driver operate.
+
+if DRIVER_LAMP
+choice
+    prompt "lamp unit version Selection"
+    default LAMP_GP201
+
+    config LAMP_GP201
+        bool "gp201 lamp units"
+        help
+            select gp201 units for lamp units group.
+endchoice
+
+    config LED_R
+        bool "choice LED_R as lamp source"
+        default y
+        help
+            choice LED_R as lamp source.
+
+    config LED_G
+        bool "choice LED_G as lamp source"
+        default y
+        help
+            choice LED_G as lamp source.
+
+    config LED_B
+        bool "choice LED_B as lamp source"
+        default y
+        help
+            choice LED_B as lamp source.
+
+    config LED_W
+        bool "choice LED_W as lamp source"
+        help
+            choice LED_W as lamp source.
+
+config LAMP_INIT_CURRENT
+    int "lamp init current val"
+    default 60000
+    help
+        lamp init current val.
+
+if LAMP_GP201
+    config DRIVER_LAMP_VER
+        string
+        default "gp201"
+endif
+
+config LED_BLT_AT_CMD
+    bool "led board level test driver"
+    depends on DRIVER_LAMP
+    depends on BLT_SUPPORT
+    default y
+    select LED_R
+    select LED_G
+    select LED_B
+    select LED_W
+    help
+        RGBW LED board level test.
+endif
+
+config DRIVER_LAMP_DEMO
+    bool "lamp demo"
+    depends on DRIVER_LAMP
+    default n
+    help
+      lamp users demo.
+endif

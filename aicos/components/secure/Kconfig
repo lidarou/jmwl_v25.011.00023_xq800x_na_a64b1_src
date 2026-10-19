@@ -1,0 +1,17 @@
+menu "security"
+	config SECURE
+	    bool "Support secure"
+        default n
+        help
+          Support secure.
+    config SECURE_BOOT
+        bool "Support secure boot"
+        default n
+        help
+          Support secure boot.
+	config SECURE_BOOT_CORE
+        bool "Support secure boot core"
+        default n
+        help
+          Enable secure boot core
+endmenu

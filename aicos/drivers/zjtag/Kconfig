@@ -1,0 +1,27 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig ZJTAG
+    bool "ZJTAG Drivers"
+    depends on SUBSYS_AP
+    help
+      Enable config options for zjtag drivers.
+
+if ZJTAG
+
+config DRIVER_ZJTAG
+    bool "Driver ZJtag"
+    default n
+    help
+      Select zjtag module.
+
+config DRIVER_ZJTAG_VER
+    string "ZJTAG driver IP version"
+    depends on DRIVER_ZJTAG
+    default "r1p0"
+    help
+      ZJTAG IP version, different chip will use different version
+      of zjtag IP.
+
+endif

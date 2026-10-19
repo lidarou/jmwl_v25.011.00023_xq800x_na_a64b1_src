@@ -1,0 +1,25 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig CORESIGHT
+    bool "CORESIGHT Drivers"
+    help
+      Enable config options for coresight drivers.
+
+if CORESIGHT
+
+config DRIVER_CORESIGHT
+    bool "Coresight driver"
+    default n
+    help
+      Coresight components, use for coresight trace debug.
+
+config DRIVER_CORESIGHT_MTB
+    bool "MTB driver"
+    depends on CPU_CORTEX_MSTAR && DRIVER_CORESIGHT
+    default n
+    help
+      MTB IP, use for CMStar trace debug.
+
+endif # CORESIGHT

@@ -1,0 +1,7 @@
+{
+    "file_path": "aicos/drivers/pmic/clk_cali/mdfile",
+    "header_path": "aicos/drivers/pmic/clk_cali/mdfile/inc",
+    "aic": [
+        "DCXOCALI"
+    ]
+}

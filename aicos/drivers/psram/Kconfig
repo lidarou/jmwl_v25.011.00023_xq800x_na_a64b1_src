@@ -1,0 +1,26 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+#
+menuconfig PSRAM
+    bool "PSRAM Drivers"
+    depends on SUBSYS_AP || SUBSYS_CP
+    help
+      Enable config options for PSRAM drivers.
+
+if PSRAM
+
+config PSRAM_DRIVER
+    bool "Driver PSRAM module"
+    default n
+    help
+      Select PSRAM module.
+
+config PSRAM_DRIVER_VER
+    string "PSRAM IP version"
+    depends on PSRAM_DRIVER
+    default "r1p0"
+    help
+      PSRAM IP version, different chip will use different version PSRAM IP.
+
+endif

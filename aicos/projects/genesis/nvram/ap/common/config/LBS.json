@@ -1,0 +1,7 @@
+{
+  "file_path": "aicos/components/location",
+  "header_path": "aicos/components/location/",
+  "custom": [
+      "CM_AT_LBS"
+  ]
+}

@@ -1,0 +1,27 @@
+# General configuration options
+#
+# Copyright 2021 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+
+menuconfig I2C
+    bool "I2C Drivers"
+    depends on SUBSYS_AP
+    default y
+    help
+      Enable config options for i2c drivers.
+
+if I2C
+
+config DRIVER_I2C
+    bool "Driver I2C"
+    default n
+    help
+      Select I2C driver.
+
+config DRIVER_I2C_TEST
+    bool "Driver I2C test"
+    depends on DRIVER_I2C
+    default n
+    help
+      Select I2C test driver.
+
+endif # I2C

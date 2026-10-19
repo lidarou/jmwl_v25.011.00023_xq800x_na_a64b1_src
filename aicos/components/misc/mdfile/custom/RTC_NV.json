@@ -1,0 +1,43 @@
+{
+    "HEADER": {
+        "id": 16,
+        "category": 1
+    },
+    "RTC_NV": {
+        "year":{
+            "value": 2023,
+            "type": "int",
+            "description": "year"
+        },
+        "month":{
+            "value": 1,
+            "type": "int",
+            "description": "month"
+        },
+        "wday":{
+            "value": 0,
+            "type": "int",
+            "description": "week day"
+        },
+        "day":{
+            "value": 1,
+            "type": "int",
+            "description": "day"
+        },
+        "hour":{
+            "value": 0,
+            "type": "int",
+            "description": "hour"
+        },
+        "minute":{
+            "value": 0,
+            "type": "int",
+            "description": "minute"
+        },
+        "second":{
+            "value": 0,
+            "type": "int",
+            "description": "second"
+        }
+    }
+}

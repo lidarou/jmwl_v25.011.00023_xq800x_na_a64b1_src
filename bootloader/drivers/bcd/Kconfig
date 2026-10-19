@@ -1,0 +1,52 @@
+# General configuration options
+#
+# Copyright 2022 by AICXTEK TECHNOLOGIES CO.,LTD. All rights reserved.
+# power suppley battery charging detect configurations
+
+menuconfig BCD
+    bool "battery charging detect driver."
+    default n
+    help
+        battery charging detect driver(no-dcd\ps2\sdp\cdp\dcp).
+
+if BCD
+    #PMIC bcd Selection configurations
+    choice
+        prompt "bc1.2 driver Selection"
+        default BCD_R1P0
+
+        config BCD_R1P0
+            bool "R1P0 bc1.2 ip"
+            help
+                select bc1.2 r1p0 for bcd interface.
+
+        config BCD_R2P0
+            bool "R2P0 bc1.2 ip"
+            help
+                select bc1.2 r2p0 for bcd interface.
+    endchoice
+
+    config BCD_DUMMY
+        bool "bcd dummy interface"
+        default n
+        help
+            select dummy for bcd interface.
+
+    if BCD_R1P0
+        config BCD_IP
+            string
+            default "r1p0"
+    endif
+
+    if BCD_R2P0
+        config BCD_IP
+            string
+            default "r2p0"
+    endif
+
+    config BCD_DEMO
+        bool "bcd user demo."
+        default n
+        help
+            bcd user demo.
+endif
